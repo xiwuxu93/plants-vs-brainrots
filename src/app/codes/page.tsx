@@ -3,7 +3,7 @@
 import { SectionHeading } from "@/components/section-heading";
 import { codeHistory, gameInfo } from "@/data/pvb-database";
 
-const siteUrl = "https://plants-vs-brainrots.org";
+const siteUrl = "https://plantsvsbrainrots-game.com";
 
 interface CodeItem {
   code: string;

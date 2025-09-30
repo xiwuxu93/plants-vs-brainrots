@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { plants, brainrots } from "@/data/pvb-database";
 
-const siteUrl = "https://plants-vs-brainrots.org";
+const siteUrl = "https://plantsvsbrainrots-game.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [

@@ -3,7 +3,7 @@ import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
-const siteUrl = "https://plants-vs-brainrots.org";
+const siteUrl = "https://plantsvsbrainrots-game.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

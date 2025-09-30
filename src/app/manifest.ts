@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://plants-vs-brainrots.org";
+const siteUrl = "https://plantsvsbrainrots-game.com";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
