@@ -1,0 +1,33 @@
+<svg width="720" height="240" viewBox="0 0 720 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B1B21"/>
+      <stop offset="100%" stop-color="#071014"/>
+    </linearGradient>
+    <linearGradient id="leafGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8CFFD2"/>
+      <stop offset="100%" stop-color="#2EA375"/>
+    </linearGradient>
+    <linearGradient id="brainGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E5C5FF"/>
+      <stop offset="100%" stop-color="#9155D9"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(32 32)">
+    <rect width="176" height="176" rx="44" fill="url(#bgGradient)"/>
+    <circle cx="88" cy="88" r="78" fill="none" stroke="#174049" stroke-width="10"/>
+    <path d="M68 142C48 118 48 78 76 46C95 26 118 26 120 56C122 86 104 120 82 140L68 142Z" fill="url(#leafGradient)"/>
+    <path d="M82 124C70 104 72 80 88 56" stroke="#1C5F48" stroke-width="8" stroke-linecap="round"/>
+    <path d="M118 52C142 58 160 76 166 100C170 116 166 132 156 144C132 170 94 168 92 120C108 122 120 110 122 94C124 78 122 66 118 52Z" fill="none" stroke="url(#brainGradient)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M126 84C140 88 148 100 148 114C148 128 140 140 128 144" stroke="#B285E6" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="112" cy="52" r="6" fill="#F2FFD3"/>
+  </g>
+  <g transform="translate(240 74)">
+    <text x="0" y="48" fill="#A7FFDE" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="700" font-size="52" letter-spacing="0.02em">Plants vs</text>
+    <text x="0" y="118" fill="#E2CCFF" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="700" font-size="72" letter-spacing="0.015em">Brainrots</text>
+    <rect x="0" y="134" width="240" height="6" rx="3" fill="#1D5B62" opacity="0.8"/>
+    <circle cx="20" cy="134" r="8" fill="url(#leafGradient)"/>
+    <circle cx="48" cy="134" r="8" fill="url(#brainGradient)"/>
+    <text x="68" y="144" fill="#7CA1B5" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="500" font-size="20">strategy codex</text>
+  </g>
+</svg>
