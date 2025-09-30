@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -43,6 +44,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="bg-slate-950">
+      <head>
+        <Script
+          id="google-adsense"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855228928819714"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className="flex min-h-screen flex-col font-sans">
         <SiteHeader />
         <main className="flex-1 pb-16 pt-10">
