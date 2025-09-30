@@ -3,7 +3,15 @@ import { HomeHero } from "@/components/home-hero";
 import { PlantCard } from "@/components/plant-card";
 import { QuickStats } from "@/components/quick-stats";
 import { SectionHeading } from "@/components/section-heading";
-import { brainrots, gameInfo, mutationInfo, plants } from "@/data/pvb-database";
+import {
+  brainrots,
+  codeHistory,
+  events,
+  gameInfo,
+  mutationInfo,
+  plants,
+  stockHistory,
+} from "@/data/pvb-database";
 import Link from "next/link";
 
 const toolHighlights = [
@@ -42,6 +50,52 @@ const guideHighlights = [
   },
 ];
 
+const featureHighlights = [
+  {
+    title: "Strategic plant lanes",
+    description:
+      "Pair burst damage with slows, shields, and income plants to counter every meme-inspired wave.",
+    emoji: "🌱",
+  },
+  {
+    title: "Brainrot economy",
+    description:
+      "Convert defeated enemies into passive income and scale your farm for late-game fusions.",
+    emoji: "💰",
+  },
+  {
+    title: "Mutation mastery",
+    description:
+      "Track multipliers and plan diamond, neon, and event-exclusive upgrades before you spend.",
+    emoji: "🧬",
+  },
+  {
+    title: "Co-op readiness",
+    description:
+      "Prepare gear rotations, raid utilities, and countdown timelines so squads never miss an event.",
+    emoji: "🤝",
+  },
+];
+
+const officialLinks = [
+  {
+    title: "Roblox game",
+    description: "Jump straight into the Plants vs Brainrots experience on Roblox.",
+    href: "https://www.roblox.com/games/127742093697776/Plants-Vs-Brainrots" as const,
+  },
+  {
+    title: "Discord server",
+    description: "Join traders and get real-time stock alerts from the community.",
+    href: "https://discord.gg/937Mfk4zGN" as const,
+  },
+];
+
+function formatDateTime(value: string | Date, options: Intl.DateTimeFormatOptions) {
+  const date = value instanceof Date ? value : new Date(value);
+  if (Number.isNaN(date.getTime())) return "—";
+  return new Intl.DateTimeFormat(undefined, options).format(date);
+}
+
 export default function HomePage() {
   const featuredPlants = [...plants]
     .sort((a, b) => b.baseDmg - a.baseDmg)
@@ -53,6 +107,41 @@ export default function HomePage() {
 
   const plantMutationEntries = Object.entries(mutationInfo.plants);
   const brainrotMutationEntries = Object.entries(mutationInfo.brainrots);
+
+  const activeCodes = [...codeHistory]
+    .filter((entry) => entry.status.toLowerCase() === "active")
+    .sort((a, b) => new Date(b.addedAt).getTime() - new Date(a.addedAt).getTime());
+  const latestCodes = activeCodes.slice(0, 3);
+
+  const lastStockTimestamp = stockHistory[0]?.timestamp ?? null;
+  const lastStockDisplay = lastStockTimestamp
+    ? formatDateTime(lastStockTimestamp, {
+        month: "short",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+      })
+    : "—";
+
+  const sortedEvents = events
+    .map((event) => ({ ...event, start: new Date(event.startDate) }))
+    .filter((event) => !Number.isNaN(event.start.getTime()))
+    .sort((a, b) => a.start.getTime() - b.start.getTime());
+  const nextEvent = sortedEvents.find((event) => event.start.getTime() > Date.now()) ?? sortedEvents[0];
+  const nextEventStartDisplay = nextEvent
+    ? formatDateTime(nextEvent.start, {
+        month: "short",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+      })
+    : null;
+  const nextEventEndDisplay = nextEvent?.endDate
+    ? formatDateTime(nextEvent.endDate, {
+        hour: "2-digit",
+        minute: "2-digit",
+      })
+    : null;
 
   const faqSchema = {
     '@context': 'https://schema.org',
@@ -96,6 +185,142 @@ export default function HomePage() {
       />
       <HomeHero />
       <QuickStats />
+
+      <section className="container">
+        <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
+          <Link
+            href="/stock"
+            className="group rounded-3xl border border-emerald-500/30 bg-slate-900/70 p-6 transition hover:border-emerald-400/70 hover:bg-slate-900"
+          >
+            <p className="text-xs uppercase tracking-[0.35em] text-emerald-300">Live services</p>
+            <h2 className="mt-3 text-2xl font-semibold text-white">Real-time stock tracker</h2>
+            <p className="mt-3 text-sm text-slate-300">
+              Leave the dashboard open to monitor restocks, rotation timers, and event-limited seeds the second they flip.
+            </p>
+            <p className="mt-4 text-xs uppercase tracking-[0.3em] text-emerald-200">
+              Last refresh {lastStockDisplay}
+            </p>
+            <p className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-emerald-200 group-hover:text-white">
+              View stock →
+            </p>
+          </Link>
+          <Link
+            href="/events"
+            className="rounded-3xl border border-purple-500/30 bg-slate-900/70 p-6 transition hover:border-purple-400/60 hover:bg-slate-900"
+          >
+            <p className="text-xs uppercase tracking-[0.35em] text-purple-200">Next event</p>
+            <h3 className="mt-3 text-lg font-semibold text-white">
+              {nextEvent ? nextEvent.name : "No event scheduled"}
+            </h3>
+            <p className="mt-2 text-sm text-slate-300">
+              {nextEvent && nextEventStartDisplay
+                ? `${nextEventStartDisplay}${nextEventEndDisplay ? ` · Ends ${nextEventEndDisplay}` : ""}`
+                : "Check the events hub for the latest schedule."}
+            </p>
+            {nextEvent?.modifiers?.length ? (
+              <ul className="mt-4 space-y-1 text-xs text-slate-400">
+                {nextEvent.modifiers.slice(0, 3).map((modifier) => (
+                  <li key={modifier}>• {modifier}</li>
+                ))}
+              </ul>
+            ) : null}
+            <p className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-purple-200 hover:text-white">
+              Event timeline →
+            </p>
+          </Link>
+        </div>
+      </section>
+
+      <section className="container">
+        <SectionHeading
+          eyebrow="Codes"
+          title="Latest active drops"
+          description="Redeem these verified codes for free cash and boosts, then bookmark the hub for future updates."
+        />
+        <div className="grid gap-4 md:grid-cols-3">
+          {latestCodes.length === 0 ? (
+            <p className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 text-sm text-slate-300 md:col-span-3">
+              No active codes right now. We will post fresh drops as soon as they land.
+            </p>
+          ) : (
+            latestCodes.map((code) => (
+              <article
+                key={code.code}
+                className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 text-sm text-slate-300"
+              >
+                <p className="text-lg font-semibold text-white">{code.code}</p>
+                <p className="mt-1 text-slate-300">{code.reward}</p>
+                <p className="mt-3 text-xs uppercase tracking-[0.3em] text-slate-500">
+                  Added {formatDateTime(code.addedAt, { month: "short", day: "numeric", year: "numeric" })}
+                </p>
+              </article>
+            ))
+          )}
+        </div>
+        <div className="mt-6 text-right">
+          <Link href="/codes" className="text-sm font-semibold text-brand-200 hover:text-white">
+            See every code →
+          </Link>
+        </div>
+        <p className="mt-2 text-xs uppercase tracking-[0.3em] text-slate-500">
+          Data sync {formatDateTime(gameInfo.lastUpdated, { month: "long", day: "numeric", year: "numeric" })}
+        </p>
+      </section>
+
+      <section className="container">
+        <SectionHeading
+          eyebrow="Official"
+          title="Official game channels"
+          description="Hop into the Roblox experience or join the community that tracks every restock and mutation."
+        />
+        <div className="grid gap-4 md:grid-cols-2">
+          {officialLinks.map((link) => (
+            <Link
+              key={link.title}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 transition hover:border-brand-400/60 hover:bg-slate-900"
+            >
+              <p className="text-sm uppercase tracking-[0.3em] text-slate-400">{link.title}</p>
+              <p className="mt-2 text-base text-slate-200">{link.description}</p>
+              <p className="mt-4 text-sm font-semibold text-brand-200">Open link →</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="container">
+        <SectionHeading
+          eyebrow="Overview"
+          title="What is Plants vs Brainrots?"
+          description="A meme-fueled tower defense where every defeat powers your economy."
+        />
+        <div className="grid gap-6 lg:grid-cols-[2fr_3fr]">
+          <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 text-sm text-slate-300">
+            <p>
+              Plants vs Brainrots reimagines classic lane defense through the lens of internet culture. Collect seeds,
+              reinforce your garden, and turn defeated brainrots into passive income that bankrolls high-tier fusions.
+            </p>
+            <p className="mt-4">
+              Our hub pulls in live stock snapshots, curated loadouts, and calculators so strategists always know their
+              next upgrade before wave timers tick down.
+            </p>
+          </div>
+          <div className="grid gap-4 md:grid-cols-2">
+            {featureHighlights.map((feature) => (
+              <article
+                key={feature.title}
+                className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 text-sm text-slate-300"
+              >
+                <p className="text-2xl">{feature.emoji}</p>
+                <p className="mt-2 text-base font-semibold text-white">{feature.title}</p>
+                <p className="mt-2">{feature.description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section className="container">
         <SectionHeading
@@ -206,24 +431,6 @@ export default function HomePage() {
               ))}
             </ul>
           </div>
-        </div>
-      </section>
-
-      <section className="container">
-        <div className="rounded-3xl border border-emerald-500/30 bg-gradient-to-br from-emerald-500/10 via-slate-900 to-slate-950 p-8 text-center md:p-12">
-          <h2 className="text-3xl font-semibold text-white md:text-4xl">Always know the newest redeem codes</h2>
-          <p className="mt-4 text-sm text-slate-300">
-            We monitor every update drop. Bookmark the codes hub so you never miss a free seed or cash boost.
-          </p>
-          <Link
-            href="/codes"
-            className="mt-6 inline-flex items-center justify-center rounded-full bg-emerald-500 px-6 py-2 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400"
-          >
-            See active codes
-          </Link>
-          <p className="mt-4 text-xs uppercase tracking-[0.3em] text-emerald-200">
-            Last updated {new Date(gameInfo.lastUpdated).toLocaleDateString(undefined, { month: "long", day: "numeric", year: "numeric" })}
-          </p>
         </div>
       </section>
     </div>

@@ -16,6 +16,22 @@ export function HomeHero() {
         </p>
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Link
+            href="https://www.roblox.com/games/127742093697776/Plants-Vs-Brainrots"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full border border-brand-500/60 bg-brand-500/10 px-6 py-2 text-sm font-semibold text-brand-100 shadow-lg shadow-brand-500/10 transition hover:scale-[1.02] hover:bg-brand-500/20 hover:text-white"
+          >
+            Play on Roblox
+          </Link>
+          <Link
+            href="https://discord.gg/937Mfk4zGN"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full border border-indigo-400/60 bg-indigo-500/10 px-6 py-2 text-sm font-semibold text-indigo-100 transition hover:bg-indigo-500/25 hover:text-white"
+          >
+            Join Discord
+          </Link>
+          <Link
             href="/plants"
             className="inline-flex items-center justify-center rounded-full bg-brand-500 px-6 py-2 text-sm font-semibold text-white shadow-lg shadow-brand-500/30 transition hover:scale-[1.02] hover:bg-brand-400"
           >
@@ -26,12 +42,6 @@ export function HomeHero() {
             className="inline-flex items-center justify-center rounded-full border border-slate-700 px-6 py-2 text-sm font-semibold text-slate-200 transition hover:border-brand-400 hover:text-white"
           >
             View Brainrots
-          </Link>
-          <Link
-            href="/tools"
-            className="inline-flex items-center justify-center rounded-full border border-slate-700 px-6 py-2 text-sm font-semibold text-slate-200 transition hover:border-brand-400 hover:text-white"
-          >
-            Open Tools
           </Link>
         </div>
       </div>
