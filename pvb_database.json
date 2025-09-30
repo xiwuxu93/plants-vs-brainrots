@@ -1,0 +1,1185 @@
+{
+  "plants": [
+    {
+      "id": 1,
+      "name": "Cactus",
+      "rarity": "Rare",
+      "seedCost": 200,
+      "baseDmg": 10,
+      "mutations": {
+        "frozen": 40.0,
+        "gold": 20.0,
+        "diamond": 30.0,
+        "neon": 45.0,
+        "rainbow": 50.0,
+        "underworld": 60.0,
+        "magma": 70.0,
+        "galaxy": 75.0
+      },
+      "specialEffect": null,
+      "costPerDmg": 20.0,
+      "tier": "F"
+    },
+    {
+      "id": 2,
+      "name": "Strawberry",
+      "rarity": "Rare",
+      "seedCost": 1250,
+      "baseDmg": 25,
+      "mutations": {
+        "frozen": 100.0,
+        "gold": 50.0,
+        "diamond": 75.0,
+        "neon": 112.5,
+        "rainbow": 125.0,
+        "underworld": 150.0,
+        "magma": 175.0,
+        "galaxy": 187.5
+      },
+      "specialEffect": null,
+      "costPerDmg": 50.0,
+      "tier": "D"
+    },
+    {
+      "id": 3,
+      "name": "Pumpkin",
+      "rarity": "Epic",
+      "seedCost": 5000,
+      "baseDmg": 55,
+      "mutations": {
+        "frozen": 220.0,
+        "gold": 110.0,
+        "diamond": 165.0,
+        "neon": 247.5,
+        "rainbow": 275.0,
+        "underworld": 330.0,
+        "magma": 385.0,
+        "galaxy": 412.5
+      },
+      "specialEffect": null,
+      "costPerDmg": 90.9091,
+      "tier": "C"
+    },
+    {
+      "id": 4,
+      "name": "Sunflower",
+      "rarity": "Epic",
+      "seedCost": 25000,
+      "baseDmg": 115,
+      "mutations": {
+        "frozen": 460.0,
+        "gold": 230.0,
+        "diamond": 345.0,
+        "neon": 517.5,
+        "rainbow": 575.0,
+        "underworld": 690.0,
+        "magma": 805.0,
+        "galaxy": 862.5
+      },
+      "specialEffect": null,
+      "costPerDmg": 217.3913,
+      "tier": "C"
+    },
+    {
+      "id": 5,
+      "name": "Dragonfruit",
+      "rarity": "Legendary",
+      "seedCost": 100000,
+      "baseDmg": 250,
+      "mutations": {
+        "frozen": 1000.0,
+        "gold": 500.0,
+        "diamond": 750.0,
+        "neon": 1125.0,
+        "rainbow": 1250.0,
+        "underworld": 1500.0,
+        "magma": 1750.0,
+        "galaxy": 1875.0
+      },
+      "specialEffect": null,
+      "costPerDmg": 400.0,
+      "tier": "B"
+    },
+    {
+      "id": 6,
+      "name": "Eggplant",
+      "rarity": "Legendary",
+      "seedCost": 250000,
+      "baseDmg": 500,
+      "mutations": {
+        "frozen": 2000.0,
+        "gold": 1000.0,
+        "diamond": 1500.0,
+        "neon": 2250.0,
+        "rainbow": 2500.0,
+        "underworld": 3000.0,
+        "magma": 3500.0,
+        "galaxy": 3750.0
+      },
+      "specialEffect": null,
+      "costPerDmg": 500.0,
+      "tier": "B"
+    },
+    {
+      "id": 7,
+      "name": "Watermelon",
+      "rarity": "Mythic",
+      "seedCost": 1000000,
+      "baseDmg": 750,
+      "mutations": {
+        "frozen": 3000.0,
+        "gold": 1500.0,
+        "diamond": 2250.0,
+        "neon": 3375.0,
+        "rainbow": 3750.0,
+        "underworld": 4500.0,
+        "magma": 5250.0,
+        "galaxy": 5625.0
+      },
+      "specialEffect": null,
+      "costPerDmg": 1333.3333,
+      "tier": "A"
+    },
+    {
+      "id": 8,
+      "name": "Cocotank",
+      "rarity": "Godly",
+      "seedCost": 5000000,
+      "baseDmg": 1200,
+      "mutations": {
+        "frozen": 4800.0,
+        "gold": 2400.0,
+        "diamond": 3600.0,
+        "neon": 5400.0,
+        "rainbow": 6000.0,
+        "underworld": 7200.0,
+        "magma": 8400.0,
+        "galaxy": 9000.0
+      },
+      "specialEffect": null,
+      "costPerDmg": 4166.6667,
+      "tier": "A"
+    },
+    {
+      "id": 9,
+      "name": "Carnivorous Plant",
+      "rarity": "Godly",
+      "seedCost": 25000000,
+      "baseDmg": 2200,
+      "mutations": {
+        "frozen": 8800.0,
+        "gold": 4400.0,
+        "diamond": 6600.0,
+        "neon": 9900.0,
+        "rainbow": 11000.0,
+        "underworld": 13200.0,
+        "magma": 15400.0,
+        "galaxy": 16500.0
+      },
+      "specialEffect": "Premium plant with high damage",
+      "costPerDmg": 11363.6364,
+      "tier": "S"
+    },
+    {
+      "id": 10,
+      "name": "Mr. Carrot",
+      "rarity": "Secret",
+      "seedCost": 50000000,
+      "baseDmg": 3500,
+      "mutations": {
+        "frozen": 14000.0,
+        "gold": 7000.0,
+        "diamond": 10500.0,
+        "neon": 15750.0,
+        "rainbow": 17500.0,
+        "underworld": 21000.0,
+        "magma": 24500.0,
+        "galaxy": 26250.0
+      },
+      "specialEffect": "Created through plant fusion",
+      "costPerDmg": 14285.7143,
+      "tier": "S"
+    },
+    {
+      "id": 11,
+      "name": "Tomatiro",
+      "rarity": "Secret",
+      "seedCost": 125000000,
+      "baseDmg": 4500,
+      "mutations": {
+        "frozen": 18000.0,
+        "gold": 9000.0,
+        "diamond": 13500.0,
+        "neon": 20250.0,
+        "rainbow": 22500.0,
+        "underworld": 27000.0,
+        "magma": 31500.0,
+        "galaxy": 33750.0
+      },
+      "specialEffect": "Highest damage plant",
+      "costPerDmg": 27777.7778,
+      "tier": "S+"
+    }
+  ],
+  "brainrots": [
+    {
+      "id": 1,
+      "name": "Noobini Bananini",
+      "rarity": "Rare",
+      "baseIncome": 2,
+      "mutations": {
+        "gold": 4.0,
+        "diamond": 6.0,
+        "frozen": 8.0,
+        "neon": 9.0,
+        "rainbow": 10.0,
+        "galaxy": 15.0,
+        "underworld": 12.0,
+        "magma": 14.0
+      },
+      "weight": "Light",
+      "tier": "F"
+    },
+    {
+      "id": 2,
+      "name": "Orangutini Ananassini",
+      "rarity": "Rare",
+      "baseIncome": 3,
+      "mutations": {
+        "gold": 6.0,
+        "diamond": 9.0,
+        "frozen": 12.0,
+        "neon": 13.5,
+        "rainbow": 15.0,
+        "galaxy": 22.5,
+        "underworld": 18.0,
+        "magma": 21.0
+      },
+      "weight": "Light",
+      "tier": "F"
+    },
+    {
+      "id": 3,
+      "name": "Lirili Larila",
+      "rarity": "Rare",
+      "baseIncome": 4,
+      "mutations": {
+        "gold": 8.0,
+        "diamond": 12.0,
+        "frozen": 16.0,
+        "neon": 18.0,
+        "rainbow": 20.0,
+        "galaxy": 30.0,
+        "underworld": 24.0,
+        "magma": 28.0
+      },
+      "weight": "Light",
+      "tier": "F"
+    },
+    {
+      "id": 4,
+      "name": "Boneca Ambalabu",
+      "rarity": "Rare",
+      "baseIncome": 5,
+      "mutations": {
+        "gold": 10.0,
+        "diamond": 15.0,
+        "frozen": 20.0,
+        "neon": 22.5,
+        "rainbow": 25.0,
+        "galaxy": 37.5,
+        "underworld": 30.0,
+        "magma": 35.0
+      },
+      "weight": "Light",
+      "tier": "E"
+    },
+    {
+      "id": 5,
+      "name": "Fluri Flura",
+      "rarity": "Rare",
+      "baseIncome": 6,
+      "mutations": {
+        "gold": 12.0,
+        "diamond": 18.0,
+        "frozen": 24.0,
+        "neon": 27.0,
+        "rainbow": 30.0,
+        "galaxy": 45.0,
+        "underworld": 36.0,
+        "magma": 42.0
+      },
+      "weight": "Light",
+      "tier": "E"
+    },
+    {
+      "id": 6,
+      "name": "Batata Patata",
+      "rarity": "Epic",
+      "baseIncome": 12,
+      "mutations": {
+        "gold": 24.0,
+        "diamond": 36.0,
+        "frozen": 48.0,
+        "neon": 54.0,
+        "rainbow": 60.0,
+        "galaxy": 90.0,
+        "underworld": 72.0,
+        "magma": 84.0
+      },
+      "weight": "Medium",
+      "tier": "D"
+    },
+    {
+      "id": 7,
+      "name": "Baleia Brasileira",
+      "rarity": "Epic",
+      "baseIncome": 15,
+      "mutations": {
+        "gold": 30.0,
+        "diamond": 45.0,
+        "frozen": 60.0,
+        "neon": 67.5,
+        "rainbow": 75.0,
+        "galaxy": 112.5,
+        "underworld": 90.0,
+        "magma": 105.0
+      },
+      "weight": "Medium",
+      "tier": "D"
+    },
+    {
+      "id": 8,
+      "name": "Burrataleta Massarela",
+      "rarity": "Epic",
+      "baseIncome": 18,
+      "mutations": {
+        "gold": 36.0,
+        "diamond": 54.0,
+        "frozen": 72.0,
+        "neon": 81.0,
+        "rainbow": 90.0,
+        "galaxy": 135.0,
+        "underworld": 108.0,
+        "magma": 126.0
+      },
+      "weight": "Medium",
+      "tier": "D"
+    },
+    {
+      "id": 9,
+      "name": "Cadareco do Batman",
+      "rarity": "Epic",
+      "baseIncome": 20,
+      "mutations": {
+        "gold": 40.0,
+        "diamond": 60.0,
+        "frozen": 80.0,
+        "neon": 90.0,
+        "rainbow": 100.0,
+        "galaxy": 150.0,
+        "underworld": 120.0,
+        "magma": 140.0
+      },
+      "weight": "Medium",
+      "tier": "D"
+    },
+    {
+      "id": 10,
+      "name": "Hiena do Jack",
+      "rarity": "Epic",
+      "baseIncome": 22,
+      "mutations": {
+        "gold": 44.0,
+        "diamond": 66.0,
+        "frozen": 88.0,
+        "neon": 99.0,
+        "rainbow": 110.0,
+        "galaxy": 165.0,
+        "underworld": 132.0,
+        "magma": 154.0
+      },
+      "weight": "Medium",
+      "tier": "C"
+    },
+    {
+      "id": 11,
+      "name": "Gato Galactico",
+      "rarity": "Epic",
+      "baseIncome": 25,
+      "mutations": {
+        "gold": 50.0,
+        "diamond": 75.0,
+        "frozen": 100.0,
+        "neon": 112.5,
+        "rainbow": 125.0,
+        "galaxy": 187.5,
+        "underworld": 150.0,
+        "magma": 175.0
+      },
+      "weight": "Medium",
+      "tier": "C"
+    },
+    {
+      "id": 12,
+      "name": "Mano do Ceu",
+      "rarity": "Epic",
+      "baseIncome": 28,
+      "mutations": {
+        "gold": 56.0,
+        "diamond": 84.0,
+        "frozen": 112.0,
+        "neon": 126.0,
+        "rainbow": 140.0,
+        "galaxy": 210.0,
+        "underworld": 168.0,
+        "magma": 196.0
+      },
+      "weight": "Medium",
+      "tier": "C"
+    },
+    {
+      "id": 13,
+      "name": "Lava Jato",
+      "rarity": "Epic",
+      "baseIncome": 30,
+      "mutations": {
+        "gold": 60.0,
+        "diamond": 90.0,
+        "frozen": 120.0,
+        "neon": 135.0,
+        "rainbow": 150.0,
+        "galaxy": 225.0,
+        "underworld": 180.0,
+        "magma": 210.0
+      },
+      "weight": "Medium",
+      "tier": "C"
+    },
+    {
+      "id": 14,
+      "name": "Gangster Footera",
+      "rarity": "Legendary",
+      "baseIncome": 36,
+      "mutations": {
+        "gold": 72.0,
+        "diamond": 108.0,
+        "frozen": 144.0,
+        "neon": 162.0,
+        "rainbow": 180.0,
+        "galaxy": 270.0,
+        "underworld": 216.0,
+        "magma": 252.0
+      },
+      "weight": "Heavy",
+      "tier": "B"
+    },
+    {
+      "id": 15,
+      "name": "Burbaloni Lulliloli",
+      "rarity": "Legendary",
+      "baseIncome": 41,
+      "mutations": {
+        "gold": 82.0,
+        "diamond": 123.0,
+        "frozen": 164.0,
+        "neon": 184.5,
+        "rainbow": 205.0,
+        "galaxy": 307.5,
+        "underworld": 246.0,
+        "magma": 287.0
+      },
+      "weight": "Heavy",
+      "tier": "B"
+    },
+    {
+      "id": 16,
+      "name": "Elefanto Cocofanto",
+      "rarity": "Legendary",
+      "baseIncome": 42,
+      "mutations": {
+        "gold": 84.0,
+        "diamond": 126.0,
+        "frozen": 168.0,
+        "neon": 189.0,
+        "rainbow": 210.0,
+        "galaxy": 315.0,
+        "underworld": 252.0,
+        "magma": 294.0
+      },
+      "weight": "Heavy",
+      "tier": "B"
+    },
+    {
+      "id": 17,
+      "name": "Madung",
+      "rarity": "Legendary",
+      "baseIncome": 45,
+      "mutations": {
+        "gold": 90.0,
+        "diamond": 135.0,
+        "frozen": 180.0,
+        "neon": 202.5,
+        "rainbow": 225.0,
+        "galaxy": 337.5,
+        "underworld": 270.0,
+        "magma": 315.0
+      },
+      "weight": "Heavy",
+      "tier": "B"
+    },
+    {
+      "id": 18,
+      "name": "Frigo Camelo",
+      "rarity": "Mythic",
+      "baseIncome": 126,
+      "mutations": {
+        "gold": 252.0,
+        "diamond": 378.0,
+        "frozen": 504.0,
+        "neon": 567.0,
+        "rainbow": 630.0,
+        "galaxy": 945.0,
+        "underworld": 756.0,
+        "magma": 882.0
+      },
+      "weight": "Super Heavy",
+      "tier": "A"
+    },
+    {
+      "id": 19,
+      "name": "Bombini Gussini",
+      "rarity": "Mythic",
+      "baseIncome": 180,
+      "mutations": {
+        "gold": 360.0,
+        "diamond": 540.0,
+        "frozen": 720.0,
+        "neon": 810.0,
+        "rainbow": 900.0,
+        "galaxy": 1350.0,
+        "underworld": 1080.0,
+        "magma": 1260.0
+      },
+      "weight": "Super Heavy",
+      "tier": "A"
+    },
+    {
+      "id": 20,
+      "name": "Bombardiro Crocodilo",
+      "rarity": "Mythic",
+      "baseIncome": 180,
+      "mutations": {
+        "gold": 360.0,
+        "diamond": 540.0,
+        "frozen": 720.0,
+        "neon": 810.0,
+        "rainbow": 900.0,
+        "galaxy": 1350.0,
+        "underworld": 1080.0,
+        "magma": 1260.0
+      },
+      "weight": "Super Heavy",
+      "tier": "A"
+    },
+    {
+      "id": 21,
+      "name": "Odin Din Din Dun",
+      "rarity": "Godly",
+      "baseIncome": 360,
+      "mutations": {
+        "gold": 720.0,
+        "diamond": 1080.0,
+        "frozen": 1440.0,
+        "neon": 1620.0,
+        "rainbow": 1800.0,
+        "galaxy": 2700.0,
+        "underworld": 2160.0,
+        "magma": 2520.0
+      },
+      "weight": "Ultra Heavy",
+      "tier": "S"
+    },
+    {
+      "id": 22,
+      "name": "Giraffa Celeste",
+      "rarity": "Godly",
+      "baseIncome": 420,
+      "mutations": {
+        "gold": 840.0,
+        "diamond": 1260.0,
+        "frozen": 1680.0,
+        "neon": 1890.0,
+        "rainbow": 2100.0,
+        "galaxy": 3150.0,
+        "underworld": 2520.0,
+        "magma": 2940.0
+      },
+      "weight": "Ultra Heavy",
+      "tier": "S"
+    },
+    {
+      "id": 23,
+      "name": "Tralalelo Tralala",
+      "rarity": "Godly",
+      "baseIncome": 575,
+      "mutations": {
+        "gold": 1150.0,
+        "diamond": 1725.0,
+        "frozen": 2300.0,
+        "neon": 2587.5,
+        "rainbow": 2875.0,
+        "galaxy": 4312.5,
+        "underworld": 3450.0,
+        "magma": 4025.0
+      },
+      "weight": "Ultra Heavy",
+      "tier": "S"
+    },
+    {
+      "id": 24,
+      "name": "Matteo",
+      "rarity": "Godly",
+      "baseIncome": 600,
+      "mutations": {
+        "gold": 1200.0,
+        "diamond": 1800.0,
+        "frozen": 2400.0,
+        "neon": 2700.0,
+        "rainbow": 3000.0,
+        "galaxy": 4500.0,
+        "underworld": 3600.0,
+        "magma": 4200.0
+      },
+      "weight": "Ultra Heavy",
+      "tier": "S"
+    },
+    {
+      "id": 25,
+      "name": "Los Tralaleritos",
+      "rarity": "Secret",
+      "baseIncome": 1200,
+      "mutations": {
+        "gold": 2400.0,
+        "diamond": 3600.0,
+        "frozen": 4800.0,
+        "neon": 5400.0,
+        "rainbow": 6000.0,
+        "galaxy": 9000.0,
+        "underworld": 7200.0,
+        "magma": 8400.0
+      },
+      "weight": "Legendary Heavy",
+      "tier": "S+"
+    },
+    {
+      "id": 26,
+      "name": "Vacca Saturno Saturnita",
+      "rarity": "Secret",
+      "baseIncome": 1200,
+      "mutations": {
+        "gold": 2400.0,
+        "diamond": 3600.0,
+        "frozen": 4800.0,
+        "neon": 5400.0,
+        "rainbow": 6000.0,
+        "galaxy": 9000.0,
+        "underworld": 7200.0,
+        "magma": 8400.0
+      },
+      "weight": "Legendary Heavy",
+      "tier": "S+"
+    },
+    {
+      "id": 27,
+      "name": "Garamararama",
+      "rarity": "Secret",
+      "baseIncome": 2100,
+      "mutations": {
+        "gold": 4200.0,
+        "diamond": 6300.0,
+        "frozen": 8400.0,
+        "neon": 9450.0,
+        "rainbow": 10500.0,
+        "galaxy": 15750.0,
+        "underworld": 12600.0,
+        "magma": 14700.0
+      },
+      "weight": "Legendary Heavy",
+      "tier": "S+"
+    }
+  ],
+  "mutationInfo": {
+    "plants": {
+      "frozen": {
+        "effect": "Freezes enemies for 0.3 seconds",
+        "damageMultiplier": 4.0
+      },
+      "gold": {
+        "effect": "Golden appearance with 2x damage",
+        "damageMultiplier": 2.0
+      },
+      "diamond": {
+        "effect": "Diamond appearance with 3x damage",
+        "damageMultiplier": 3.0
+      },
+      "neon": {
+        "effect": "Neon glow with 4.5x damage",
+        "damageMultiplier": 4.5
+      },
+      "rainbow": {
+        "effect": "Prismatic aura boosts projectiles to 5x damage",
+        "damageMultiplier": 5.0
+      },
+      "underworld": {
+        "effect": "Infernal thorns leech health and deal 6x damage",
+        "damageMultiplier": 6.0
+      },
+      "magma": {
+        "effect": "Magma bursts leave burning pools for extra ticks",
+        "damageMultiplier": 7.0
+      },
+      "galaxy": {
+        "effect": "Cosmic orbit beams hit all lanes for 7.5x damage",
+        "damageMultiplier": 7.5
+      }
+    },
+    "brainrots": {
+      "gold": {
+        "effect": "Golden appearance with 2x income",
+        "incomeMultiplier": 2.0
+      },
+      "diamond": {
+        "effect": "Diamond appearance with 3x income",
+        "incomeMultiplier": 3.0
+      },
+      "frozen": {
+        "effect": "Frozen appearance with 4x income",
+        "incomeMultiplier": 4.0
+      },
+      "neon": {
+        "effect": "Neon glow with 4.5x income",
+        "incomeMultiplier": 4.5
+      },
+      "rainbow": {
+        "effect": "Rainbow colors with 5x income",
+        "incomeMultiplier": 5.0
+      },
+      "galaxy": {
+        "effect": "Galaxy pattern with 7.5x income",
+        "incomeMultiplier": 7.5
+      },
+      "underworld": {
+        "effect": "Underworld flames generate 6x income and fear aura",
+        "incomeMultiplier": 6.0
+      },
+      "magma": {
+        "effect": "Magma pulses double tick speed for 7x income",
+        "incomeMultiplier": 7.0
+      }
+    }
+  },
+  "rarityOrder": [
+    "Common",
+    "Rare",
+    "Epic",
+    "Legendary",
+    "Mythic",
+    "Godly",
+    "Secret",
+    "Limited"
+  ],
+  "gameInfo": {
+    "lastUpdated": "2024-09-28",
+    "totalPlants": 11,
+    "totalBrainrots": 27,
+    "maxFusionLevel": "Unknown",
+    "rebirthRequirement": "Own 'the gazini' and 'the trali' plants"
+  },
+  "gears": [
+    {
+      "id": "fertilizer-sprayer",
+      "name": "Fertilizer Sprayer",
+      "rarity": "Epic",
+      "cost": 250000,
+      "effect": "+15% plant damage for 120s",
+      "cooldown": 300,
+      "source": "Stock shop",
+      "notes": "Rotate before boss waves to burst down heavy brainrots."
+    },
+    {
+      "id": "cryonic-freezer",
+      "name": "Cryonic Freezer",
+      "rarity": "Legendary",
+      "cost": 480000,
+      "effect": "Freezes all lanes for 6 seconds",
+      "cooldown": 420,
+      "source": "Raid boss chest",
+      "notes": "Pairs well with high-DPS neon builds to secure crowd control."
+    },
+    {
+      "id": "income-booster",
+      "name": "Income Booster Drone",
+      "rarity": "Rare",
+      "cost": 175000,
+      "effect": "+20% brainrot income for 180s",
+      "cooldown": 360,
+      "source": "Events",
+      "notes": "Stack with Festival boosters to rush expensive fusions."
+    },
+    {
+      "id": "mutation-scanner",
+      "name": "Mutation Scanner",
+      "rarity": "Mythic",
+      "cost": 620000,
+      "effect": "Guarantees next mutation upgrade is Neon",
+      "cooldown": 540,
+      "source": "Rebirth vendor",
+      "notes": "Best used on Tomatiro or other S-tier damage plants."
+    },
+    {
+      "id": "guardian-barrier",
+      "name": "Guardian Barrier",
+      "rarity": "Epic",
+      "cost": 300000,
+      "effect": "Shields the frontline for 45% damage reduction during 90s",
+      "cooldown": 420,
+      "source": "Guild shop",
+      "notes": "Keep stacked for admin abuse timers or late-game rushes."
+    }
+  ],
+  "fusionRecipes": [
+    {
+      "id": "mr-carrot",
+      "result": "Mr. Carrot",
+      "rarity": "Legendary",
+      "cost": 850000,
+      "inputs": [
+        {
+          "item": "Charito",
+          "count": 2
+        },
+        {
+          "item": "Pumpkin",
+          "count": 1
+        },
+        {
+          "item": "Fusion Core",
+          "count": 1
+        }
+      ],
+      "unlock": "Fusion Lab lvl 5",
+      "notes": "Top-tier single-target burst with natural armor shred."
+    },
+    {
+      "id": "dragonfrutina",
+      "result": "Dragonfrutina Dolphinita",
+      "rarity": "Mythic",
+      "cost": 1450000,
+      "inputs": [
+        {
+          "item": "Dragonfruit",
+          "count": 1
+        },
+        {
+          "item": "Dolphinita",
+          "count": 1
+        },
+        {
+          "item": "Fusion Core",
+          "count": 2
+        }
+      ],
+      "unlock": "Fusion Lab lvl 6",
+      "notes": "A hybrid brainrot that pulses splash damage and passive income."
+    },
+    {
+      "id": "sunflar",
+      "result": "Brr Brr Sunflowerim",
+      "rarity": "Secret",
+      "cost": 1650000,
+      "inputs": [
+        {
+          "item": "Sunflower",
+          "count": 1
+        },
+        {
+          "item": "Brr Brr Patapim",
+          "count": 1
+        },
+        {
+          "item": "Neon Core",
+          "count": 1
+        }
+      ],
+      "unlock": "Winter event",
+      "notes": "Provides both lane slow and cross-lane healing pulses."
+    },
+    {
+      "id": "orcalero",
+      "result": "Orcalero Orcala",
+      "rarity": "Mythic",
+      "cost": 1120000,
+      "inputs": [
+        {
+          "item": "Orangutini Ananassini",
+          "count": 1
+        },
+        {
+          "item": "Orca Core",
+          "count": 1
+        },
+        {
+          "item": "Mutant Brainrot",
+          "count": 2
+        }
+      ],
+      "unlock": "Atlantis raid",
+      "notes": "High-income aquatic brainrot with splash frost attacks."
+    },
+    {
+      "id": "pumpkinino",
+      "result": "Svinino Pumpkinino",
+      "rarity": "Legendary",
+      "cost": 980000,
+      "inputs": [
+        {
+          "item": "Pumpkin",
+          "count": 1
+        },
+        {
+          "item": "Svinino Bombondino",
+          "count": 1
+        },
+        {
+          "item": "Fusion Core",
+          "count": 1
+        }
+      ],
+      "unlock": "Fusion Lab lvl 4",
+      "notes": "Frontline tank brainrot that taunts and shares damage."
+    }
+  ],
+  "events": [
+    {
+      "id": "admin-abuse",
+      "name": "Admin Abuse Countdown",
+      "type": "Limited Event",
+      "startDate": "2025-09-27T11:00:00Z",
+      "endDate": "2025-09-27T13:00:00Z",
+      "modifiers": [
+        "2x Stock Refresh",
+        "+15% Brainrot Income"
+      ],
+      "rewards": [
+        "Admin Badge",
+        "Exclusive Gear Skin"
+      ],
+      "notes": "Prep shields and income buffs 15 minutes before start\u2014stock drains instantly when countdown hits zero."
+    },
+    {
+      "id": "winter-festival",
+      "name": "Winter Festival",
+      "type": "Seasonal",
+      "startDate": "2025-12-15T00:00:00Z",
+      "endDate": "2026-01-05T00:00:00Z",
+      "modifiers": [
+        "Snowstorm weather",
+        "+10% Plant Freeze Chance"
+      ],
+      "rewards": [
+        "Neon Core",
+        "Limited Snowfall Brainrot Skin"
+      ],
+      "notes": "Unlocks fusion recipe Brr Brr Sunflowerim and drops Frost Grenades from raid bosses."
+    },
+    {
+      "id": "raid-atlantis",
+      "name": "Raid: Atlantis Vault",
+      "type": "Raid",
+      "startDate": "2025-10-12T18:00:00Z",
+      "endDate": "2025-10-19T18:00:00Z",
+      "modifiers": [
+        "Water lane resistance",
+        "Boss armor phases"
+      ],
+      "rewards": [
+        "Orca Core",
+        "Atlantis Title"
+      ],
+      "notes": "Bring aquatic fusions and Guardian Barrier\u2014boss enrages after 50% HP."
+    }
+  ],
+  "dropTables": [
+    {
+      "id": "raid_boss",
+      "activity": "Raid Boss Chest",
+      "recommendedPower": 3200,
+      "drops": [
+        {
+          "item": "Orca Core",
+          "rarity": "Legendary",
+          "chance": "5%"
+        },
+        {
+          "item": "Fusion Core",
+          "rarity": "Epic",
+          "chance": "22%"
+        },
+        {
+          "item": "Guardian Barrier",
+          "rarity": "Epic",
+          "chance": "15%"
+        },
+        {
+          "item": "Stock Cache",
+          "rarity": "Rare",
+          "chance": "58%"
+        }
+      ]
+    },
+    {
+      "id": "winter_dungeon",
+      "activity": "Winter Dungeon",
+      "recommendedPower": 2100,
+      "drops": [
+        {
+          "item": "Frost Grenade",
+          "rarity": "Rare",
+          "chance": "32%"
+        },
+        {
+          "item": "Neon Core",
+          "rarity": "Epic",
+          "chance": "12%"
+        },
+        {
+          "item": "Snowfall Skin",
+          "rarity": "Legendary",
+          "chance": "4%"
+        },
+        {
+          "item": "Festival Tokens",
+          "rarity": "Common",
+          "chance": "52%"
+        }
+      ]
+    },
+    {
+      "id": "daily_stock",
+      "activity": "Daily Stock Reset",
+      "recommendedPower": 0,
+      "drops": [
+        {
+          "item": "Random Seed",
+          "rarity": "Common",
+          "chance": "40%"
+        },
+        {
+          "item": "Random Brainrot",
+          "rarity": "Rare",
+          "chance": "30%"
+        },
+        {
+          "item": "Mutation Core",
+          "rarity": "Epic",
+          "chance": "20%"
+        },
+        {
+          "item": "Limited Gear",
+          "rarity": "Legendary",
+          "chance": "10%"
+        }
+      ]
+    }
+  ],
+  "stockHistory": [
+    {
+      "timestamp": "2025-09-29T03:25:00Z",
+      "items": [
+        {
+          "id": "sunflower",
+          "name": "Sunflower",
+          "type": "Seed",
+          "change": 2,
+          "price": 7500000
+        },
+        {
+          "id": "dragon-fruit",
+          "name": "Dragon Fruit",
+          "type": "Seed",
+          "change": 1,
+          "price": 12500000
+        },
+        {
+          "id": "pumpkin",
+          "name": "Pumpkin",
+          "type": "Seed",
+          "change": 2,
+          "price": 5000000
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-09-29T02:55:00Z",
+      "items": [
+        {
+          "id": "guardian-barrier",
+          "name": "Guardian Barrier",
+          "type": "Gear",
+          "change": -1,
+          "price": 300000
+        },
+        {
+          "id": "fusion-core",
+          "name": "Fusion Core",
+          "type": "Gear",
+          "change": 2,
+          "price": 520000
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-09-29T02:25:00Z",
+      "items": [
+        {
+          "id": "neon-core",
+          "name": "Neon Core",
+          "type": "Mutation",
+          "change": 1,
+          "price": 450000
+        },
+        {
+          "id": "svinino-bombondino",
+          "name": "Svinino Bombondino",
+          "type": "Brainrot",
+          "change": 1,
+          "price": 750000
+        }
+      ]
+    }
+  ],
+  "codeHistory": [
+    {
+      "code": "STACKS",
+      "reward": "Lucky Potion",
+      "addedAt": "2025-09-15T00:00:00Z",
+      "expiresAt": "2025-10-01T00:00:00Z",
+      "status": "Expired"
+    },
+    {
+      "code": "FROZEN",
+      "reward": "1 Frost Grenade",
+      "addedAt": "2025-09-20T00:00:00Z",
+      "expiresAt": "2025-10-10T00:00:00Z",
+      "status": "Active"
+    },
+    {
+      "code": "BASED",
+      "reward": "5000 cash",
+      "addedAt": "2025-09-25T00:00:00Z",
+      "expiresAt": null,
+      "status": "Active"
+    }
+  ]
+}

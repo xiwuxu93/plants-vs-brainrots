@@ -1,0 +1,474 @@
+[
+  {
+    "name": "Ballerina Cappuccina",
+    "slug": "ballerina-cappuccina",
+    "category": "brainrot",
+    "filename": "ballerina-cappuccina-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/ballerina-cappuccina-brainrot-plants-vs-brainrots.webp",
+    "alt": "Ballerina Cappuccina brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Bananita Dolphinita",
+    "slug": "bananita-dolphinita",
+    "category": "brainrot",
+    "filename": "bananita-dolphinita-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/bananita-dolphinita-brainrot-plants-vs-brainrots.webp",
+    "alt": "Bananita Dolphinita brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Bandito Bobrito",
+    "slug": "bandito-bobrito",
+    "category": "brainrot",
+    "filename": "bandito-bobrito-plants-vs-brainrots.png",
+    "path": "@/assets/media/bandito-bobrito-plants-vs-brainrots.png",
+    "alt": "Bandito Bobrito brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Bombardiro Crocodilo",
+    "slug": "bombardiro-crocodilo",
+    "category": "brainrot",
+    "filename": "bombardiro-crocodilo-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/bombardiro-crocodilo-brainrot-plants-vs-brainrots.webp",
+    "alt": "Bombardiro Crocodilo brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Bombini Crostini",
+    "slug": "bombini-crostini",
+    "category": "brainrot",
+    "filename": "bambini-crostini-plants-vs-brainrots.png",
+    "path": "@/assets/media/bambini-crostini-plants-vs-brainrots.png",
+    "alt": "Bombini Crostini brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Bombini Gussini",
+    "slug": "bombini-gussini",
+    "category": "brainrot",
+    "filename": "bombini-gussini-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/bombini-gussini-brainrot-plants-vs-brainrots.webp",
+    "alt": "Bombini Gussini brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Boneca Ambalabu",
+    "slug": "boneca-ambalabu",
+    "category": "brainrot",
+    "filename": "boneca-ambalabu-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/boneca-ambalabu-brainrot-plants-vs-brainrots.webp",
+    "alt": "Boneca Ambalabu brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Brr Brr Patapim",
+    "slug": "brr-brr-patapim",
+    "category": "brainrot",
+    "filename": "brr-brr-patapim-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/brr-brr-patapim-brainrot-plants-vs-brainrots.webp",
+    "alt": "Brr Brr Patapim brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Burbaloni Lulliloli",
+    "slug": "burbaloni-lulliloli",
+    "category": "brainrot",
+    "filename": "burbaloni-lulliloli-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/burbaloni-lulliloli-brainrot-plants-vs-brainrots.webp",
+    "alt": "Burbaloni Lulliloli brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Cappuccino Assasino",
+    "slug": "cappuccino-assasino",
+    "category": "brainrot",
+    "filename": "cappuccino-assasino-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/cappuccino-assasino-brainrot-plants-vs-brainrots.webp",
+    "alt": "Cappuccino Assasino brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Crazylone Pizalone",
+    "slug": "crazylone-pizalone",
+    "category": "brainrot",
+    "filename": "crazylone-pizalone-plants-vs-brainrots.png",
+    "path": "@/assets/media/crazylone-pizalone-plants-vs-brainrots.png",
+    "alt": "Crazylone Pizalone brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Elefanto Cocofanto",
+    "slug": "elefanto-cocofanto",
+    "category": "brainrot",
+    "filename": "elefanto-cocofanto-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/elefanto-cocofanto-brainrot-plants-vs-brainrots.webp",
+    "alt": "Elefanto Cocofanto brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Espresso Signora",
+    "slug": "espresso-signora",
+    "category": "brainrot",
+    "filename": "espresso-signora-plants-vs-brainrots.png",
+    "path": "@/assets/media/espresso-signora-plants-vs-brainrots.png",
+    "alt": "Espresso Signora brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Fluri Flura",
+    "slug": "fluri-flura",
+    "category": "brainrot",
+    "filename": "fluri-flura-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/fluri-flura-brainrot-plants-vs-brainrots.webp",
+    "alt": "Fluri Flura brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Frigo Camelo",
+    "slug": "frigo-camelo",
+    "category": "brainrot",
+    "filename": "frigo-camelo-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/frigo-camelo-brainrot-plants-vs-brainrots.webp",
+    "alt": "Frigo Camelo brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Gangster Footera",
+    "slug": "gangster-footera",
+    "category": "brainrot",
+    "filename": "gangster-footera-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/gangster-footera-brainrot-plants-vs-brainrots.webp",
+    "alt": "Gangster Footera brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Garamararam",
+    "slug": "garamararam",
+    "category": "brainrot",
+    "filename": "garamararam-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/garamararam-brainrot-plants-vs-brainrots.webp",
+    "alt": "Garamararam brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Giraffa Celeste",
+    "slug": "giraffa-celeste",
+    "category": "brainrot",
+    "filename": "giraffa-celeste-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/giraffa-celeste-brainrot-plants-vs-brainrots.webp",
+    "alt": "Giraffa Celeste brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Lirili Larila",
+    "slug": "lirili-larila",
+    "category": "brainrot",
+    "filename": "lirili-larila-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/lirili-larila-brainrot-plants-vs-brainrots.webp",
+    "alt": "Lirili Larila brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Los Tralaleritos",
+    "slug": "los-tralaleritos",
+    "category": "brainrot",
+    "filename": "los-tralaleritos-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/los-tralaleritos-brainrot-plants-vs-brainrots.webp",
+    "alt": "Los Tralaleritos brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Madung",
+    "slug": "madung",
+    "category": "brainrot",
+    "filename": "madung-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/madung-brainrot-plants-vs-brainrots.webp",
+    "alt": "Madung brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Matteo",
+    "slug": "matteo",
+    "category": "brainrot",
+    "filename": "matteo-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/matteo-brainrot-plants-vs-brainrots.webp",
+    "alt": "Matteo brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Noobini Bananini",
+    "slug": "noobini-bananini",
+    "category": "brainrot",
+    "filename": "noobini-bananini-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/noobini-bananini-brainrot-plants-vs-brainrots.webp",
+    "alt": "Noobini Bananini brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Odin Din Din Dun",
+    "slug": "odin-din-din-dun",
+    "category": "brainrot",
+    "filename": "odin-din-din-dun-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/odin-din-din-dun-brainrot-plants-vs-brainrots.webp",
+    "alt": "Odin Din Din Dun brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Orangutini Ananassini",
+    "slug": "orangutini-ananassini",
+    "category": "brainrot",
+    "filename": "orangutani-ananassini-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/orangutani-ananassini-brainrot-plants-vs-brainrots.webp",
+    "alt": "Orangutini Ananassini brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Orcalero Orcala",
+    "slug": "orcalero-orcala",
+    "category": "brainrot",
+    "filename": "orcalero-orcala-plants-vs-brainrots.png",
+    "path": "@/assets/media/orcalero-orcala-plants-vs-brainrots.png",
+    "alt": "Orcalero Orcala brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Pipi Kiwi",
+    "slug": "pipi-kiwi",
+    "category": "brainrot",
+    "filename": "pipi-kiwi-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/pipi-kiwi-brainrot-plants-vs-brainrots.webp",
+    "alt": "Pipi Kiwi brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Svinino Bombondino",
+    "slug": "svinino-bombondino",
+    "category": "brainrot",
+    "filename": "svinino-bombondino-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/svinino-bombondino-brainrot-plants-vs-brainrots.webp",
+    "alt": "Svinino Bombondino brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Tim Cheese",
+    "slug": "tim-cheese",
+    "category": "brainrot",
+    "filename": "tim-cheese-plants-vs-brainrots.png",
+    "path": "@/assets/media/tim-cheese-plants-vs-brainrots.png",
+    "alt": "Tim Cheese brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Tralalelo Tralala",
+    "slug": "tralalelo-tralala",
+    "category": "brainrot",
+    "filename": "tralalelo-tralala-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/tralalelo-tralala-brainrot-plants-vs-brainrots.webp",
+    "alt": "Tralalelo Tralala brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Trippi Troppi",
+    "slug": "trippi-troppi",
+    "category": "brainrot",
+    "filename": "trippi-troppi-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/trippi-troppi-brainrot-plants-vs-brainrots.webp",
+    "alt": "Trippi Troppi brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Trulimero Trulicina",
+    "slug": "trulimero-trulicina",
+    "category": "brainrot",
+    "filename": "trullimero-trulicina-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/trullimero-trulicina-brainrot-plants-vs-brainrots.webp",
+    "alt": "Trulimero Trulicina brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Vacca Saturno Saturnita",
+    "slug": "vacca-saturno-saturnita",
+    "category": "brainrot",
+    "filename": "vacca-saturno-saturnita-brainrot-plants-vs-brainrots.webp",
+    "path": "@/assets/media/vacca-saturno-saturnita-brainrot-plants-vs-brainrots.webp",
+    "alt": "Vacca Saturno Saturnita brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Bombardilo Watermelondrilo",
+    "slug": "bombardilo-watermelondrilo",
+    "category": "fusion brainrot",
+    "filename": "bombardilo-watermelondrillo-plants-vs-brainrots.png",
+    "path": "@/assets/media/bombardilo-watermelondrillo-plants-vs-brainrots.png",
+    "alt": "Bombardilo Watermelondrilo fuzed brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Brr Brr Sunflowerim",
+    "slug": "brr-brr-sunflowerim",
+    "category": "fusion brainrot",
+    "filename": "brr-brr-sunflowerim-plants-vs-brainrots.png",
+    "path": "@/assets/media/brr-brr-sunflowerim-plants-vs-brainrots.png",
+    "alt": "Brr Brr Sunflowerim fuzed brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Carnivourita Tralalerita",
+    "slug": "carnivourita-tralalerita",
+    "category": "fusion brainrot",
+    "filename": "carnivourita-tralalerita-plants-vs-brainrots.png",
+    "path": "@/assets/media/carnivourita-tralalerita-plants-vs-brainrots.png",
+    "alt": "Carnivourita Tralalerita fuzed brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Cocotanko Giraffanto",
+    "slug": "cocotanko-giraffanto",
+    "category": "fusion brainrot",
+    "filename": "cocotanko-giraffanto-plants-vs-brainrots.png",
+    "path": "@/assets/media/cocotanko-giraffanto-plants-vs-brainrots.png",
+    "alt": "Cocotanko Giraffanto fuzed brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Dragonfrutina Dolphinita",
+    "slug": "dragonfrutina-dolphinita",
+    "category": "fusion brainrot",
+    "filename": "dragonfrutina-dolphinita-plants-vs-brainrots.png",
+    "path": "@/assets/media/dragonfrutina-dolphinita-plants-vs-brainrots.png",
+    "alt": "Dragonfrutina Dolphinita fuzed brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Eggplantini Burbalonini",
+    "slug": "eggplantini-burbalonini",
+    "category": "fusion brainrot",
+    "filename": "eggplantini-burbalonini-plants-vs-brainrots.png",
+    "path": "@/assets/media/eggplantini-burbalonini-plants-vs-brainrots.png",
+    "alt": "Eggplantini Burbalonini fuzed brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Los Mr Carrotitos",
+    "slug": "los-mr-carrotitos",
+    "category": "fusion brainrot",
+    "filename": "los-mr-carrotitos-plants-vs-brainrots.png",
+    "path": "@/assets/media/los-mr-carrotitos-plants-vs-brainrots.png",
+    "alt": "Los Mr Carrotitos fuzed brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Noobini Cactusini",
+    "slug": "noobini-cactusini",
+    "category": "fusion brainrot",
+    "filename": "noobini-cactusini-plants-vs-brainrots.png",
+    "path": "@/assets/media/noobini-cactusini-plants-vs-brainrots.png",
+    "alt": "Noobini Cactusini fuzed brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Orangutini Strawberrini",
+    "slug": "orangutini-strawberrini",
+    "category": "fusion brainrot",
+    "filename": "orangutini-strawberrini-plants-vs-brainrots.png",
+    "path": "@/assets/media/orangutini-strawberrini-plants-vs-brainrots.png",
+    "alt": "Orangutini Strawberrini fuzed brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Svinino Pumpkinino",
+    "slug": "svinino-pumpkinino",
+    "category": "fusion brainrot",
+    "filename": "svinino-pumpkinino-plants-vs-brainrots.png",
+    "path": "@/assets/media/svinino-pumpkinino-plants-vs-brainrots.png",
+    "alt": "Svinino Pumpkinino fuzed brainrot from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Cactus",
+    "slug": "cactus",
+    "category": "plant",
+    "filename": "cactus-plant-plants-vs-brainrots.webp",
+    "path": "@/assets/media/cactus-plant-plants-vs-brainrots.webp",
+    "alt": "Cactus plant from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Carnivorous",
+    "slug": "carnivorous",
+    "category": "plant",
+    "filename": "carnivorous-plant-plants-vs-brainrots.webp",
+    "path": "@/assets/media/carnivorous-plant-plants-vs-brainrots.webp",
+    "alt": "Carnivorous plant from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Cocotank",
+    "slug": "cocotank",
+    "category": "plant",
+    "filename": "cocotank-plant-plants-vs-brainrots.webp",
+    "path": "@/assets/media/cocotank-plant-plants-vs-brainrots.webp",
+    "alt": "Cocotank plant from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Dragon Fruit",
+    "slug": "dragon-fruit",
+    "category": "plant",
+    "filename": "dragon-fruit-plant-plants-vs-brainrots.webp",
+    "path": "@/assets/media/dragon-fruit-plant-plants-vs-brainrots.webp",
+    "alt": "Dragon Fruit plant from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Eggplant",
+    "slug": "eggplant",
+    "category": "plant",
+    "filename": "eggplant-plant-plants-vs-brainrots.webp",
+    "path": "@/assets/media/eggplant-plant-plants-vs-brainrots.webp",
+    "alt": "Eggplant plant from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Mr Carrot",
+    "slug": "mr-carrot",
+    "category": "plant",
+    "filename": "mr-carrot-plant-plants-vs-brainrots.webp",
+    "path": "@/assets/media/mr-carrot-plant-plants-vs-brainrots.webp",
+    "alt": "Mr Carrot plant from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Pumpkin",
+    "slug": "pumpkin",
+    "category": "plant",
+    "filename": "pumpkin-plant-plants-vs-brainrots.webp",
+    "path": "@/assets/media/pumpkin-plant-plants-vs-brainrots.webp",
+    "alt": "Pumpkin plant from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Strawberry",
+    "slug": "strawberry",
+    "category": "plant",
+    "filename": "strawberry-plant-plants-vs-brainrots.webp",
+    "path": "@/assets/media/strawberry-plant-plants-vs-brainrots.webp",
+    "alt": "Strawberry plant from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Sunflower",
+    "slug": "sunflower",
+    "category": "plant",
+    "filename": "sunflower-plant-plants-vs-brainrots.webp",
+    "path": "@/assets/media/sunflower-plant-plants-vs-brainrots.webp",
+    "alt": "Sunflower plant from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Tomatrio",
+    "slug": "tomatrio",
+    "category": "plant",
+    "filename": "tomatrio-plants-vs-brainrots.png",
+    "path": "@/assets/media/tomatrio-plants-vs-brainrots.png",
+    "alt": "Tomatrio plant from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "Watermelon",
+    "slug": "watermelon",
+    "category": "plant",
+    "filename": "watermelon-plant-plants-vs-brainrots.webp",
+    "path": "@/assets/media/watermelon-plant-plants-vs-brainrots.webp",
+    "alt": "Watermelon plant from Plants vs Zombies Roblox experience."
+  },
+  {
+    "name": "A player selling their brainrots in Plants vs Brainrots",
+    "slug": "a-player-selling-their-brainrots-in-plants-vs-brainrots",
+    "category": "scene",
+    "filename": "how-to-sell-brainrots-plants-vs-brainrots.webp",
+    "path": "@/assets/media/how-to-sell-brainrots-plants-vs-brainrots.webp",
+    "alt": "A player selling their brainrots in Plants vs Brainrots."
+  },
+  {
+    "name": "A player showing their currently placed brainrots in Plants vs Brainrots Roblox experience",
+    "slug": "a-player-showing-their-currently-placed-brainrots-in-plants-vs-brainrots-roblox-experience",
+    "category": "scene",
+    "filename": "placed-brainrots-plants-vs-brainrots.webp",
+    "path": "@/assets/media/placed-brainrots-plants-vs-brainrots.webp",
+    "alt": "A player showing their currently placed brainrots in Plants vs Brainrots Roblox experience."
+  },
+  {
+    "name": "Brainrots attacking a players field in Plants vs Brainrots",
+    "slug": "brainrots-attacking-a-players-field-in-plants-vs-brainrots",
+    "category": "scene",
+    "filename": "brainrots-attacking-plants-vs-brainrots.webp",
+    "path": "@/assets/media/brainrots-attacking-plants-vs-brainrots.webp",
+    "alt": "Brainrots attacking a players field in Plants vs Brainrots."
+  },
+  {
+    "name": "Preview of the seed shop in Plants vs Brainrots Roblox experience",
+    "slug": "preview-of-the-seed-shop-in-plants-vs-brainrots-roblox-experience",
+    "category": "scene",
+    "filename": "how-to-buy-seeds-plants-vs-brainrots.webp",
+    "path": "@/assets/media/how-to-buy-seeds-plants-vs-brainrots.webp",
+    "alt": "Preview of the seed shop in Plants vs Brainrots Roblox experience."
+  },
+  {
+    "name": "Secret brainrots in Plants vs Brainrots",
+    "slug": "secret-brainrots-in-plants-vs-brainrots",
+    "category": "scene",
+    "filename": "all-plants-and-brainrots-plants-vs-brainrots.webp",
+    "path": "@/assets/media/all-plants-and-brainrots-plants-vs-brainrots.webp",
+    "alt": "Secret brainrots in Plants vs Brainrots"
+  }
+]
