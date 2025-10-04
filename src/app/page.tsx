@@ -83,11 +83,11 @@ const officialLinks = [
     description: "Jump straight into the Plants vs Brainrots experience on Roblox.",
     href: "https://www.roblox.com/games/127742093697776/Plants-Vs-Brainrots" as const,
   },
-  {
-    title: "Discord server",
-    description: "Join traders and get real-time stock alerts from the community.",
-    href: "https://discord.gg/937Mfk4zGN" as const,
-  },
+  // {
+  //   title: "Discord server",
+  //   description: "Join traders and get real-time stock alerts from the community.",
+  //   href: "https://discord.gg/937Mfk4zGN" as const,
+  // },
 ];
 
 function formatDateTime(value: string | Date, options: Intl.DateTimeFormatOptions) {

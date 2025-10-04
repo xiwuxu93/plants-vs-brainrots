@@ -217,14 +217,14 @@ export default function CodesPage() {
               Follow the community channels and revisit this hub after major game patches or weekend events to catch fresh drops.
             </p>
           </div>
-          <a
+          {/* <a
             href="https://discord.gg/937Mfk4zGN"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-700 bg-slate-950/70 px-5 py-2 text-sm font-semibold text-white transition hover:border-brand-400 hover:text-brand-100"
           >
             Join Discord →
-          </a>
+          </a> */}
         </div>
       </section>
     </div>
