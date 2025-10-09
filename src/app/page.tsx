@@ -16,6 +16,11 @@ import Link from "next/link";
 
 const toolHighlights = [
   {
+    title: "Calculator Suite",
+    description: "Mirror the community-favorite multi-tool for brainrots, plants, and cash planning.",
+    href: "/plants-vs-brainrots-calculator" as const,
+  },
+  {
     title: "Plant Efficiency Calculator",
     description: "Balance cost, damage, and mutations to build bulletproof lanes.",
     href: "/tools/plant-calculator" as const,
