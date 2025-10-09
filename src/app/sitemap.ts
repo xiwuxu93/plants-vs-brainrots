@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tools/rebirth",
     "/codes",
     "/gallery",
+    "/plants-vs-brainrots-calculator",
   ];
 
   const entries: MetadataRoute.Sitemap = staticRoutes.map((path) => ({
