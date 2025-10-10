@@ -1,15 +1,15 @@
 import { SectionHeading } from "@/components/section-heading";
-import { getPlantById, mutationInfo, plants } from "@/data/pvb-database";
+import { getPlantByName, mutationInfo, plants } from "@/data/pvb-database";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 interface PlantDetailPageProps {
-  params: { id: string };
+  params: { name: string };
 }
 
 export function generateMetadata({ params }: PlantDetailPageProps): Metadata {
-  const plant = getPlantById(Number(params.id));
+  const plant = getPlantByName(params.name);
   if (!plant) {
     return {
       title: "Plant not found",
@@ -22,7 +22,7 @@ export function generateMetadata({ params }: PlantDetailPageProps): Metadata {
 }
 
 export default function PlantDetailPage({ params }: PlantDetailPageProps) {
-  const plant = getPlantById(Number(params.id));
+  const plant = getPlantByName(params.name);
   if (!plant) {
     notFound();
   }

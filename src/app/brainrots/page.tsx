@@ -71,7 +71,7 @@ function FilteredBrainrotsTable({ searchParams }: { searchParams: Record<string,
                 })()}
               </td>
               <td className="px-4 py-3">
-                <Link href={`/brainrots/${brainrot.id}`} className="font-semibold text-white hover:text-purple-200">
+                <Link href={`/brainrots/${brainrot.name}`} className="font-semibold text-white hover:text-purple-200">
                   {brainrot.name}
                 </Link>
               </td>

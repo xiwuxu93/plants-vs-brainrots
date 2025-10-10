@@ -138,8 +138,14 @@ export function getPlantById(id: number) {
   return plants.find((plant) => plant.id === id);
 }
 
+export function getPlantByName(name: string) {
+  return plants.find((plant) => plant.name === name);
+}
 export function getBrainrotById(id: number) {
   return brainrots.find((brainrot) => brainrot.id === id);
+}
+export function getBrainrotByName(name: string) {
+  return brainrots.find((brainrot) => brainrot.name === name);
 }
 
 export function getGearById(id: string) {

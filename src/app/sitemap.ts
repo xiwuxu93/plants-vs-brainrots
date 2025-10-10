@@ -35,7 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   plants.forEach((plant) => {
     entries.push({
-      url: `${siteUrl}/plants/${plant.id}`,
+      url: `${siteUrl}/plants/${plant.name}`,
       changeFrequency: "weekly",
       priority: 0.6,
     });
@@ -43,7 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   brainrots.forEach((brainrot) => {
     entries.push({
-      url: `${siteUrl}/brainrots/${brainrot.id}`,
+      url: `${siteUrl}/brainrots/${brainrot.name}`,
       changeFrequency: "weekly",
       priority: 0.6,
     });
