@@ -4,6 +4,8 @@ import { plants, brainrots } from "@/data/pvb-database";
 const siteUrl = "https://plantsvsbrainrots-game.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const lastModified = new Date().toISOString();
+
   const staticRoutes = [
     "",
     "/plants",
@@ -30,6 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${siteUrl}${path}`,
     changeFrequency: "daily",
     priority: path === "" ? 1 : 0.7,
+    lastModified,
   }));
 
   plants.forEach((plant) => {
@@ -37,6 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${siteUrl}/plants/${plant.slug}`,
       changeFrequency: "weekly",
       priority: 0.6,
+      lastModified,
     });
   });
 
@@ -45,6 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${siteUrl}/brainrots/${brainrot.slug}`,
       changeFrequency: "weekly",
       priority: 0.6,
+      lastModified,
     });
   });
 
