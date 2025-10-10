@@ -46,8 +46,11 @@ export default function SearchPage() {
               <li>No plants found.</li>
             ) : (
               plantResults.map((plant) => (
-                <li key={plant.id} className="rounded-lg border border-transparent px-3 py-2 transition hover:border-brand-400/40 hover:bg-slate-900/60">
-                  <Link href={`/plants/${plant.id}`} className="flex justify-between">
+                <li
+                  key={plant.id}
+                  className="rounded-lg border border-transparent px-3 py-2 transition hover:border-brand-400/40 hover:bg-slate-900/60"
+                >
+                  <Link href={`/plants/${plant.slug}`} className="flex justify-between">
                     <span className="text-white">{plant.name}</span>
                     <span className="text-xs uppercase tracking-[0.3em] text-brand-200">{plant.rarity}</span>
                   </Link>
@@ -63,8 +66,11 @@ export default function SearchPage() {
               <li>No brainrots found.</li>
             ) : (
               brainrotResults.map((brainrot) => (
-                <li key={brainrot.id} className="rounded-lg border border-transparent px-3 py-2 transition hover:border-purple-400/40 hover:bg-slate-900/60">
-                  <Link href={`/brainrots/${brainrot.id}`} className="flex justify-between">
+                <li
+                  key={brainrot.id}
+                  className="rounded-lg border border-transparent px-3 py-2 transition hover:border-purple-400/40 hover:bg-slate-900/60"
+                >
+                  <Link href={`/brainrots/${brainrot.slug}`} className="flex justify-between">
                     <span className="text-white">{brainrot.name}</span>
                     <span className="text-xs uppercase tracking-[0.3em] text-purple-200">{brainrot.rarity}</span>
                   </Link>

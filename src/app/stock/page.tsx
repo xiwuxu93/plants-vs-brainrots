@@ -8,6 +8,15 @@ import { SectionHeading } from "@/components/section-heading";
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
+function formatDate(value: string | number | Date | null | undefined, options: Intl.DateTimeFormatOptions) {
+  if (!value) return "—";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) {
+    return "—";
+  }
+  return new Intl.DateTimeFormat(undefined, options).format(date);
+}
+
 function StockStatusBadge({ status }: { status: StockItem["status"] }) {
   const config: Record<StockItem["status"], { label: string; className: string }> = {
     "in-stock": { label: "In Stock", className: "bg-emerald-500/15 text-emerald-200 border-emerald-400/40" },
@@ -33,13 +42,13 @@ export default function StockPage() {
 
   const lastUpdated = useMemo(() => {
     if (!data?.generatedAt) return "—";
-    return new Intl.DateTimeFormat(undefined, {
+    return formatDate(data.generatedAt, {
       hour: "2-digit",
       minute: "2-digit",
       second: "2-digit",
       month: "short",
       day: "numeric",
-    }).format(new Date(data.generatedAt));
+    });
   }, [data?.generatedAt]);
 
   return (
@@ -78,18 +87,22 @@ export default function StockPage() {
               <tr key={item.id} className="transition hover:bg-slate-900/50">
                 <td className="px-4 py-3 font-semibold text-white">{item.name}</td>
                 <td className="px-4 py-3 text-slate-300">{item.type}</td>
-                <td className="px-4 py-3 text-right text-slate-300">${item.price.toLocaleString()}</td>
-                <td className="px-4 py-3 text-right text-slate-300">{item.stock}</td>
+                <td className="px-4 py-3 text-right text-slate-300">
+                  {Number.isFinite(item.price) ? `$${item.price.toLocaleString()}` : "—"}
+                </td>
+                <td className="px-4 py-3 text-right text-slate-300">
+                  {Number.isFinite(item.stock) ? item.stock : "—"}
+                </td>
                 <td className="px-4 py-3">
                   <StockStatusBadge status={item.status} />
                 </td>
                 <td className="px-4 py-3 text-slate-300">
-                  {new Intl.DateTimeFormat(undefined, {
+                  {formatDate(item.lastSeen, {
                     hour: "2-digit",
                     minute: "2-digit",
                     month: "short",
                     day: "numeric",
-                  }).format(new Date(item.lastSeen))}
+                  })}
                 </td>
               </tr>
             ))}
@@ -116,12 +129,12 @@ export default function StockPage() {
               className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5 shadow shadow-slate-950/20"
             >
               <header className="text-sm text-slate-300">
-                {new Intl.DateTimeFormat(undefined, {
+                {formatDate(entry.timestamp, {
                   month: "short",
                   day: "numeric",
                   hour: "2-digit",
                   minute: "2-digit",
-                }).format(new Date(entry.timestamp))}
+                })}
               </header>
               <ul className="mt-3 space-y-2 text-sm text-slate-200">
                 {entry.items.map((item) => {
@@ -140,7 +153,9 @@ export default function StockPage() {
                           {item.change >= 0 ? "+" : ""}
                           {item.change}
                         </p>
-                        <p>${item.price.toLocaleString()}</p>
+                        <p>
+                          {Number.isFinite(item.price) ? `$${item.price.toLocaleString()}` : "—"}
+                        </p>
                       </div>
                     </li>
                   );

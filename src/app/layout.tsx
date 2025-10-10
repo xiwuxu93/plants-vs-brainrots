@@ -14,9 +14,6 @@ export const metadata: Metadata = {
   },
   description:
     "Strategy companion for Plants vs Brainrots with data-driven tools, fusion planning, live stock tracking, and event timelines.",
-  alternates: {
-    canonical: siteUrl,
-  },
   openGraph: {
     title: "Plants vs Brainrots Wiki",
     description:

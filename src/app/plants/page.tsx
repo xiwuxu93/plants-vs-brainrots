@@ -1,9 +1,18 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { SectionHeading } from "@/components/section-heading";
 import { getPlantMedia } from "@/data/media-assets";
 import { plants, rarityOrder } from "@/data/pvb-database";
 import Link from "next/link";
 import { Suspense } from "react";
+
+const siteUrl = "https://plantsvsbrainrots-game.com";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: `${siteUrl}/plants`,
+  },
+};
 
 const sorts: Record<string, (a: typeof plants[number], b: typeof plants[number]) => number> = {
   name: (a, b) => a.name.localeCompare(b.name),
@@ -72,7 +81,7 @@ function FilteredPlantsTable({ searchParams }: { searchParams: Record<string, st
                 })()}
               </td>
               <td className="px-4 py-3">
-                <Link href={`/plants/${plant.name}`} className="font-semibold text-white hover:text-brand-200">
+                <Link href={`/plants/${plant.slug}`} className="font-semibold text-white hover:text-brand-200">
                   {plant.name}
                 </Link>
               </td>

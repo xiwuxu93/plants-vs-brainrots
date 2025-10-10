@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { BrainrotCard } from "@/components/brainrot-card";
 import { HomeHero } from "@/components/home-hero";
 import { PlantCard } from "@/components/plant-card";
@@ -10,9 +11,16 @@ import {
   gameInfo,
   mutationInfo,
   plants,
-  stockHistory,
 } from "@/data/pvb-database";
 import Link from "next/link";
+
+const siteUrl = "https://plantsvsbrainrots-game.com";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: siteUrl,
+  },
+};
 
 const toolHighlights = [
   {
@@ -118,16 +126,6 @@ export default function HomePage() {
     .sort((a, b) => new Date(b.addedAt).getTime() - new Date(a.addedAt).getTime());
   const latestCodes = activeCodes.slice(0, 3);
 
-  const lastStockTimestamp = stockHistory[0]?.timestamp ?? null;
-  const lastStockDisplay = lastStockTimestamp
-    ? formatDateTime(lastStockTimestamp, {
-        month: "short",
-        day: "numeric",
-        hour: "2-digit",
-        minute: "2-digit",
-      })
-    : "—";
-
   const sortedEvents = events
     .map((event) => ({ ...event, start: new Date(event.startDate) }))
     .filter((event) => !Number.isNaN(event.start.getTime()))
@@ -194,19 +192,16 @@ export default function HomePage() {
       <section className="container">
         <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
           <Link
-            href="/stock"
-            className="group rounded-3xl border border-emerald-500/30 bg-slate-900/70 p-6 transition hover:border-emerald-400/70 hover:bg-slate-900"
+            href="/tools/fusion-planner"
+            className="group rounded-3xl border border-sky-500/30 bg-slate-900/70 p-6 transition hover:border-sky-400/70 hover:bg-slate-900"
           >
-            <p className="text-xs uppercase tracking-[0.35em] text-emerald-300">Live services</p>
-            <h2 className="mt-3 text-2xl font-semibold text-white">Real-time stock tracker</h2>
+            <p className="text-xs uppercase tracking-[0.35em] text-sky-200">Build planner</p>
+            <h2 className="mt-3 text-2xl font-semibold text-white">Fusion planner toolkit</h2>
             <p className="mt-3 text-sm text-slate-300">
-              Leave the dashboard open to monitor restocks, rotation timers, and event-limited seeds the second they flip.
+              Map every recipe, track missing components, and forecast the cash you need before the next raid cycle hits.
             </p>
-            <p className="mt-4 text-xs uppercase tracking-[0.3em] text-emerald-200">
-              Last refresh {lastStockDisplay}
-            </p>
-            <p className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-emerald-200 group-hover:text-white">
-              View stock →
+            <p className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-sky-200 group-hover:text-white">
+              Plan fusions →
             </p>
           </Link>
           <Link

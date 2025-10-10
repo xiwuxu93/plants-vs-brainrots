@@ -5,6 +5,7 @@ export type MutationValues = Record<string, number>;
 export interface Plant {
   id: number;
   name: string;
+  slug: string;
   rarity: string;
   seedCost: number;
   baseDmg: number;
@@ -14,15 +15,20 @@ export interface Plant {
   tier: string;
 }
 
+export type RawPlant = Omit<Plant, "slug"> & { slug?: string };
+
 export interface Brainrot {
   id: number;
   name: string;
+  slug: string;
   rarity: string;
   baseIncome: number;
   mutations: MutationValues;
   weight: string;
   tier: string;
 }
+
+export type RawBrainrot = Omit<Brainrot, "slug"> & { slug?: string };
 
 export interface Gear {
   id: string;
@@ -107,8 +113,8 @@ export interface MutationInfo {
 }
 
 export interface PvbDatabase {
-  plants: Plant[];
-  brainrots: Brainrot[];
+  plants: RawPlant[];
+  brainrots: RawBrainrot[];
   gameInfo: GameInfo;
   mutationInfo: MutationInfo;
   rarityOrder: string[];
@@ -120,10 +126,28 @@ export interface PvbDatabase {
   codeHistory: CodeHistoryEntry[];
 }
 
+const slugify = (value: string) =>
+  value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
 const database = rawData as PvbDatabase;
 
-export const plants = database.plants;
-export const brainrots = database.brainrots;
+const plantsWithSlugs: Plant[] = database.plants.map((plant) => {
+  const slug = plant.slug ? slugify(plant.slug) : slugify(plant.name);
+  return { ...plant, slug };
+});
+
+const brainrotsWithSlugs: Brainrot[] = database.brainrots.map((brainrot) => {
+  const slug = brainrot.slug ? slugify(brainrot.slug) : slugify(brainrot.name);
+  return { ...brainrot, slug };
+});
+
+export const toSlug = (value: string) => slugify(value);
+
+export const plants = plantsWithSlugs;
+export const brainrots = brainrotsWithSlugs;
 export const gameInfo = database.gameInfo;
 export const mutationInfo = database.mutationInfo;
 export const rarityOrder = database.rarityOrder;
@@ -141,11 +165,22 @@ export function getPlantById(id: number) {
 export function getPlantByName(name: string) {
   return plants.find((plant) => plant.name === name);
 }
+
+export function getPlantBySlug(slug: string) {
+  const normalized = slugify(slug);
+  return plants.find((plant) => plant.slug === normalized);
+}
+
 export function getBrainrotById(id: number) {
   return brainrots.find((brainrot) => brainrot.id === id);
 }
 export function getBrainrotByName(name: string) {
   return brainrots.find((brainrot) => brainrot.name === name);
+}
+
+export function getBrainrotBySlug(slug: string) {
+  const normalized = slugify(slug);
+  return brainrots.find((brainrot) => brainrot.slug === normalized);
 }
 
 export function getGearById(id: string) {

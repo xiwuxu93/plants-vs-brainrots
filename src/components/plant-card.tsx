@@ -54,7 +54,10 @@ export function PlantCard({ plant }: PlantCardProps) {
             </span>
           ))}
         </div>
-        <Link href={`/plants/${plant.id}`} className="inline-flex items-center gap-1 text-sm text-brand-200 hover:text-white">
+        <Link
+          href={`/plants/${plant.slug}`}
+          className="inline-flex items-center gap-1 text-sm text-brand-200 hover:text-white"
+        >
           View Stats
           <ArrowRight className="h-4 w-4" />
         </Link>

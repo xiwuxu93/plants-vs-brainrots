@@ -6,7 +6,6 @@ const siteUrl = "https://plantsvsbrainrots-game.com";
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     "",
-    "/stock",
     "/plants",
     "/brainrots",
     "/gears",
@@ -35,7 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   plants.forEach((plant) => {
     entries.push({
-      url: `${siteUrl}/plants/${plant.name}`,
+      url: `${siteUrl}/plants/${plant.slug}`,
       changeFrequency: "weekly",
       priority: 0.6,
     });
@@ -43,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   brainrots.forEach((brainrot) => {
     entries.push({
-      url: `${siteUrl}/brainrots/${brainrot.name}`,
+      url: `${siteUrl}/brainrots/${brainrot.slug}`,
       changeFrequency: "weekly",
       priority: 0.6,
     });
