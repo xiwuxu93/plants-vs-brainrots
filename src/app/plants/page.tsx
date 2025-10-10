@@ -72,7 +72,7 @@ function FilteredPlantsTable({ searchParams }: { searchParams: Record<string, st
                 })()}
               </td>
               <td className="px-4 py-3">
-                <Link href={`/plants/${plant.id}`} className="font-semibold text-white hover:text-brand-200">
+                <Link href={`/plants/${plant.name}`} className="font-semibold text-white hover:text-brand-200">
                   {plant.name}
                 </Link>
               </td>
