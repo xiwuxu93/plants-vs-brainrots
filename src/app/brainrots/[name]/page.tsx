@@ -1,15 +1,16 @@
 import { SectionHeading } from "@/components/section-heading";
-import { brainrots, getBrainrotByName, mutationInfo } from "@/data/pvb-database";
+import { getBrainrotById, getBrainrotByName, mutationInfo } from "@/data/pvb-database";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 
 interface BrainrotDetailPageProps {
   params: { name: string };
 }
 
 export function generateMetadata({ params }: BrainrotDetailPageProps): Metadata {
-  const brainrot = getBrainrotByName(params.name);
+  const slug = params.name;
+  const brainrot = /^\d+$/.test(slug) ? getBrainrotById(Number(slug)) : getBrainrotByName(slug);
   if (!brainrot) {
     return {
       title: "Brainrot not found",
@@ -22,7 +23,16 @@ export function generateMetadata({ params }: BrainrotDetailPageProps): Metadata 
 }
 
 export default function BrainrotDetailPage({ params }: BrainrotDetailPageProps) {
-  const brainrot = getBrainrotByName(params.name);
+  const slug = params.name;
+
+  if (/^\d+$/.test(slug)) {
+    const brainrotById = getBrainrotById(Number(slug));
+    if (!brainrotById) {
+      notFound();
+    }
+    redirect(`/brainrots/${encodeURIComponent(brainrotById.name)}`);
+  }
+  const brainrot = getBrainrotByName(decodeURIComponent(slug) );
   if (!brainrot) {
     notFound();
   }
