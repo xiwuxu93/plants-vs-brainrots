@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import { SectionHeading } from "@/components/section-heading";
+import { withCanonical } from "@/lib/site-metadata";
+
+export const metadata: Metadata = {
+  ...withCanonical("/privacy"),
+  title: "Privacy Policy",
+  description: "Understand how the Plants vs Brainrots Wiki handles analytics, user submissions, and data requests.",
+};
 
 export default function PrivacyPage() {
   return (
