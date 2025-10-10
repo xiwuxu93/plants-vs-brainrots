@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import { SectionHeading } from "@/components/section-heading";
+import { withCanonical } from "@/lib/site-metadata";
+
+export const metadata: Metadata = {
+  ...withCanonical("/contact"),
+  title: "Contact",
+  description: "Reach the Plants vs Brainrots team for bug reports, data updates, and feature requests.",
+};
 
 export default function ContactPage() {
   return (

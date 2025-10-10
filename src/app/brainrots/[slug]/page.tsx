@@ -1,18 +1,11 @@
 import Image from "next/image";
 import { SectionHeading } from "@/components/section-heading";
-import {
-  getBrainrotById,
-  getBrainrotByName,
-  getBrainrotBySlug,
-  mutationInfo,
-  toSlug,
-} from "@/data/pvb-database";
+import { getBrainrotById, getBrainrotByName, getBrainrotBySlug, mutationInfo, toSlug } from "@/data/pvb-database";
 import { getBrainrotMedia } from "@/data/media-assets";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
-
-const siteUrl = "https://plantsvsbrainrots-game.com";
+import { withCanonical } from "@/lib/site-metadata";
 
 interface BrainrotDetailPageProps {
   params: { slug: string };
@@ -35,13 +28,10 @@ export function generateMetadata({ params }: BrainrotDetailPageProps): Metadata 
     return { title: "Brainrot not found" };
   }
 
-  const canonicalPath = `/brainrots/${brainrot.slug}`;
   return {
     title: `${brainrot.name} | Plants vs Brainrots`,
     description: `Income tiers, weight class, and best mutations for ${brainrot.name}.`,
-    alternates: {
-      canonical: `${siteUrl}${canonicalPath}`,
-    },
+    ...withCanonical(`/brainrots/${brainrot.slug}`),
   };
 }
 

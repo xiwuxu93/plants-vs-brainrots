@@ -1,4 +1,13 @@
+import type { Metadata } from "next";
 import { SectionHeading } from "@/components/section-heading";
+import { withCanonical } from "@/lib/site-metadata";
+
+export const metadata: Metadata = {
+  ...withCanonical("/about"),
+  title: "About",
+  description:
+    "Learn why we built the Plants vs Brainrots Wiki and how the project supports the community with data-backed tools.",
+};
 
 export default function AboutPage() {
   return (

@@ -3,11 +3,10 @@ import Script from "next/script";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-
-const siteUrl = "https://plantsvsbrainrots-game.com";
+import { SITE_URL } from "@/lib/site-metadata";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Plants vs Brainrots Wiki",
     template: "%s | Plants vs Brainrots",
@@ -20,7 +19,7 @@ export const metadata: Metadata = {
       "Strategy companion for Plants vs Brainrots with data-driven tools, fusion planning, live stock tracking, and event timelines.",
     siteName: "Plants vs Brainrots",
     type: "website",
-    url: siteUrl,
+    url: SITE_URL,
   },
   twitter: {
     card: "summary_large_image",

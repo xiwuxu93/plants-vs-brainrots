@@ -13,13 +13,10 @@ import {
   plants,
 } from "@/data/pvb-database";
 import Link from "next/link";
-
-const siteUrl = "https://plantsvsbrainrots-game.com";
+import { withCanonical } from "@/lib/site-metadata";
 
 export const metadata: Metadata = {
-  alternates: {
-    canonical: siteUrl,
-  },
+  ...withCanonical("/"),
 };
 
 const toolHighlights = [

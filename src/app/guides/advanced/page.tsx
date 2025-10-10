@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import { SectionHeading } from "@/components/section-heading";
 import Link from "next/link";
+import { withCanonical } from "@/lib/site-metadata";
+
+export const metadata: Metadata = {
+  ...withCanonical("/guides/advanced"),
+  title: "Advanced Strategies",
+  description: "Optimize Plants vs Brainrots mid-game with mutation sequencing, wave control, and balanced income planning.",
+};
 
 const playbook = [
   {

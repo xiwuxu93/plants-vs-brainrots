@@ -1,18 +1,11 @@
 import Image from "next/image";
 import { SectionHeading } from "@/components/section-heading";
-import {
-  getPlantById,
-  getPlantByName,
-  getPlantBySlug,
-  mutationInfo,
-  toSlug,
-} from "@/data/pvb-database";
+import { getPlantById, getPlantByName, getPlantBySlug, mutationInfo, toSlug } from "@/data/pvb-database";
 import { getPlantMedia } from "@/data/media-assets";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
-
-const siteUrl = "https://plantsvsbrainrots-game.com";
+import { withCanonical } from "@/lib/site-metadata";
 
 interface PlantDetailPageProps {
   params: { slug: string };
@@ -35,13 +28,10 @@ export function generateMetadata({ params }: PlantDetailPageProps): Metadata {
     return { title: "Plant not found" };
   }
 
-  const canonicalPath = `/plants/${plant.slug}`;
   return {
     title: `${plant.name} | Plants vs Brainrots`,
     description: `Stats, mutations, and strategies for ${plant.name} in Plants vs Brainrots.`,
-    alternates: {
-      canonical: `${siteUrl}${canonicalPath}`,
-    },
+    ...withCanonical(`/plants/${plant.slug}`),
   };
 }
 

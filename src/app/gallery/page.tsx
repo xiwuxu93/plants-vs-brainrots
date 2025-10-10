@@ -1,6 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { mediaAssets, type MediaCategory } from "@/data/media-assets";
 import { SectionHeading } from "@/components/section-heading";
+import { withCanonical } from "@/lib/site-metadata";
+
+export const metadata: Metadata = {
+  ...withCanonical("/gallery"),
+  title: "Gallery",
+  description: "Download Plants vs Brainrots character art, fusion renders, and in-game scene captures.",
+};
 
 const categoryMeta: Array<{
   id: MediaCategory;

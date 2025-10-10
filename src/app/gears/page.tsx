@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import { SectionHeading } from "@/components/section-heading";
 import { gears } from "@/data/pvb-database";
+import { withCanonical } from "@/lib/site-metadata";
+
+export const metadata: Metadata = {
+  ...withCanonical("/gears"),
+  title: "Gear List",
+  description: "Review every Plants vs Brainrots gear item with cost, cooldowns, and effects for raid planning.",
+};
 
 const rarityColor: Record<string, string> = {
   Common: "text-slate-300",

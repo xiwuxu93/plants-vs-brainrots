@@ -5,13 +5,10 @@ import { getPlantMedia } from "@/data/media-assets";
 import { plants, rarityOrder } from "@/data/pvb-database";
 import Link from "next/link";
 import { Suspense } from "react";
-
-const siteUrl = "https://plantsvsbrainrots-game.com";
+import { withCanonical } from "@/lib/site-metadata";
 
 export const metadata: Metadata = {
-  alternates: {
-    canonical: `${siteUrl}/plants`,
-  },
+  ...withCanonical("/plants"),
 };
 
 const sorts: Record<string, (a: typeof plants[number], b: typeof plants[number]) => number> = {

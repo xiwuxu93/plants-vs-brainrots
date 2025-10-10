@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import { SectionHeading } from "@/components/section-heading";
 import { dropTables } from "@/data/pvb-database";
+import { withCanonical } from "@/lib/site-metadata";
+
+export const metadata: Metadata = {
+  ...withCanonical("/drops"),
+  title: "Drop Tables",
+  description: "Browse Plants vs Brainrots drop rates and recommended power levels for every farming activity.",
+};
 
 const rarityColor: Record<string, string> = {
   Common: "text-slate-300",

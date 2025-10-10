@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import { SectionHeading } from "@/components/section-heading";
 import Link from "next/link";
+import { withCanonical } from "@/lib/site-metadata";
+
+export const metadata: Metadata = {
+  ...withCanonical("/guides"),
+  title: "Guides Hub",
+  description: "Browse Plants vs Brainrots strategy guides for beginners, advanced players, and boss battles.",
+};
 
 const guides = [
   {
