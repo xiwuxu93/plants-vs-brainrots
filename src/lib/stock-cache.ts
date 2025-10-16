@@ -81,10 +81,11 @@ export async function saveStockPayload(payload: StockPayload) {
 
 export async function loadStockHistory(excludeHash?: string) {
   if (!hasKv()) return [] as StockPayload[];
-  const members = await kv.zrevrange(
+  const members = await kv.zrange(
     STOCK_HISTORY_INDEX_KEY,
     0,
-    STOCK_HISTORY_LIMIT - 1
+    STOCK_HISTORY_LIMIT - 1,
+    { rev: true }
   );
   const payloads: StockPayload[] = [];
 
