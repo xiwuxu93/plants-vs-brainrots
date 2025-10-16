@@ -92,12 +92,9 @@ export async function loadStockHistory(excludeHash?: string) {
       `${STOCK_HISTORY_INDEX_KEY}:${hash}`
     );
     if (!record) continue;
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const { hash: _hash, ...payload } = record;
+    const { hash: _ignored, ...payload } = record;
     payloads.push(payload);
   }
 
   return payloads;
 }
-REDIS_URL =
-  "redis://default:c2cRG4mjuToUdfaQ9kKRQVNC2JHdHHxN@redis-15671.c244.us-east-1-2.ec2.redns.redis-cloud.com:15671";

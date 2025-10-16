@@ -23,6 +23,7 @@
     "swr": "^2.3.3"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@types/node": "^20.11.30",
     "@types/react": "^18.2.75",
     "@types/react-dom": "^18.2.24",
