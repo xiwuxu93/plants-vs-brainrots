@@ -54,7 +54,9 @@ async function appendHistory(record: CachedStockRecord) {
       const keysToDelete = excess.map(
         (hash) => `${STOCK_HISTORY_INDEX_KEY}:${hash}`
       );
-      await kv.del(keysToDelete);
+      if (keysToDelete.length > 0) {
+        await kv.del(...keysToDelete);
+      }
     }
   }
 }
