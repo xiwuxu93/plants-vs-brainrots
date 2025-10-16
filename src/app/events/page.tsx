@@ -1,13 +1,12 @@
-import type { Metadata } from "next";
 import { SectionHeading } from "@/components/section-heading";
 import { events } from "@/data/pvb-database";
-import { withCanonical } from "@/lib/site-metadata";
+import { buildPageMetadata } from "@/lib/site-metadata";
 
-export const metadata: Metadata = {
-  ...withCanonical("/events"),
+export const metadata = buildPageMetadata({
   title: "Event Tracker",
-  description: "Track current and upcoming Plants vs Brainrots events, modifiers, and rewards.",
-};
+  description: "Track current and upcoming Plants vs Brainrots events with modifiers, timers, and exclusive rewards.",
+  path: "/events",
+});
 
 function formatRange(start: string, end: string) {
   const startDate = new Date(start);

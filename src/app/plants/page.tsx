@@ -1,15 +1,17 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import { SectionHeading } from "@/components/section-heading";
 import { getPlantMedia } from "@/data/media-assets";
 import { plants, rarityOrder } from "@/data/pvb-database";
 import Link from "next/link";
 import { Suspense } from "react";
-import { withCanonical } from "@/lib/site-metadata";
+import { buildPageMetadata } from "@/lib/site-metadata";
 
-export const metadata: Metadata = {
-  ...withCanonical("/plants"),
-};
+export const metadata = buildPageMetadata({
+  title: "Plants Database",
+  description:
+    "Filter every Plants vs Brainrots plant by rarity, tier, seed cost, damage, and mutation scaling to plan your next lineup.",
+  path: "/plants",
+});
 
 const sorts: Record<string, (a: typeof plants[number], b: typeof plants[number]) => number> = {
   name: (a, b) => a.name.localeCompare(b.name),

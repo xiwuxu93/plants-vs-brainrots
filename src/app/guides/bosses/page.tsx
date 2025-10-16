@@ -1,13 +1,12 @@
-import type { Metadata } from "next";
 import { SectionHeading } from "@/components/section-heading";
 import Link from "next/link";
-import { withCanonical } from "@/lib/site-metadata";
+import { buildPageMetadata } from "@/lib/site-metadata";
 
-export const metadata: Metadata = {
-  ...withCanonical("/guides/bosses"),
+export const metadata = buildPageMetadata({
   title: "Boss Battle Tactics",
   description: "Counter every Plants vs Brainrots boss with recommended squads, rotations, and timing windows.",
-};
+  path: "/guides/bosses",
+});
 
 const bosses = [
   {

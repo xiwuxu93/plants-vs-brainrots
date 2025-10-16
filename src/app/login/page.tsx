@@ -1,13 +1,12 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { SectionHeading } from "@/components/section-heading";
-import { withCanonical } from "@/lib/site-metadata";
+import { buildPageMetadata } from "@/lib/site-metadata";
 
-export const metadata: Metadata = {
-  ...withCanonical("/login"),
+export const metadata = buildPageMetadata({
   title: "Login",
   description: "Sign-in features are coming soon. Browse all Plants vs Brainrots tools without an account for now.",
-};
+  path: "/login",
+});
 
 export default function LoginPage() {
   return (

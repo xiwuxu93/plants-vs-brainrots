@@ -1,13 +1,12 @@
-import type { Metadata } from "next";
 import { SectionHeading } from "@/components/section-heading";
 import { fusionRecipes } from "@/data/pvb-database";
-import { withCanonical } from "@/lib/site-metadata";
+import { buildPageMetadata } from "@/lib/site-metadata";
 
-export const metadata: Metadata = {
-  ...withCanonical("/fusions"),
+export const metadata = buildPageMetadata({
   title: "Fusion Recipes",
-  description: "Track every Plants vs Brainrots fusion recipe with inputs, costs, and unlock requirements.",
-};
+  description: "Track every Plants vs Brainrots fusion combination with required inputs, craft costs, and unlock steps.",
+  path: "/fusions",
+});
 
 export default function FusionsPage() {
   return (

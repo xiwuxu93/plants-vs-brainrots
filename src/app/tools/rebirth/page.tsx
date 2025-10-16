@@ -1,13 +1,12 @@
-import type { Metadata } from "next";
 import { SectionHeading } from "@/components/section-heading";
 import { gameInfo } from "@/data/pvb-database";
-import { withCanonical } from "@/lib/site-metadata";
+import { buildPageMetadata } from "@/lib/site-metadata";
 
-export const metadata: Metadata = {
-  ...withCanonical("/tools/rebirth"),
+export const metadata = buildPageMetadata({
   title: "Rebirth Planner",
   description: "Estimate Plants vs Brainrots rebirth multipliers and plan the ideal reset window with milestone guidance.",
-};
+  path: "/tools/rebirth",
+});
 
 const milestones = [
   {

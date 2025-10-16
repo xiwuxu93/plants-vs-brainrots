@@ -1,15 +1,17 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import { SectionHeading } from "@/components/section-heading";
 import { getBrainrotMedia } from "@/data/media-assets";
 import { brainrots, rarityOrder } from "@/data/pvb-database";
 import Link from "next/link";
 import { Suspense } from "react";
-import { withCanonical } from "@/lib/site-metadata";
+import { buildPageMetadata } from "@/lib/site-metadata";
 
-export const metadata: Metadata = {
-  ...withCanonical("/brainrots"),
-};
+export const metadata = buildPageMetadata({
+  title: "Brainrot Database",
+  description:
+    "Compare Plants vs Brainrots brainrots by income, rarity, and weight class to maximize passive cash flow and fusion resources.",
+  path: "/brainrots",
+});
 
 const sorts: Record<string, (a: typeof brainrots[number], b: typeof brainrots[number]) => number> = {
   name: (a, b) => a.name.localeCompare(b.name),

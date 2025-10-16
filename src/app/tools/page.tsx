@@ -1,13 +1,12 @@
-import type { Metadata } from "next";
 import { SectionHeading } from "@/components/section-heading";
 import Link from "next/link";
-import { withCanonical } from "@/lib/site-metadata";
+import { buildPageMetadata } from "@/lib/site-metadata";
 
-export const metadata: Metadata = {
-  ...withCanonical("/tools"),
+export const metadata = buildPageMetadata({
   title: "Tools",
   description: "Access Plants vs Brainrots calculators for plant efficiency, fusion planning, income optimization, and rebirth prep.",
-};
+  path: "/tools",
+});
 
 const tools = [
   {

@@ -13,11 +13,14 @@ import {
   plants,
 } from "@/data/pvb-database";
 import Link from "next/link";
-import { withCanonical } from "@/lib/site-metadata";
+import { buildPageMetadata } from "@/lib/site-metadata";
 
-export const metadata: Metadata = {
-  ...withCanonical("/"),
-};
+export const metadata: Metadata = buildPageMetadata({
+  title: "Game Database & Tools",
+  description:
+    "Strategy companion for Plants vs Brainrots with data-driven tools, fusion planning, live stock tracking, and event timelines.",
+  path: "/",
+});
 
 const toolHighlights = [
   {
