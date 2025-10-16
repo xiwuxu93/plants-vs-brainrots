@@ -55,7 +55,7 @@ const heroStats = [
   },
   {
     label: "Rarest result",
-    value: highestRarity ? highestRarity.result : "—",
+    value: highestRarity ? highestRarity.fused : "—",
     detail: highestRarity ? highestRarity.rarity : "",
   },
   {
