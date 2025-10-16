@@ -1,0 +1,194 @@
+{
+  "generatedAt": "2025-10-16T06:09:37.527Z",
+  "intro": [
+    "The fusion system in Plants vs Brainrots allows you to create exclusive brainrots that cannot be found anywhere else on the map. These special brainrots are obtained by combining specific plants with specific brainrots in the Fuse Machine, giving you access to unique characters for your collection."
+  ],
+  "fusionNote": "🌱 Also see: Plants Guide | Brainrots Guide",
+  "fusions": [
+    {
+      "fused": "Noobini Cactusini",
+      "plant": "Cactus",
+      "brainrot": "Noobini Bananani",
+      "rarity": "Rare",
+      "slug": "noobini-cactusini"
+    },
+    {
+      "fused": "Orangutini Strawberrini",
+      "plant": "Strawberry",
+      "brainrot": "Orangutini Annanasini",
+      "rarity": "Rare",
+      "slug": "orangutini-strawberrini"
+    },
+    {
+      "fused": "Svinino Pumpkinino",
+      "plant": "Pumpkin",
+      "brainrot": "Svinino Bombondino",
+      "rarity": "Epic",
+      "slug": "svinino-pumpkinino"
+    },
+    {
+      "fused": "Brr Brr Sunflowerim",
+      "plant": "Sunflower",
+      "brainrot": "Brr Brr Patapim",
+      "rarity": "Epic",
+      "slug": "brr-brr-sunflowerim"
+    },
+    {
+      "fused": "Dragonfruitina Dolphinita",
+      "plant": "Dragon Fruit",
+      "brainrot": "Bananita Dolphinita",
+      "rarity": "Legendary",
+      "slug": "dragonfruitina-dolphinita"
+    },
+    {
+      "fused": "Eggplantini Burbalonini",
+      "plant": "Eggplant",
+      "brainrot": "Burbaloni Lulioli",
+      "rarity": "Legendary",
+      "slug": "eggplantini-burbalonini"
+    },
+    {
+      "fused": "Bombardilo Watermelondrilo",
+      "plant": "Watermelon",
+      "brainrot": "Bombardiro Crocodilo",
+      "rarity": "Mythic",
+      "slug": "bombardilo-watermelondrilo"
+    },
+    {
+      "fused": "Cocotanko Giraffanto",
+      "plant": "Cocotank",
+      "brainrot": "Giraffa Celeste",
+      "rarity": "Godly",
+      "slug": "cocotanko-giraffanto"
+    },
+    {
+      "fused": "Carnivourita Tralalerita",
+      "plant": "Carnivorous Plant",
+      "brainrot": "Tralalelo Tralala",
+      "rarity": "Godly",
+      "slug": "carnivourita-tralalerita"
+    },
+    {
+      "fused": "Los Mr Carrotitos",
+      "plant": "Mr Carrot",
+      "brainrot": "Los Tralalitos",
+      "rarity": "Secret",
+      "slug": "los-mr-carrotitos"
+    },
+    {
+      "fused": "Lemowzio",
+      "plant": "King Limone",
+      "brainrot": "Meowzio Sushini",
+      "rarity": "Secret",
+      "slug": "lemowzio"
+    }
+  ],
+  "sections": [
+    {
+      "title": "How to Unlock the Fuse Machine",
+      "intro": [
+        "The Fuse Machine is located to the right of the brainrot spawn area. To unlock it, you must complete your first Rebirth, which requires:"
+      ],
+      "entries": [
+        {
+          "title": null,
+          "body": [],
+          "lists": [
+            {
+              "type": "unordered",
+              "items": [
+                "$1,000,000 Cash",
+                "1 Bombini Gussini (Mythic rarity)",
+                "1 Tralalelo Tralala (Godly rarity)"
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Complete Guide: See Rebirth for detailed rebirth requirements and strategies."
+      ]
+    },
+    {
+      "title": "How to Use the Fuse Machine",
+      "intro": [
+        "Using the Fuse Machine is straightforward:",
+        "Fusion Time: Takes 3-5 minutes to complete, depending on the rarity of the resulting fused brainrot."
+      ],
+      "entries": [
+        {
+          "title": null,
+          "body": [],
+          "lists": [
+            {
+              "type": "ordered",
+              "items": [
+                "Place a plant in the machine",
+                "Add the required brainrot to the machine",
+                "Activate fusion by pressing E or tapping the Fuse button"
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "title": "Important Notes",
+      "intro": [],
+      "entries": [
+        {
+          "title": null,
+          "body": [],
+          "lists": [
+            {
+              "type": "unordered",
+              "items": [
+                "No Returns: Once you place plants and brainrots in the Fuse Machine, you cannot get them back",
+                "Inventory Space: Ensure you have inventory space available before claiming your fused brainrot",
+                "No Mutation Transfer: Mutations from your original plants and brainrots will not transfer to the fused result",
+                "Random Size: The size of your fused brainrot is completely random, regardless of input sizes"
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "relatedGuides": [
+    {
+      "title": "Plants Guide",
+      "description": "Learn about all plants and their stats",
+      "href": "/plants"
+    },
+    {
+      "title": "Brainrots Guide",
+      "description": "Complete brainrot collection guide",
+      "href": "/brainrots"
+    },
+    {
+      "title": "Stock Guide",
+      "description": "Track current shop inventory and prices",
+      "href": "/stock"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Will I get the original Plant and Brainrot back after fusion?",
+      "answer": ""
+    },
+    {
+      "question": "Why didn't I get my fused brainrot?",
+      "answer": ""
+    },
+    {
+      "question": "Will my Plant and Brainrot mutations pass on to fused brainrots?",
+      "answer": ""
+    },
+    {
+      "question": "Will my Plant and Brainrot size affect the fused brainrot?",
+      "answer": ""
+    }
+  ]
+}

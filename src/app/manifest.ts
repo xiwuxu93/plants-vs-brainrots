@@ -6,8 +6,8 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Plants vs Brainrots Wiki",
     short_name: "PvB Wiki",
-    description:
-      "Live stock, calculators, fusion planner, and guides for Plants vs Brainrots players.",
+      description:
+        "Live stock, calculators, and mechanics breakdowns for Plants vs Brainrots players.",
     start_url: "/",
     display: "standalone",
     background_color: "#0f172a",

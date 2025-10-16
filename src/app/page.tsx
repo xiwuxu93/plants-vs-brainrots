@@ -45,48 +45,60 @@ const toolHighlights = [
   },
 ];
 
-const guideHighlights = [
+const mechanicHighlights = [
   {
-    title: "Beginner Loadouts",
-    description: "Step-by-step build orders that carry you to your first rebirth.",
-    href: "/guides/beginner" as const,
+    title: "Card system essentials",
+    description: "See live drop odds, recommended combos, and deck templates before you roll packs.",
+    href: "/card" as const,
   },
   {
-    title: "Mutation Meta Deep Dive",
-    description: "Understand when to invest in gold, diamond, and neon upgrades.",
-    href: "/guides/advanced" as const,
+    title: "Fuse machine roadmap",
+    description: "Track every plant + brainrot recipe, unlock requirement, and cautionary note.",
+    href: "/fuse-recipe" as const,
   },
   {
-    title: "Boss Arena Playbook",
-    description: "Counter every boss pattern with recommended squad rotations.",
-    href: "/guides/bosses" as const,
+    title: "Rebirth checklist",
+    description: "Review cash and brainrot requirements plus rebuild plans for each stage.",
+    href: "/rebirth" as const,
   },
 ];
 
 const featureHighlights = [
   {
-    title: "Strategic plant lanes",
+    title: "Strategic plant placement",
     description:
-      "Pair burst damage with slows, shields, and income plants to counter every meme-inspired wave.",
+      "Lay out lanes that balance slows, burst, and shields so every wave stalls before it reaches your base.",
     emoji: "🌱",
   },
   {
-    title: "Brainrot economy",
+    title: "Income generation system",
     description:
-      "Convert defeated enemies into passive income and scale your farm for late-game fusions.",
+      "Collect defeated brainrots and convert them into passive income to bankroll high-tier seeds and upgrades.",
     emoji: "💰",
   },
   {
-    title: "Mutation mastery",
+    title: "Plant fusion mechanics",
     description:
-      "Track multipliers and plan diamond, neon, and event-exclusive upgrades before you spend.",
-    emoji: "🧬",
+      "Fuse duplicate plants into advanced forms—like Mr. Carrot—to unlock dramatic damage spikes.",
+    emoji: "🔄",
   },
   {
-    title: "Co-op readiness",
+    title: "Rarity progression",
     description:
-      "Prepare gear rotations, raid utilities, and countdown timelines so squads never miss an event.",
-    emoji: "🤝",
+      "Climb through Common, Rare, Mythic, Secret, and Godly plants, each bringing unique abilities to your roster.",
+    emoji: "⭐",
+  },
+  {
+    title: "Rebirth bonuses",
+    description:
+      "Reset at the right moment to lock in permanent +50% money and luck, accelerating every future run.",
+    emoji: "🌀",
+  },
+  {
+    title: "Meme-inspired enemies",
+    description:
+      "Square off against viral characters and internet jokes that keep every defense scenario lighthearted.",
+    emoji: "🎭",
   },
 ];
 
@@ -96,17 +108,62 @@ const officialLinks = [
     description: "Jump straight into the Plants vs Brainrots experience on Roblox.",
     href: "https://www.roblox.com/games/127742093697776/Plants-Vs-Brainrots" as const,
   },
-  // {
-  //   title: "Discord server",
-  //   description: "Join traders and get real-time stock alerts from the community.",
-  //   href: "https://discord.gg/937Mfk4zGN" as const,
-  // },
+  {
+    title: "Roblox community",
+    description: "Follow Yo Gurt Studio announcements from the official Roblox community hub.",
+    href: "https://www.roblox.com/communities/34869880/Yo-Gurt-Studio" as const,
+  },
+];
+
+const faqItems = [
+  {
+    question: "How do I start playing Plants vs Brainrots?",
+    answer:
+      "Purchase seeds from the in-game shop, plant them in your garden, and let them automatically defend each lane. Scoop up defeated brainrots to generate money for stronger seeds.",
+  },
+  {
+    question: "What is the most effective strategy for beginners?",
+    answer:
+      "Blend low-cost slows in front with heavy hitters in the back. This mix stretches waves while your high-damage plants melt brainrots safely.",
+  },
+  {
+    question: "How does the plant fusion system work?",
+    answer:
+      "Visit the fuse machine with duplicate plants to create empowered versions. For example combining charitos upgrades the result into Mr. Carrot for a huge DPS bump.",
+  },
+  {
+    question: "When should I consider rebirthing?",
+    answer:
+      "Wait until you own late-game plants like The Gazini and The Trali and feel your progression slowing. The +50% money and luck bonus is worth it once those checkpoints are met.",
+  },
+  {
+    question: "Can I play without spending Robux?",
+    answer:
+      "Yes. Everything in Plants vs Brainrots can be earned for free, though premium purchases like the Carnivorous Godly Plant speed up unlocks.",
+  },
+  {
+    question: "How is this different from other Brainrot games?",
+    answer:
+      "Plants vs Brainrots focuses on lane defense and tower strategy. Other Brainrot games lean into tycoon or pet sim mechanics, so plan on defending waves here.",
+  },
 ];
 
 function formatDateTime(value: string | Date, options: Intl.DateTimeFormatOptions) {
   const date = value instanceof Date ? value : new Date(value);
   if (Number.isNaN(date.getTime())) return "—";
   return new Intl.DateTimeFormat(undefined, options).format(date);
+}
+
+function getCountdown(target: Date) {
+  const diffMs = target.getTime() - Date.now();
+  if (diffMs <= 0) return null;
+
+  const totalMinutes = Math.floor(diffMs / 60000);
+  const days = Math.floor(totalMinutes / (60 * 24));
+  const hours = Math.floor((totalMinutes - days * 24 * 60) / 60);
+  const minutes = totalMinutes % 60;
+
+  return { days, hours, minutes };
 }
 
 export default function HomePage() {
@@ -145,39 +202,19 @@ export default function HomePage() {
         minute: "2-digit",
       })
     : null;
+  const nextEventCountdown = nextEvent ? getCountdown(nextEvent.start) : null;
 
   const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'How do I track Plants vs Brainrots stock in real time?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text:
-            'Open the Stock Tracker to watch live restocks, status badges, and historical snapshots. It auto-refreshes every ten minutes and falls back to the latest cached data.',
-        },
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
       },
-      {
-        '@type': 'Question',
-        name: 'Where can I find complete plant and brainrot stats?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text:
-            'Use the Plants and Brainrots databases for tier lists, mutation multipliers, seed costs, gear synergy, and quick navigation into detailed pages.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Do you have calculators for budget planning?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text:
-            'Yes. The Plant Efficiency Calculator models damage, ROI, mutation weights, and stock availability while the Fusion Planner tracks missing components and optimal farm routes.',
-        },
-      },
-    ],
+    })),
   };
 
   return (
@@ -187,21 +224,37 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <HomeHero />
+      <div className="container">
+        <div className="flex flex-col gap-3 rounded-3xl border border-brand-500/40 bg-brand-500/10 px-6 py-4 text-sm text-brand-100 shadow shadow-brand-500/10 md:flex-row md:items-center md:justify-between">
+          <div className="flex items-center gap-3">
+            <span role="img" aria-label="sparkles" className="text-lg">
+              ✨
+            </span>
+            <p className="font-semibold text-white">Data pulled from the live Roblox experience and refreshed with every sync.</p>
+          </div>
+          <Link
+            href="/search"
+            className="inline-flex items-center justify-center rounded-full border border-brand-400 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-brand-200 transition hover:border-brand-200 hover:text-white"
+          >
+            Search the database →
+          </Link>
+        </div>
+      </div>
       <QuickStats />
 
       <section className="container">
         <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
           <Link
-            href="/tools/fusion-planner"
+            href="/fuse-recipe"
             className="group rounded-3xl border border-sky-500/30 bg-slate-900/70 p-6 transition hover:border-sky-400/70 hover:bg-slate-900"
           >
-            <p className="text-xs uppercase tracking-[0.35em] text-sky-200">Build planner</p>
-            <h2 className="mt-3 text-2xl font-semibold text-white">Fusion planner toolkit</h2>
+            <p className="text-xs uppercase tracking-[0.35em] text-sky-200">Fuse machine</p>
+            <h2 className="mt-3 text-2xl font-semibold text-white">All fusion combos at a glance</h2>
             <p className="mt-3 text-sm text-slate-300">
-              Map every recipe, track missing components, and forecast the cash you need before the next raid cycle hits.
+              Browse every plant + brainrot combination, unlock requirement, and rarity multiplier before you fuel the machine.
             </p>
             <p className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-sky-200 group-hover:text-white">
-              Plan fusions →
+              Explore recipes →
             </p>
           </Link>
           <Link
@@ -217,6 +270,11 @@ export default function HomePage() {
                 ? `${nextEventStartDisplay}${nextEventEndDisplay ? ` · Ends ${nextEventEndDisplay}` : ""}`
                 : "Check the events hub for the latest schedule."}
             </p>
+            {nextEventCountdown ? (
+              <p className="mt-1 text-xs uppercase tracking-[0.3em] text-slate-500">
+                Starts in {nextEventCountdown.days}d {nextEventCountdown.hours}h {nextEventCountdown.minutes}m
+              </p>
+            ) : null}
             {nextEvent?.modifiers?.length ? (
               <ul className="mt-4 space-y-1 text-xs text-slate-400">
                 {nextEvent.modifiers.slice(0, 3).map((modifier) => (
@@ -299,15 +357,20 @@ export default function HomePage() {
         <div className="grid gap-6 lg:grid-cols-[2fr_3fr]">
           <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 text-sm text-slate-300">
             <p>
-              Plants vs Brainrots reimagines classic lane defense through the lens of internet culture. Collect seeds,
-              reinforce your garden, and turn defeated brainrots into passive income that bankrolls high-tier fusions.
+              Plants vs Brainrots is a tower defense game from Yo Gurt Studio on Roblox that remixes classic lane defense
+              with meme-fueled Brainrot enemies. Plant seeds, fortify each tile, and unleash combos that keep waves pinned
+              long enough for your damage anchors to shred them.
             </p>
             <p className="mt-4">
-              Our hub pulls in live stock snapshots, curated loadouts, and calculators so strategists always know their
-              next upgrade before wave timers tick down.
+              Every defeated enemy can be dropped into your base to print passive income, which rolls straight into higher
+              rarity plants, fusion recipes, and rebirth perks. This hub mirrors the latest community wiki so you can track
+              restocks, plan fusions, and theorycraft without digging through multiple sources.
             </p>
+            <Link href="/mechanics" className="mt-4 inline-flex text-sm font-semibold text-brand-200 hover:text-white">
+              Explore the core mechanics →
+            </Link>
           </div>
-          <div className="grid gap-4 md:grid-cols-2">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {featureHighlights.map((feature) => (
               <article
                 key={feature.title}
@@ -381,21 +444,44 @@ export default function HomePage() {
 
       <section className="container">
         <SectionHeading
-          eyebrow="Guides"
-          title="Play smarter with curated blueprints"
-          description="Short, actionable guides that get straight to the moves you should make next."
+          eyebrow="Mechanics"
+          title="Dial in your core systems"
+          description="Jump straight into the card system, fuse machine, and rebirth loop with data-backed primers."
         />
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {guideHighlights.map((guide) => (
+          {mechanicHighlights.map((item) => (
             <Link
-              key={guide.title}
-              href={guide.href}
-              className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 transition hover:border-purple-400 hover:shadow-lg hover:shadow-purple-500/10"
+              key={item.title}
+              href={item.href}
+              className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 transition hover:border-brand-400 hover:shadow-lg hover:shadow-brand-500/10"
             >
-              <h3 className="text-lg font-semibold text-white">{guide.title}</h3>
-              <p className="mt-2 text-sm text-slate-300">{guide.description}</p>
-              <p className="mt-4 text-sm font-semibold text-purple-200">Read guide →</p>
+              <h3 className="text-lg font-semibold text-white">{item.title}</h3>
+              <p className="mt-2 text-sm text-slate-300">{item.description}</p>
+              <p className="mt-4 text-sm font-semibold text-brand-200">Open system →</p>
             </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="container">
+        <SectionHeading
+          eyebrow="FAQ"
+          title="Plants vs Brainrots essentials"
+          description="Direct answers to the latest questions coming from the official community."
+        />
+        <div className="space-y-3">
+          {faqItems.map((item) => (
+            <details
+              key={item.question}
+              className="group rounded-2xl border border-slate-800 bg-slate-900/60 p-5 transition hover:border-brand-400/50"
+            >
+              <summary className="cursor-pointer text-base font-semibold text-white marker:text-brand-300">
+                {item.question}
+              </summary>
+              <p className="mt-3 text-sm text-slate-300">
+                {item.answer}
+              </p>
+            </details>
           ))}
         </div>
       </section>

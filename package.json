@@ -6,13 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sync:remote": "node scripts/sync-content.mjs"
   },
   "dependencies": {
+    "@vercel/kv": "^0.2.4",
     "@radix-ui/react-slot": "^1.0.3",
+    "cheerio": "^1.1.2",
     "clsx": "^2.1.0",
+    "fast-xml-parser": "^5.3.0",
     "lucide-react": "^0.441.0",
     "next": "^14.2.5",
+    "p-limit": "^7.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "swr": "^2.3.3"

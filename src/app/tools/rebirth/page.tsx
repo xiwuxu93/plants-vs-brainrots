@@ -1,5 +1,6 @@
 import { SectionHeading } from "@/components/section-heading";
 import { gameInfo } from "@/data/pvb-database";
+import { rebirthRows } from "@/data/rebirth";
 import { buildPageMetadata } from "@/lib/site-metadata";
 
 export const metadata = buildPageMetadata({
@@ -10,18 +11,20 @@ export const metadata = buildPageMetadata({
 
 const milestones = [
   {
-    title: "Track your current cycle",
-    description: "Log your passive income, lane strength, and upgrade tiers before locking in a rebirth.",
+    title: "Capture your baseline",
+    description: "Record current $/s, boss level, and highest plant tier so you can measure the rebound after rebirth.",
   },
   {
-    title: "Project post-rebirth gains",
-    description: "Estimate the bonus damage and income you will unlock so you know if the reset is worth it.",
+    title: "Confirm the requirements",
+    description: "Cross-check cash and brainrot needs using our rebirth table before you dismantle your roster.",
   },
   {
-    title: "Forecast payback windows",
-    description: "See how many runs it takes to recoup the reset cost and surpass your previous peak.",
+    title: "Plot the rebuild",
+    description: "List the first five purchases post-reset so you sprint back to your pre-rebirth income curve.",
   },
 ];
+
+const nextRebirthTarget = rebirthRows[0];
 
 export default function RebirthToolPage() {
   return (
@@ -29,24 +32,28 @@ export default function RebirthToolPage() {
       <SectionHeading
         eyebrow="Tool"
         title="Rebirth planner"
-        description="The full planner is in development. This outline shows what the MVP will cover and how you can prepare your data."
+        description="Use this worksheet to decide when to reset, what to stockpile, and how to stabilise income during the next cycle."
       />
 
       <section className="grid gap-6 rounded-3xl border border-slate-800 bg-slate-900/60 p-6 md:grid-cols-[2fr,1fr]">
         <div className="space-y-4 text-sm text-slate-300">
           <p>
-            We are currently mapping the inputs needed for precise rebirth recommendations. That includes your highest-tier plants, current
-            idle income, and mutation ownership. The first release will support quick comparisons so you can answer, &ldquo;If I rebirth now, when do I
-            get back to my current power?&rdquo;
+            Start by capturing a snapshot of your lane setup: current $/s, highest boss cleared, and the plant tiers anchoring each tile. That
+            baseline tells you how quickly the next cycle needs to rebuild before it surpasses your previous peak.
           </p>
           <p>
-            Want to help shape it? Head to the Discord server and drop your spreadsheets or the exact questions you want answered. We will bake
-            them directly into the planner workflows.
+            Next, compare what you own against the official requirements below. If you are missing a brainrot, add it to a farming list along
+            with its drop table. Finally, script a five-step rebuild plan so you know exactly what to purchase once the reset lands.
           </p>
         </div>
         <aside className="rounded-2xl border border-purple-500/30 bg-purple-500/10 p-6 text-sm text-purple-100">
-          <p className="text-xs uppercase tracking-[0.3em] text-purple-200">Game requirement</p>
-          <p className="mt-2 font-semibold text-white">{gameInfo.rebirthRequirement}</p>
+          <p className="text-xs uppercase tracking-[0.3em] text-purple-200">Next milestone</p>
+          <p className="mt-2 font-semibold text-white">{nextRebirthTarget.stage}</p>
+          <ul className="mt-3 space-y-1 text-xs text-purple-100/90">
+            <li>Cash: {nextRebirthTarget.cashDisplay ?? "—"}</li>
+            <li>Brainrots: {nextRebirthTarget.brainrotRequirement ?? "—"}</li>
+            <li>Reward: {nextRebirthTarget.rewards || "—"}</li>
+          </ul>
           <p className="mt-4 text-xs text-purple-200">Last verified {gameInfo.lastUpdated}</p>
         </aside>
       </section>

@@ -15,6 +15,7 @@ export interface StockPayload {
   nextRefresh: string;
   source: string;
   items: StockItem[];
+  message?: string;
 }
 
 const seed = Date.now();
@@ -27,8 +28,8 @@ function randomFluctuation(base: number, variance = 0.15) {
 
 const baseItems: Omit<StockItem, "stock" | "lastSeen">[] = [
   {
-    id: "tomatiro-seed",
-    name: "Tomatiro Seed",
+    id: "tomatrio-seed",
+    name: "Tomatrio Seed",
     type: "Seed",
     price: 125000000,
     status: "low",

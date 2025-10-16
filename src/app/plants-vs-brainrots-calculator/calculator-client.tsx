@@ -74,8 +74,7 @@ export function CalculatorClient() {
           <div className="calculator-placeholder">
             <h3>Calculator Loading Area</h3>
             <p>
-              Your selected calculator will appear here. Choose a calculator type from
-              the dropdown above.
+              Your selected calculator will appear here. Choose a calculator type from the dropdown above and keep this page bookmarked for new tools.
             </p>
           </div>
         </section>

@@ -1,0 +1,6 @@
+*** Begin Patch
+*** Update File: src/lib/stock.ts
+@@
+-    const history = await loadStockHistory(result.changed ? computeHash(fresh) : undefined);
++    const history = await loadStockHistory(result.changed ? computeHash(fresh) : undefined);
+*** End Patch

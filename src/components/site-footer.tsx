@@ -3,7 +3,6 @@ import Link from "next/link";
 const footerLinks = [
   { name: "About", href: "/about" as const },
   { name: "Contact", href: "/contact" as const },
-  { name: "Discord", href: "https://discord.gg/example" },
   { name: "Privacy", href: "/privacy" as const }
 ];
 

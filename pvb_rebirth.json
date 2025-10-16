@@ -1,0 +1,201 @@
+{
+  "generatedAt": "2025-10-16T06:09:38.599Z",
+  "intro": [
+    "The Rebirth system is Plants vs Brainrots' primary progression mechanic that resets your progress in exchange for permanent upgrades. Each rebirth makes you stronger while unlocking powerful new features."
+  ],
+  "note": "🌱 Related Guides: Brainrots Guide | Fuse Recipe | Plants Guide",
+  "rebirths": [
+    {
+      "stage": "Rebirth 1",
+      "cashDisplay": "$1,000,000",
+      "cash": 1000000,
+      "brainrotRequirement": "Tralalero Tralala + Bombini Gussini",
+      "rewards": "+50% Luck, +50% Money",
+      "unlocks": "Stronger Bat, Fuse Machine, Big Island",
+      "boss": "Rhino Toasterino"
+    },
+    {
+      "stage": "Rebirth 2",
+      "cashDisplay": "$50,000,000",
+      "cash": 50000000,
+      "brainrotRequirement": "Los Tralaleritos + La Tomatoro",
+      "rewards": "+50% Luck, +50% Money",
+      "unlocks": "Stronger Bat, Bigger Island",
+      "boss": "Esok Sekolah"
+    },
+    {
+      "stage": "Rebirth 3",
+      "cashDisplay": "$100,000,000",
+      "cash": 100000000,
+      "brainrotRequirement": "Garamararam + Crazylone Pizaione",
+      "rewards": "+50% Luck, +50% Money",
+      "unlocks": "Stronger Bat",
+      "boss": "Chef Cabracadabra"
+    },
+    {
+      "stage": "Rebirth 4",
+      "cashDisplay": "$150,000,000",
+      "cash": 150000000,
+      "brainrotRequirement": "Los Sekolitos + Los Mr Carrotitos",
+      "rewards": "+50% Luck, +50% Money",
+      "unlocks": "Stronger Bat",
+      "boss": "Dragon Cannelloni"
+    },
+    {
+      "stage": "Rebirth 5",
+      "cashDisplay": "$300,000,000",
+      "cash": 300000000,
+      "brainrotRequirement": "Los Sekolitos + Crazylone Pizaione",
+      "rewards": "+50% Luck, +50% Money",
+      "unlocks": "",
+      "boss": "Wardenelli Brickatoni"
+    }
+  ],
+  "sections": [
+    {
+      "title": "How Rebirth Works",
+      "intro": [
+        "When you rebirth, you sacrifice specific brainrots and currency to gain permanent bonuses. Your money and brainrot collection reset, but you keep plants and gain lasting improvements that compound over multiple rebirths."
+      ],
+      "entries": [],
+      "notes": []
+    },
+    {
+      "title": "What Changes After Rebirth",
+      "intro": [
+        "You Lose:",
+        "You Keep:",
+        "Special Unlocks:"
+      ],
+      "entries": [
+        {
+          "title": null,
+          "body": [],
+          "lists": [
+            {
+              "type": "unordered",
+              "items": [
+                "All currency (money resets to $0)",
+                "All brainrots in collection",
+                "Boss levels and spawner upgrades"
+              ]
+            }
+          ]
+        },
+        {
+          "title": null,
+          "body": [],
+          "lists": [
+            {
+              "type": "unordered",
+              "items": [
+                "All plants in your garden",
+                "Inventory items and gears",
+                "Previous rebirth bonuses (permanent luck/money boosts)",
+                "Island expansions"
+              ]
+            }
+          ]
+        },
+        {
+          "title": null,
+          "body": [],
+          "lists": [
+            {
+              "type": "unordered",
+              "items": [
+                "Rebirth 1: Fuse Machine, Stronger Bat, Big Island expansion, Rhino Toasterino boss",
+                "Rebirth 2: Stronger Bat, Bigger Island expansion, Esok Sekolah boss",
+                "Rebirth 3: Stronger Bat, Chef Cabracadabra boss",
+                "Rebirth 4: Stronger Bat, Dragon Cannelloni boss",
+                "Rebirth 5: Wardenelli Brickatoni boss"
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "title": "Rebirth Strategy",
+      "intro": [
+        "When to Rebirth:",
+        "After Rebirth:"
+      ],
+      "entries": [
+        {
+          "title": null,
+          "body": [],
+          "lists": [
+            {
+              "type": "unordered",
+              "items": [
+                "Rebirth as soon as you meet the requirements",
+                "Earlier rebirths = faster long-term progression",
+                "Each rebirth's +50% bonuses compound significantly"
+              ]
+            }
+          ]
+        },
+        {
+          "title": null,
+          "body": [],
+          "lists": [
+            {
+              "type": "ordered",
+              "items": [
+                "Rebuild defense - Buy Cactus plants first for basic income",
+                "Use Fuse Machine - Combine brainrots for stronger variants (Rebirth 1+)",
+                "Utilize weapons - Clear brainrots faster with your Stronger Bat",
+                "Focus on collection - Work toward next rebirth requirements"
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "📖 Fuse Recipes: See Fuse Recipe Guide for all combination formulas"
+      ]
+    },
+    {
+      "title": "Key Tips",
+      "intro": [
+        "The Rebirth system is your path to true power in Plants vs Brainrots. Each reset makes you permanently stronger!"
+      ],
+      "entries": [
+        {
+          "title": null,
+          "body": [],
+          "lists": [
+            {
+              "type": "unordered",
+              "items": [
+                "Don't delay - Permanent +50% bonuses make early rebirths very valuable",
+                "Save Secret brainrots - Los Tralaleritos and La Tomatoro are needed for Rebirth 2+",
+                "Master the Fuse Machine - Essential for creating rare brainrots efficiently",
+                "Plan ahead - Start collecting next rebirth requirements immediately",
+                "Challenge bosses - Each rebirth unlocks powerful bosses with unique rewards"
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "relatedGuides": [],
+  "faqs": [
+    {
+      "question": "What happens to my plants when I rebirth?",
+      "answer": ""
+    },
+    {
+      "question": "Do I lose the brainrots I use for rebirth requirements?",
+      "answer": ""
+    },
+    {
+      "question": "When should I do my first rebirth?",
+      "answer": ""
+    }
+  ]
+}

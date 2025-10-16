@@ -47,12 +47,21 @@ import Carnivorous from "@/assets/media/carnivorous-plant-plants-vs-brainrots.we
 import Cocotank from "@/assets/media/cocotank-plant-plants-vs-brainrots.webp";
 import DragonFruit from "@/assets/media/dragon-fruit-plant-plants-vs-brainrots.webp";
 import Eggplant from "@/assets/media/eggplant-plant-plants-vs-brainrots.webp";
+import Grape from "@/assets/media/grape-plant-plants-vs-brainrots.webp";
+import KingLimone from "@/assets/media/king-limone-plant-plants-vs-brainrots.webp";
 import MrCarrot from "@/assets/media/mr-carrot-plant-plants-vs-brainrots.webp";
+import Mango from "@/assets/media/mango-plant-plants-vs-brainrots.webp";
 import Pumpkin from "@/assets/media/pumpkin-plant-plants-vs-brainrots.webp";
+import Shroombino from "@/assets/media/shroombino-plant-plants-vs-brainrots.webp";
 import Strawberry from "@/assets/media/strawberry-plant-plants-vs-brainrots.webp";
 import Sunflower from "@/assets/media/sunflower-plant-plants-vs-brainrots.webp";
+import Sunzio from "@/assets/media/sunzio-plant-plants-vs-brainrots.webp";
+import TomadeTorelli from "@/assets/media/tomade-torelli-plant-plants-vs-brainrots.webp";
 import Tomatrio from "@/assets/media/tomatrio-plants-vs-brainrots.png";
 import Watermelon from "@/assets/media/watermelon-plant-plants-vs-brainrots.webp";
+import Aubie from "@/assets/media/aubie-plant-plants-vs-brainrots.webp";
+import Copuccino from "@/assets/media/copuccino-plant-plants-vs-brainrots.webp";
+import DonFragola from "@/assets/media/don-fragola-plant-plants-vs-brainrots.webp";
 import APlayerSellingTheirBrainrotsInPlantsVsBrainrots from "@/assets/media/how-to-sell-brainrots-plants-vs-brainrots.webp";
 import APlayerShowingTheirCurrentlyPlacedBrainrotsInPlantsVsBrainrotsRobloxExperience from "@/assets/media/placed-brainrots-plants-vs-brainrots.webp";
 import BrainrotsAttackingAPlayersFieldInPlantsVsBrainrots from "@/assets/media/brainrots-attacking-plants-vs-brainrots.webp";
@@ -456,6 +465,22 @@ export const mediaAssets: MediaAsset[] = [
     image: Eggplant,
   },
   {
+    name: "Grape",
+    slug: "grape",
+    category: "plant" as MediaCategory,
+    alt: "Grape plant from Plants vs Zombies Roblox experience.",
+    filename: "grape-plant-plants-vs-brainrots.webp",
+    image: Grape,
+  },
+  {
+    name: "King Limone",
+    slug: "king-limone",
+    category: "plant" as MediaCategory,
+    alt: "King Limone plant from Plants vs Zombies Roblox experience.",
+    filename: "king-limone-plant-plants-vs-brainrots.webp",
+    image: KingLimone,
+  },
+  {
     name: "Mr Carrot",
     slug: "mr-carrot",
     category: "plant" as MediaCategory,
@@ -464,12 +489,36 @@ export const mediaAssets: MediaAsset[] = [
     image: MrCarrot,
   },
   {
+    name: "Mango",
+    slug: "mango",
+    category: "plant" as MediaCategory,
+    alt: "Mango plant from Plants vs Zombies Roblox experience.",
+    filename: "mango-plant-plants-vs-brainrots.webp",
+    image: Mango,
+  },
+  {
+    name: "Copuccino",
+    slug: "copuccino",
+    category: "plant" as MediaCategory,
+    alt: "Copuccino plant from Plants vs Zombies Roblox experience.",
+    filename: "copuccino-plant-plants-vs-brainrots.webp",
+    image: Copuccino,
+  },
+  {
     name: "Pumpkin",
     slug: "pumpkin",
     category: "plant" as MediaCategory,
     alt: "Pumpkin plant from Plants vs Zombies Roblox experience.",
     filename: "pumpkin-plant-plants-vs-brainrots.webp",
     image: Pumpkin,
+  },
+  {
+    name: "Shroombino",
+    slug: "shroombino",
+    category: "plant" as MediaCategory,
+    alt: "Shroombino plant from Plants vs Zombies Roblox experience.",
+    filename: "shroombino-plant-plants-vs-brainrots.webp",
+    image: Shroombino,
   },
   {
     name: "Strawberry",
@@ -488,6 +537,14 @@ export const mediaAssets: MediaAsset[] = [
     image: Sunflower,
   },
   {
+    name: "Sunzio",
+    slug: "sunzio",
+    category: "plant" as MediaCategory,
+    alt: "Sunzio plant from Plants vs Zombies Roblox experience.",
+    filename: "sunzio-plant-plants-vs-brainrots.webp",
+    image: Sunzio,
+  },
+  {
     name: "Tomatrio",
     slug: "tomatrio",
     category: "plant" as MediaCategory,
@@ -496,12 +553,36 @@ export const mediaAssets: MediaAsset[] = [
     image: Tomatrio,
   },
   {
+    name: "Tomade Torelli",
+    slug: "tomade-torelli",
+    category: "plant" as MediaCategory,
+    alt: "Tomade Torelli plant from Plants vs Zombies Roblox experience.",
+    filename: "tomade-torelli-plant-plants-vs-brainrots.webp",
+    image: TomadeTorelli,
+  },
+  {
     name: "Watermelon",
     slug: "watermelon",
     category: "plant" as MediaCategory,
     alt: "Watermelon plant from Plants vs Zombies Roblox experience.",
     filename: "watermelon-plant-plants-vs-brainrots.webp",
     image: Watermelon,
+  },
+  {
+    name: "Aubie",
+    slug: "aubie",
+    category: "plant" as MediaCategory,
+    alt: "Aubie plant from Plants vs Zombies Roblox experience.",
+    filename: "aubie-plant-plants-vs-brainrots.webp",
+    image: Aubie,
+  },
+  {
+    name: "Don Fragola",
+    slug: "don-fragola",
+    category: "plant" as MediaCategory,
+    alt: "Don Fragola plant from Plants vs Zombies Roblox experience.",
+    filename: "don-fragola-plant-plants-vs-brainrots.webp",
+    image: DonFragola,
   },
   {
     name: "A player selling their brainrots in Plants vs Brainrots",

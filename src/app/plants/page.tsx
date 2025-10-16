@@ -57,6 +57,7 @@ function FilteredPlantsTable({ searchParams }: { searchParams: Record<string, st
             <th className="px-4 py-3">Damage</th>
             <th className="px-4 py-3">Cost / Damage</th>
             <th className="px-4 py-3">Mutations</th>
+            <th className="px-4 py-3">How to Get</th>
           </tr>
         </thead>
         <tbody className="divide-y divide-slate-900/60 bg-slate-950/60 text-sm text-slate-200">
@@ -94,6 +95,7 @@ function FilteredPlantsTable({ searchParams }: { searchParams: Record<string, st
                   .map((mutation) => mutation.toUpperCase())
                   .join(" · ")}
               </td>
+              <td className="px-4 py-3 text-slate-300">{plant.obtainMethod}</td>
             </tr>
           ))}
         </tbody>

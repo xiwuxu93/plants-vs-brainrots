@@ -94,6 +94,7 @@ export default function PlantDetailPage({ params }: PlantDetailPageProps) {
               helpText="Lower is better"
             />
             {plant.specialEffect ? <StatBlock label="Signature effect" value={plant.specialEffect} /> : null}
+            <StatBlock label="How to get" value={plant.obtainMethod} />
           </div>
         </div>
         <div className="space-y-4">

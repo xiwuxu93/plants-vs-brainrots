@@ -1,0 +1,494 @@
+{
+  "generatedAt": "2025-10-16T06:09:38.154Z",
+  "intro": [
+    "Cards offer various boosts and advantages in Plants vs Brainrots. When placed in card slots, they can boost spawn rates of rare Brainrots, increase plant damage, enhance luck, and trigger special events. The card system has transformed the game's collection experience, encouraging players to build optimal card decks for strategic gameplay.",
+    "Each card pack contains 5 cards of similar or different rarities. High-rarity cards like Legendary and Epic have low drop chances but provide powerful boosts and effects."
+  ],
+  "cardNote": "We will complete the card information as soon as possible after the card system update",
+  "cardCta": {
+    "label": "Discord",
+    "href": "https://discord.com/invite/937Mfk4zGN"
+  },
+  "cards": [
+    {
+      "name": "Brainrot Blessing",
+      "slug": "brainrot-blessing",
+      "rarity": "Common",
+      "chance": 9.24,
+      "chanceText": "9.24%",
+      "description": "10% increased income from all brainrots",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/brainrot-blessing.webp"
+    },
+    {
+      "name": "Whirlwind",
+      "slug": "whirlwind",
+      "rarity": "Common",
+      "chance": 8.32,
+      "chanceText": "8.32%",
+      "description": "Every 100 brainrots slain, summons a tornado that knocks brainrots to the start",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/whirlwind.webp"
+    },
+    {
+      "name": "Batter Up",
+      "slug": "batter-up",
+      "rarity": "Common",
+      "chance": 7.86,
+      "chanceText": "7.86%",
+      "description": "Bats deal 25% more damage",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/batter-up.webp"
+    },
+    {
+      "name": "Sunflower Flurry",
+      "slug": "sunflower-flurry",
+      "rarity": "Common",
+      "chance": 7.39,
+      "chanceText": "7.39%",
+      "description": "Sunflowers have a 10% chance to attack +1 time",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/sunflower-flurry.webp"
+    },
+    {
+      "name": "Pumpkin Flurry",
+      "slug": "pumpkin-flurry",
+      "rarity": "Common",
+      "chance": 7.39,
+      "chanceText": "7.39%",
+      "description": "Pumpkins have a 10% chance to attack +1 times",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/pumpkin-flurry.webp"
+    },
+    {
+      "name": "Cactus Flurry",
+      "slug": "cactus-flurry",
+      "rarity": "Common",
+      "chance": 7.39,
+      "chanceText": "7.39%",
+      "description": "Cacti have a 10% chance to attack +1 times",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/cactus-flurry.webp"
+    },
+    {
+      "name": "Rare Collection",
+      "slug": "rare-collection",
+      "rarity": "Common",
+      "chance": 6.47,
+      "chanceText": "6.47%",
+      "description": "25% higher chance for Rare brainrots to spawn",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/rare-collection.webp"
+    },
+    {
+      "name": "Epic Collection",
+      "slug": "epic-collection",
+      "rarity": "Common",
+      "chance": 6.47,
+      "chanceText": "6.47%",
+      "description": "25% higher chance for Epic brainrots to spawn",
+      "image": "https://assets.bloxwikia.com/games/tbd.webp"
+    },
+    {
+      "name": "Secret Slayer",
+      "slug": "secret-slayer",
+      "rarity": "Uncommon",
+      "chance": 4.62,
+      "chanceText": "4.62%",
+      "description": "Every time you slay a secret rarity, instantly get cash equal to 10× your Cash per minute",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/secret-slayer.webp"
+    },
+    {
+      "name": "Solar Burst",
+      "slug": "solar-burst",
+      "rarity": "Uncommon",
+      "chance": 4.39,
+      "chanceText": "4.39%",
+      "description": "Every 200 brainrots slain, instantly grants 10 minutes of bonus money based on $/s",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/solar-burst.webp"
+    },
+    {
+      "name": "Chain Lightning",
+      "slug": "chain-lightning",
+      "rarity": "Uncommon",
+      "chance": 4.16,
+      "chanceText": "4.16%",
+      "description": "Every 50 brainrots slain, summons chain lightning that strikes 5 random brainrots for 10,000 damage",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/chain-lightning.webp"
+    },
+    {
+      "name": "Home Run",
+      "slug": "home-run",
+      "rarity": "Uncommon",
+      "chance": 3.93,
+      "chanceText": "3.93%",
+      "description": "Every brainrot slain by a bat deals 80% of its max HP to all active brainrots",
+      "image": "https://assets.bloxwikia.com/games/tbd.webp"
+    },
+    {
+      "name": "Legendary Collection",
+      "slug": "legendary-collection",
+      "rarity": "Uncommon",
+      "chance": 3.7,
+      "chanceText": "3.70%",
+      "description": "25% higher chance for Legendary brainrots to spawn",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/legendary-collection.webp"
+    },
+    {
+      "name": "Time Blossom",
+      "slug": "time-blossom",
+      "rarity": "Uncommon",
+      "chance": 4.5,
+      "chanceText": "4.50%",
+      "description": "After slaying 100 brainrots, slow time by 50% for 10 seconds",
+      "image": "https://assets.bloxwikia.com/games/tbd.webp"
+    },
+    {
+      "name": "Spirit Bloom",
+      "slug": "spirit-bloom",
+      "rarity": "Rare",
+      "chance": 2.31,
+      "chanceText": "2.31%",
+      "description": "Every 25 brainrots slain, randomly buff one plant with 10% Rage for 10 seconds",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/spirit-bloom.webp"
+    },
+    {
+      "name": "Plant Frenzy",
+      "slug": "plant-frenzy",
+      "rarity": "Rare",
+      "chance": 2.22,
+      "chanceText": "2.22%",
+      "description": "Every 25 brainrots slain by a plant sends it into 100% Frenzy for 8 seconds",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/plant-frenzy.webp"
+    },
+    {
+      "name": "Frozen Frenzy",
+      "slug": "frozen-frenzy",
+      "rarity": "Rare",
+      "chance": 2.08,
+      "chanceText": "2.08%",
+      "description": "Plants deal Additional 35% more damage to frozen Brainrots",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/frozen-frenzy.webp"
+    },
+    {
+      "name": "Tile Trio",
+      "slug": "tile-trio",
+      "rarity": "Rare",
+      "chance": 1.94,
+      "chanceText": "1.94%",
+      "description": "If three plants with the same type are on the same tile, they have 15% increased damage",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/tile-trio.webp"
+    },
+    {
+      "name": "Bloom Bank",
+      "slug": "bloom-bank",
+      "rarity": "Epic",
+      "chance": 1.29,
+      "chanceText": "1.29%",
+      "description": "10% of all currency earned is stored; unleashed as a 3x payout burst when you slay 500 brainrots",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/bloom-bank.webp"
+    },
+    {
+      "name": "Meteor Strike",
+      "slug": "meteor-strike",
+      "rarity": "Epic",
+      "chance": 1.2,
+      "chanceText": "1.20%",
+      "description": "Every 50 brainrots slain, a meteor strikes dealing 25,000 damage to all brainrots",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/meteor-strike.webp"
+    },
+    {
+      "name": "Freezing Field",
+      "slug": "freezing-field",
+      "rarity": "Epic",
+      "chance": 1.11,
+      "chanceText": "1.11%",
+      "description": "Every 50 brainrots slain, freeze all brainrots for 5 seconds",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/freezing-field.webp"
+    },
+    {
+      "name": "Rizzroot Manifestation",
+      "slug": "rizzroot-manifestation",
+      "rarity": "Epic",
+      "chance": 1.02,
+      "chanceText": "1.02%",
+      "description": "Luck is increased by 50%",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/rizzroot-manifestation.webp"
+    },
+    {
+      "name": "Bloom Ascendant",
+      "slug": "bloom-ascendant",
+      "rarity": "Epic",
+      "chance": 0.92,
+      "chanceText": "0.92%",
+      "description": "After slaying 1,000 brainrots, buff all plants' stats by 100% for 5 minutes",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/bloom-ascendant.webp"
+    },
+    {
+      "name": "Petal Storm",
+      "slug": "petal-storm",
+      "rarity": "Epic",
+      "chance": 0.83,
+      "chanceText": "0.83%",
+      "description": "Every 10th hit from a plant releases a wave of petals that deal 5,000 AoE damage",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/petal-storm.webp"
+    },
+    {
+      "name": "Mono-Crop Mindset",
+      "slug": "mono-crop-mindset",
+      "rarity": "Epic",
+      "chance": 0.74,
+      "chanceText": "0.74%",
+      "description": "When an entire row is the same plant type, they deal 15% more damage",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/mono-crop-mindset.webp"
+    },
+    {
+      "name": "Aura",
+      "slug": "aura",
+      "rarity": "Epic",
+      "chance": 0.65,
+      "chanceText": "0.65%",
+      "description": "As long as there is a boss in the lane, all brainrot enemies are 50% weakened",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/aura.webp"
+    },
+    {
+      "name": "Ovargreth",
+      "slug": "ovargreth",
+      "rarity": "Epic",
+      "chance": 0.465,
+      "chanceText": "0.465%",
+      "description": "A mysterious and powerful entity with unknown abilities",
+      "image": "https://assets.bloxwikia.com/games/tbd.webp"
+    },
+    {
+      "name": "Inferno Petal",
+      "slug": "inferno-petal",
+      "rarity": "Epic",
+      "chance": 0.37,
+      "chanceText": "0.37%",
+      "description": "Magma brainrots explode for 10% of their max HP on death",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/inferno-petal.webp"
+    },
+    {
+      "name": "Mythic Collection",
+      "slug": "mythic-collection",
+      "rarity": "Epic",
+      "chance": 0.35,
+      "chanceText": "0.35%",
+      "description": "25% higher chance for Mythic brainrots to spawn",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/mythic-collection.webp"
+    },
+    {
+      "name": "Doom Bloom",
+      "slug": "doom-bloom",
+      "rarity": "Legendary",
+      "chance": 0.28,
+      "chanceText": "0.28%",
+      "description": "35% more damage",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/doom-bloom.webp"
+    },
+    {
+      "name": "Toxic Cloud",
+      "slug": "toxic-cloud",
+      "rarity": "Legendary",
+      "chance": 0.23,
+      "chanceText": "0.23%",
+      "description": "Slaying a brainrot has a 5% chance to release a poisonous cloud dealing 100 damage per second",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/toxic-cloud.webp"
+    },
+    {
+      "name": "Frozen Blast",
+      "slug": "frozen-blast",
+      "rarity": "Legendary",
+      "chance": 0.18,
+      "chanceText": "0.18%",
+      "description": "Frozen brainrots take 1,000 damage per second",
+      "image": "https://assets.bloxwikia.com/games/plants-vs-brainrots/cards/frozen-blast.webp"
+    },
+    {
+      "name": "Godly Collection",
+      "slug": "godly-collection",
+      "rarity": "Legendary",
+      "chance": 0.14,
+      "chanceText": "0.14%",
+      "description": "25% higher chance for Godly brainrots to spawn",
+      "image": "https://assets.bloxwikia.com/games/tbd.webp"
+    },
+    {
+      "name": "Limited Collection",
+      "slug": "limited-collection",
+      "rarity": "Legendary",
+      "chance": 0.09,
+      "chanceText": "0.09%",
+      "description": "25% higher chance for Limited brainrots to spawn",
+      "image": "https://assets.bloxwikia.com/games/tbd.webp"
+    },
+    {
+      "name": "Secret Collection",
+      "slug": "secret-collection",
+      "rarity": "Legendary",
+      "chance": 0.05,
+      "chanceText": "0.05%",
+      "description": "25% higher chance for Secret brainrots to spawn",
+      "image": "https://assets.bloxwikia.com/games/tbd.webp"
+    }
+  ],
+  "sections": [
+    {
+      "title": "How to Get Cards",
+      "intro": [
+        "Cards are obtained from Card Packs through several methods:"
+      ],
+      "entries": [
+        {
+          "title": "1. Rebirths",
+          "body": [
+            "Rebirths provide card packs as rewards starting from Rebirth 2 onwards. Besides offering higher Money and Luck multipliers, each rebirth grants card pack rewards. You can perform up to 6 rebirths total, though each requires minimum cash and specific Brainrots in your base. Note that rebirthing resets all cash, boss levels, and upgrades."
+          ]
+        },
+        {
+          "title": "2. Daily Rewards",
+          "body": [
+            "Access daily rewards by entering the door portal to Central Island. Find the platform on the right side listing available daily rewards and grand prizes. Card packs may appear as grand prizes - obtain them by placing required Brainrots on the four platforms. Remember: characters cannot be reclaimed once placed."
+          ]
+        },
+        {
+          "title": "3. Events",
+          "body": [
+            "Card packs are available through special events like the Brainrot Hit List. This event requires defeating specific Brainrots in exchange for rewards. Check the board near NPC Tomade Torelli in Central Island for target information and elimination requirements."
+          ]
+        },
+        {
+          "title": "4. Shop Purchase",
+          "body": [
+            "Skip the grind by purchasing Shiny Card Packs directly from the in-game Shop:",
+            "You can also gift card packs to friends using the present icon next to the Robux button."
+          ],
+          "lists": [
+            {
+              "type": "unordered",
+              "items": [
+                "1 pack - 249 Robux",
+                "3 packs - 598 Robux",
+                "10 packs - 1,699 Robux"
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "title": "How to Use Cards",
+      "intro": [],
+      "entries": [
+        {
+          "title": "Equipping Cards",
+          "body": [
+            "Equipping cards is straightforward in Plants vs Brainrots:"
+          ],
+          "lists": [
+            {
+              "type": "ordered",
+              "items": [
+                "Head to the Player Cards station located on the right side of the spawner",
+                "Approach one of the available card slots",
+                "Hold the E key on PC and select a card from your collection",
+                "The card's perk activates immediately upon equipping"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Card Slots System",
+          "body": [
+            "The card slot system adds strategic importance to the Rebirth progression, as more slots allow for greater card synergies and more powerful combinations."
+          ],
+          "lists": [
+            {
+              "type": "unordered",
+              "items": [
+                "1 slot unlocked for free initially",
+                "4 additional slots require completing Rebirths 1-5",
+                "Total of 5 card slots available at maximum progression",
+                "Cards placed in slots provide active benefits during gameplay"
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "title": "Card Merging System",
+      "intro": [
+        "Upgrade your cards through the merging system located in Central Island:"
+      ],
+      "entries": [
+        {
+          "title": null,
+          "body": [],
+          "lists": [
+            {
+              "type": "unordered",
+              "items": [
+                "Requirements: 3 identical cards of the same type",
+                "Location: Card Merging station in Central Island",
+                "Process: Combine 3 similar cards to create a higher-tier version",
+                "Result: Enhanced card with improved effects and bonuses"
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "⚠️ Important: Card merging is permanent and cannot be undone. Plan your merges carefully to optimize your deck."
+      ]
+    },
+    {
+      "title": "Card Benefits & Strategy",
+      "intro": [],
+      "entries": [
+        {
+          "title": "Stacking with Potions",
+          "body": [
+            "Card benefits can stack with potions for enhanced effects. For example, use a Lucky Potion combined with the Secret Collection card to spawn more Secret Brainrots, maximizing your rare spawn rates."
+          ]
+        },
+        {
+          "title": "Strategic Deck Building",
+          "body": [
+            "With 5 card slots available, focus on creating synergistic combinations that complement your playstyle:",
+            "The 5-slot limitation forces strategic decisions about which abilities to prioritize, transforming the game from passive tower defense to active strategic planning."
+          ],
+          "lists": [
+            {
+              "type": "unordered",
+              "items": [
+                "Offensive builds: Cards that boost plant damage and attack speed",
+                "Economic builds: Cards that increase income and rare spawn rates",
+                "Balanced builds: Mix of offensive and economic benefits"
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "relatedGuides": [
+    {
+      "title": "Plants Guide",
+      "description": "Learn about all plants and their synergies with cards",
+      "href": "/plants"
+    },
+    {
+      "title": "Brainrots Guide",
+      "description": "Understanding your enemies and income sources",
+      "href": "/brainrots"
+    },
+    {
+      "title": "Rebirth Guide",
+      "description": "Progression system for unlocking card slots",
+      "href": "/rebirth"
+    },
+    {
+      "title": "Gears Guide",
+      "description": "Additional equipment and tools for optimization",
+      "href": "/gears"
+    }
+  ]
+}

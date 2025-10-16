@@ -13,13 +13,13 @@ const stats = [
   },
   {
     label: "Tools",
-    value: 4,
+    value: 3,
     description: "Calculators tailored for every strategy",
   },
   {
-    label: "Guides",
+    label: "Mechanics",
     value: 3,
-    description: "Playbooks curated by top grinders",
+    description: "Cards, fuse machine, and rebirth loops",
   },
 ];
 

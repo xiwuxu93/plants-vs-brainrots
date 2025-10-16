@@ -13,6 +13,7 @@ export interface Plant {
   specialEffect: string | null;
   costPerDmg: number;
   tier: string;
+  obtainMethod: string;
 }
 
 export type RawPlant = Omit<Plant, "slug"> & { slug?: string };

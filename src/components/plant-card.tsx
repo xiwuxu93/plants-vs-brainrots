@@ -42,6 +42,7 @@ export function PlantCard({ plant }: PlantCardProps) {
         {plant.specialEffect ? (
           <p className="text-sm text-slate-200">{plant.specialEffect}</p>
         ) : null}
+        <p className="text-xs text-slate-400">{plant.obtainMethod}</p>
       </div>
       <div className="mt-4 flex items-center justify-between border-t border-slate-800 pt-4">
         <div className="flex -space-x-2 overflow-hidden">
