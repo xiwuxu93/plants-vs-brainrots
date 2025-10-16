@@ -7,18 +7,20 @@
       "seedCost": 200,
       "baseDmg": 10,
       "mutations": {
-        "frozen": 40.0,
-        "gold": 20.0,
-        "diamond": 30.0,
-        "neon": 45.0,
-        "rainbow": 50.0,
-        "underworld": 60.0,
-        "magma": 70.0,
-        "galaxy": 75.0
+        "frozen": 40,
+        "gold": 20,
+        "diamond": 30,
+        "neon": 45,
+        "rainbow": 50,
+        "underworld": 60,
+        "magma": 70,
+        "galaxy": 75
       },
       "specialEffect": null,
-      "costPerDmg": 20.0,
-      "tier": "F"
+      "costPerDmg": 20,
+      "tier": "F",
+      "slug": "cactus",
+      "obtainMethod": "Purchase from Plants Shop. Check Live Stock for availability."
     },
     {
       "id": 2,
@@ -27,18 +29,20 @@
       "seedCost": 1250,
       "baseDmg": 25,
       "mutations": {
-        "frozen": 100.0,
-        "gold": 50.0,
-        "diamond": 75.0,
+        "frozen": 100,
+        "gold": 50,
+        "diamond": 75,
         "neon": 112.5,
-        "rainbow": 125.0,
-        "underworld": 150.0,
-        "magma": 175.0,
+        "rainbow": 125,
+        "underworld": 150,
+        "magma": 175,
         "galaxy": 187.5
       },
       "specialEffect": null,
-      "costPerDmg": 50.0,
-      "tier": "D"
+      "costPerDmg": 50,
+      "tier": "D",
+      "slug": "strawberry",
+      "obtainMethod": "Purchase from Plants Shop. Check Live Stock for availability."
     },
     {
       "id": 3,
@@ -47,18 +51,20 @@
       "seedCost": 5000,
       "baseDmg": 55,
       "mutations": {
-        "frozen": 220.0,
-        "gold": 110.0,
-        "diamond": 165.0,
+        "frozen": 220,
+        "gold": 110,
+        "diamond": 165,
         "neon": 247.5,
-        "rainbow": 275.0,
-        "underworld": 330.0,
-        "magma": 385.0,
+        "rainbow": 275,
+        "underworld": 330,
+        "magma": 385,
         "galaxy": 412.5
       },
       "specialEffect": null,
-      "costPerDmg": 90.9091,
-      "tier": "C"
+      "costPerDmg": 90.9,
+      "tier": "C",
+      "slug": "pumpkin",
+      "obtainMethod": "Purchase from Plants Shop. Check Live Stock for availability."
     },
     {
       "id": 4,
@@ -67,18 +73,20 @@
       "seedCost": 25000,
       "baseDmg": 115,
       "mutations": {
-        "frozen": 460.0,
-        "gold": 230.0,
-        "diamond": 345.0,
+        "frozen": 460,
+        "gold": 230,
+        "diamond": 345,
         "neon": 517.5,
-        "rainbow": 575.0,
-        "underworld": 690.0,
-        "magma": 805.0,
+        "rainbow": 575,
+        "underworld": 690,
+        "magma": 805,
         "galaxy": 862.5
       },
       "specialEffect": null,
-      "costPerDmg": 217.3913,
-      "tier": "C"
+      "costPerDmg": 217.4,
+      "tier": "C",
+      "slug": "sunflower",
+      "obtainMethod": "Purchase from Plants Shop. Check Live Stock for availability."
     },
     {
       "id": 5,
@@ -87,18 +95,19 @@
       "seedCost": 100000,
       "baseDmg": 250,
       "mutations": {
-        "frozen": 1000.0,
-        "gold": 500.0,
-        "diamond": 750.0,
-        "neon": 1125.0,
-        "rainbow": 1250.0,
-        "underworld": 1500.0,
-        "magma": 1750.0,
-        "galaxy": 1875.0
+        "frozen": 1000,
+        "gold": 500,
+        "diamond": 750,
+        "neon": 1125,
+        "rainbow": 1250,
+        "underworld": 1500,
+        "magma": 1750,
+        "galaxy": 1875
       },
       "specialEffect": null,
-      "costPerDmg": 400.0,
-      "tier": "B"
+      "costPerDmg": 400,
+      "tier": "B",
+      "slug": "dragonfruit"
     },
     {
       "id": 6,
@@ -107,98 +116,108 @@
       "seedCost": 250000,
       "baseDmg": 500,
       "mutations": {
-        "frozen": 2000.0,
-        "gold": 1000.0,
-        "diamond": 1500.0,
-        "neon": 2250.0,
-        "rainbow": 2500.0,
-        "underworld": 3000.0,
-        "magma": 3500.0,
-        "galaxy": 3750.0
+        "frozen": 2000,
+        "gold": 1000,
+        "diamond": 1500,
+        "neon": 2250,
+        "rainbow": 2500,
+        "underworld": 3000,
+        "magma": 3500,
+        "galaxy": 3750
       },
       "specialEffect": null,
-      "costPerDmg": 500.0,
-      "tier": "B"
+      "costPerDmg": 500,
+      "tier": "B",
+      "slug": "eggplant",
+      "obtainMethod": "Purchase from Plants Shop. Check Live Stock for availability."
     },
     {
       "id": 7,
       "name": "Watermelon",
       "rarity": "Mythic",
       "seedCost": 1000000,
-      "baseDmg": 750,
+      "baseDmg": 2.5,
       "mutations": {
-        "frozen": 3000.0,
-        "gold": 1500.0,
-        "diamond": 2250.0,
-        "neon": 3375.0,
-        "rainbow": 3750.0,
-        "underworld": 4500.0,
-        "magma": 5250.0,
-        "galaxy": 5625.0
+        "frozen": 3000,
+        "gold": 1500,
+        "diamond": 2250,
+        "neon": 3375,
+        "rainbow": 3750,
+        "underworld": 4500,
+        "magma": 5250,
+        "galaxy": 5625
       },
       "specialEffect": null,
-      "costPerDmg": 1333.3333,
-      "tier": "A"
+      "costPerDmg": 400000,
+      "tier": "A",
+      "slug": "watermelon",
+      "obtainMethod": "Purchase from Plants Shop. Check Live Stock for availability."
     },
     {
       "id": 8,
       "name": "Cocotank",
       "rarity": "Godly",
       "seedCost": 5000000,
-      "baseDmg": 1200,
+      "baseDmg": 2,
       "mutations": {
-        "frozen": 4800.0,
-        "gold": 2400.0,
-        "diamond": 3600.0,
-        "neon": 5400.0,
-        "rainbow": 6000.0,
-        "underworld": 7200.0,
-        "magma": 8400.0,
-        "galaxy": 9000.0
+        "frozen": 4800,
+        "gold": 2400,
+        "diamond": 3600,
+        "neon": 5400,
+        "rainbow": 6000,
+        "underworld": 7200,
+        "magma": 8400,
+        "galaxy": 9000
       },
       "specialEffect": null,
-      "costPerDmg": 4166.6667,
-      "tier": "A"
+      "costPerDmg": 2500000,
+      "tier": "A",
+      "slug": "cocotank",
+      "obtainMethod": "Purchase from Plants Shop. Check Live Stock for availability."
     },
     {
       "id": 9,
       "name": "Carnivorous Plant",
       "rarity": "Godly",
       "seedCost": 25000000,
-      "baseDmg": 2200,
+      "baseDmg": 2.5,
       "mutations": {
-        "frozen": 8800.0,
-        "gold": 4400.0,
-        "diamond": 6600.0,
-        "neon": 9900.0,
-        "rainbow": 11000.0,
-        "underworld": 13200.0,
-        "magma": 15400.0,
-        "galaxy": 16500.0
+        "frozen": 8800,
+        "gold": 4400,
+        "diamond": 6600,
+        "neon": 9900,
+        "rainbow": 11000,
+        "underworld": 13200,
+        "magma": 15400,
+        "galaxy": 16500
       },
       "specialEffect": "Premium plant with high damage",
-      "costPerDmg": 11363.6364,
-      "tier": "S"
+      "costPerDmg": 10000000,
+      "tier": "S",
+      "slug": "carnivorous-plant",
+      "obtainMethod": "Purchase from Plants Shop. Check Live Stock for availability."
     },
     {
       "id": 10,
       "name": "Mr. Carrot",
       "rarity": "Secret",
       "seedCost": 50000000,
-      "baseDmg": 3500,
+      "baseDmg": 3.5,
       "mutations": {
-        "frozen": 14000.0,
-        "gold": 7000.0,
-        "diamond": 10500.0,
-        "neon": 15750.0,
-        "rainbow": 17500.0,
-        "underworld": 21000.0,
-        "magma": 24500.0,
-        "galaxy": 26250.0
+        "frozen": 14000,
+        "gold": 7000,
+        "diamond": 10500,
+        "neon": 15750,
+        "rainbow": 17500,
+        "underworld": 21000,
+        "magma": 24500,
+        "galaxy": 26250
       },
       "specialEffect": "Created through plant fusion",
-      "costPerDmg": 14285.7143,
-      "tier": "S"
+      "costPerDmg": 14285714.3,
+      "tier": "S",
+      "slug": "mr-carrot",
+      "obtainMethod": "Purchase from Plants Shop. Check Live Stock for availability."
     },
     {
       "id": 11,
@@ -207,18 +226,162 @@
       "seedCost": 125000000,
       "baseDmg": 4500,
       "mutations": {
-        "frozen": 18000.0,
-        "gold": 9000.0,
-        "diamond": 13500.0,
-        "neon": 20250.0,
-        "rainbow": 22500.0,
-        "underworld": 27000.0,
-        "magma": 31500.0,
-        "galaxy": 33750.0
+        "frozen": 18000,
+        "gold": 9000,
+        "diamond": 13500,
+        "neon": 20250,
+        "rainbow": 22500,
+        "underworld": 27000,
+        "magma": 31500,
+        "galaxy": 33750
       },
       "specialEffect": "Highest damage plant",
-      "costPerDmg": 27777.7778,
-      "tier": "S+"
+      "costPerDmg": 27777.8,
+      "tier": "S+",
+      "slug": "tomatiro"
+    },
+    {
+      "id": 12,
+      "name": "Dragon Fruit",
+      "slug": "dragon-fruit",
+      "rarity": "Legendary",
+      "seedCost": 100000,
+      "baseDmg": 250,
+      "mutations": {},
+      "specialEffect": null,
+      "costPerDmg": 400,
+      "tier": "Unranked",
+      "obtainMethod": "Purchase from Plants Shop. Check Live Stock for availability."
+    },
+    {
+      "id": 13,
+      "name": "Grape",
+      "slug": "grape",
+      "rarity": "Mythic",
+      "seedCost": 2000000,
+      "baseDmg": 1.5,
+      "mutations": {},
+      "specialEffect": null,
+      "costPerDmg": 1333333.3,
+      "tier": "Unranked",
+      "obtainMethod": "Purchase from Plants Shop. Check Live Stock for availability."
+    },
+    {
+      "id": 14,
+      "name": "Tomatrio",
+      "slug": "tomatrio",
+      "rarity": "Secret",
+      "seedCost": 125000000,
+      "baseDmg": 9,
+      "mutations": {},
+      "specialEffect": null,
+      "costPerDmg": 13888888.9,
+      "tier": "Unranked",
+      "obtainMethod": "Purchase from Plants Shop. Check Live Stock for availability."
+    },
+    {
+      "id": 15,
+      "name": "Shroombino",
+      "slug": "shroombino",
+      "rarity": "Secret",
+      "seedCost": 200000000,
+      "baseDmg": 12.5,
+      "mutations": {},
+      "specialEffect": null,
+      "costPerDmg": 16000000,
+      "tier": "Unranked",
+      "obtainMethod": "Purchase from Plants Shop. Check Live Stock for availability."
+    },
+    {
+      "id": 16,
+      "name": "Mango",
+      "slug": "mango",
+      "rarity": "Secret",
+      "seedCost": 357000000,
+      "baseDmg": 7.65,
+      "mutations": {},
+      "specialEffect": null,
+      "costPerDmg": 46666666.7,
+      "tier": "Unranked",
+      "obtainMethod": "Purchase from Plants Shop. Check Live Stock for availability."
+    },
+    {
+      "id": 17,
+      "name": "King Limone",
+      "slug": "king-limone",
+      "rarity": "Secret",
+      "seedCost": 450000000,
+      "baseDmg": 12.5,
+      "mutations": {},
+      "specialEffect": null,
+      "costPerDmg": 36000000,
+      "tier": "Unranked",
+      "obtainMethod": "Purchase from Plants Shop. Check Live Stock for availability."
+    },
+    {
+      "id": 18,
+      "name": "Copuccino",
+      "slug": "copuccino",
+      "rarity": "Godly",
+      "seedCost": 0,
+      "baseDmg": 1500,
+      "mutations": {},
+      "specialEffect": null,
+      "costPerDmg": 0,
+      "tier": "Unranked",
+      "obtainMethod": "Prison Event acquisition."
+    },
+    {
+      "id": 19,
+      "name": "Aubie",
+      "slug": "aubie",
+      "rarity": "Legendary",
+      "seedCost": 0,
+      "baseDmg": 500,
+      "mutations": {},
+      "specialEffect": null,
+      "costPerDmg": 0,
+      "tier": "Unranked",
+      "obtainMethod": "Prison Event acquisition."
+    },
+    {
+      "id": 20,
+      "name": "Don Fragola",
+      "slug": "don-fragola",
+      "rarity": "Rare",
+      "seedCost": 0,
+      "baseDmg": 25,
+      "mutations": {},
+      "specialEffect": null,
+      "costPerDmg": 0,
+      "tier": "Unranked",
+      "obtainMethod": "Prison Event acquisition."
+    },
+    {
+      "id": 21,
+      "name": "Sunzio",
+      "slug": "sunzio",
+      "rarity": "Epic",
+      "seedCost": 0,
+      "baseDmg": 115,
+      "mutations": {},
+      "specialEffect": null,
+      "costPerDmg": 0,
+      "tier": "Unranked",
+      "obtainMethod": "Prison Event acquisition."
+    },
+    {
+      "id": 22,
+      "name": "Tomade Torelli",
+      "slug": "tomade-torelli",
+      "rarity": "Godly",
+      "seedCost": 0,
+      "baseDmg": 0,
+      "mutations": {},
+      "specialEffect": null,
+      "costPerDmg": 0,
+      "tier": "Unranked",
+      "obtainMethod": "Completing the quest by Tomade Torelli in the Central island."
     }
   ],
   "brainrots": [
@@ -228,17 +391,18 @@
       "rarity": "Rare",
       "baseIncome": 2,
       "mutations": {
-        "gold": 4.0,
-        "diamond": 6.0,
-        "frozen": 8.0,
-        "neon": 9.0,
-        "rainbow": 10.0,
-        "galaxy": 15.0,
-        "underworld": 12.0,
-        "magma": 14.0
+        "gold": 4,
+        "diamond": 6,
+        "frozen": 8,
+        "neon": 9,
+        "rainbow": 10,
+        "galaxy": 15,
+        "underworld": 12,
+        "magma": 14
       },
       "weight": "Light",
-      "tier": "F"
+      "tier": "F",
+      "slug": "noobini-bananini"
     },
     {
       "id": 2,
@@ -246,17 +410,18 @@
       "rarity": "Rare",
       "baseIncome": 3,
       "mutations": {
-        "gold": 6.0,
-        "diamond": 9.0,
-        "frozen": 12.0,
+        "gold": 6,
+        "diamond": 9,
+        "frozen": 12,
         "neon": 13.5,
-        "rainbow": 15.0,
+        "rainbow": 15,
         "galaxy": 22.5,
-        "underworld": 18.0,
-        "magma": 21.0
+        "underworld": 18,
+        "magma": 21
       },
       "weight": "Light",
-      "tier": "F"
+      "tier": "F",
+      "slug": "orangutini-ananassini"
     },
     {
       "id": 3,
@@ -264,17 +429,18 @@
       "rarity": "Rare",
       "baseIncome": 4,
       "mutations": {
-        "gold": 8.0,
-        "diamond": 12.0,
-        "frozen": 16.0,
-        "neon": 18.0,
-        "rainbow": 20.0,
-        "galaxy": 30.0,
-        "underworld": 24.0,
-        "magma": 28.0
+        "gold": 8,
+        "diamond": 12,
+        "frozen": 16,
+        "neon": 18,
+        "rainbow": 20,
+        "galaxy": 30,
+        "underworld": 24,
+        "magma": 28
       },
       "weight": "Light",
-      "tier": "F"
+      "tier": "F",
+      "slug": "lirili-larila"
     },
     {
       "id": 4,
@@ -282,17 +448,18 @@
       "rarity": "Rare",
       "baseIncome": 5,
       "mutations": {
-        "gold": 10.0,
-        "diamond": 15.0,
-        "frozen": 20.0,
+        "gold": 10,
+        "diamond": 15,
+        "frozen": 20,
         "neon": 22.5,
-        "rainbow": 25.0,
+        "rainbow": 25,
         "galaxy": 37.5,
-        "underworld": 30.0,
-        "magma": 35.0
+        "underworld": 30,
+        "magma": 35
       },
       "weight": "Light",
-      "tier": "E"
+      "tier": "E",
+      "slug": "boneca-ambalabu"
     },
     {
       "id": 5,
@@ -300,17 +467,18 @@
       "rarity": "Rare",
       "baseIncome": 6,
       "mutations": {
-        "gold": 12.0,
-        "diamond": 18.0,
-        "frozen": 24.0,
-        "neon": 27.0,
-        "rainbow": 30.0,
-        "galaxy": 45.0,
-        "underworld": 36.0,
-        "magma": 42.0
+        "gold": 12,
+        "diamond": 18,
+        "frozen": 24,
+        "neon": 27,
+        "rainbow": 30,
+        "galaxy": 45,
+        "underworld": 36,
+        "magma": 42
       },
       "weight": "Light",
-      "tier": "E"
+      "tier": "E",
+      "slug": "fluri-flura"
     },
     {
       "id": 6,
@@ -318,17 +486,18 @@
       "rarity": "Epic",
       "baseIncome": 12,
       "mutations": {
-        "gold": 24.0,
-        "diamond": 36.0,
-        "frozen": 48.0,
-        "neon": 54.0,
-        "rainbow": 60.0,
-        "galaxy": 90.0,
-        "underworld": 72.0,
-        "magma": 84.0
+        "gold": 24,
+        "diamond": 36,
+        "frozen": 48,
+        "neon": 54,
+        "rainbow": 60,
+        "galaxy": 90,
+        "underworld": 72,
+        "magma": 84
       },
       "weight": "Medium",
-      "tier": "D"
+      "tier": "D",
+      "slug": "batata-patata"
     },
     {
       "id": 7,
@@ -336,17 +505,18 @@
       "rarity": "Epic",
       "baseIncome": 15,
       "mutations": {
-        "gold": 30.0,
-        "diamond": 45.0,
-        "frozen": 60.0,
+        "gold": 30,
+        "diamond": 45,
+        "frozen": 60,
         "neon": 67.5,
-        "rainbow": 75.0,
+        "rainbow": 75,
         "galaxy": 112.5,
-        "underworld": 90.0,
-        "magma": 105.0
+        "underworld": 90,
+        "magma": 105
       },
       "weight": "Medium",
-      "tier": "D"
+      "tier": "D",
+      "slug": "baleia-brasileira"
     },
     {
       "id": 8,
@@ -354,17 +524,18 @@
       "rarity": "Epic",
       "baseIncome": 18,
       "mutations": {
-        "gold": 36.0,
-        "diamond": 54.0,
-        "frozen": 72.0,
-        "neon": 81.0,
-        "rainbow": 90.0,
-        "galaxy": 135.0,
-        "underworld": 108.0,
-        "magma": 126.0
+        "gold": 36,
+        "diamond": 54,
+        "frozen": 72,
+        "neon": 81,
+        "rainbow": 90,
+        "galaxy": 135,
+        "underworld": 108,
+        "magma": 126
       },
       "weight": "Medium",
-      "tier": "D"
+      "tier": "D",
+      "slug": "burrataleta-massarela"
     },
     {
       "id": 9,
@@ -372,17 +543,18 @@
       "rarity": "Epic",
       "baseIncome": 20,
       "mutations": {
-        "gold": 40.0,
-        "diamond": 60.0,
-        "frozen": 80.0,
-        "neon": 90.0,
-        "rainbow": 100.0,
-        "galaxy": 150.0,
-        "underworld": 120.0,
-        "magma": 140.0
+        "gold": 40,
+        "diamond": 60,
+        "frozen": 80,
+        "neon": 90,
+        "rainbow": 100,
+        "galaxy": 150,
+        "underworld": 120,
+        "magma": 140
       },
       "weight": "Medium",
-      "tier": "D"
+      "tier": "D",
+      "slug": "cadareco-do-batman"
     },
     {
       "id": 10,
@@ -390,17 +562,18 @@
       "rarity": "Epic",
       "baseIncome": 22,
       "mutations": {
-        "gold": 44.0,
-        "diamond": 66.0,
-        "frozen": 88.0,
-        "neon": 99.0,
-        "rainbow": 110.0,
-        "galaxy": 165.0,
-        "underworld": 132.0,
-        "magma": 154.0
+        "gold": 44,
+        "diamond": 66,
+        "frozen": 88,
+        "neon": 99,
+        "rainbow": 110,
+        "galaxy": 165,
+        "underworld": 132,
+        "magma": 154
       },
       "weight": "Medium",
-      "tier": "C"
+      "tier": "C",
+      "slug": "hiena-do-jack"
     },
     {
       "id": 11,
@@ -408,17 +581,18 @@
       "rarity": "Epic",
       "baseIncome": 25,
       "mutations": {
-        "gold": 50.0,
-        "diamond": 75.0,
-        "frozen": 100.0,
+        "gold": 50,
+        "diamond": 75,
+        "frozen": 100,
         "neon": 112.5,
-        "rainbow": 125.0,
+        "rainbow": 125,
         "galaxy": 187.5,
-        "underworld": 150.0,
-        "magma": 175.0
+        "underworld": 150,
+        "magma": 175
       },
       "weight": "Medium",
-      "tier": "C"
+      "tier": "C",
+      "slug": "gato-galactico"
     },
     {
       "id": 12,
@@ -426,17 +600,18 @@
       "rarity": "Epic",
       "baseIncome": 28,
       "mutations": {
-        "gold": 56.0,
-        "diamond": 84.0,
-        "frozen": 112.0,
-        "neon": 126.0,
-        "rainbow": 140.0,
-        "galaxy": 210.0,
-        "underworld": 168.0,
-        "magma": 196.0
+        "gold": 56,
+        "diamond": 84,
+        "frozen": 112,
+        "neon": 126,
+        "rainbow": 140,
+        "galaxy": 210,
+        "underworld": 168,
+        "magma": 196
       },
       "weight": "Medium",
-      "tier": "C"
+      "tier": "C",
+      "slug": "mano-do-ceu"
     },
     {
       "id": 13,
@@ -444,17 +619,18 @@
       "rarity": "Epic",
       "baseIncome": 30,
       "mutations": {
-        "gold": 60.0,
-        "diamond": 90.0,
-        "frozen": 120.0,
-        "neon": 135.0,
-        "rainbow": 150.0,
-        "galaxy": 225.0,
-        "underworld": 180.0,
-        "magma": 210.0
+        "gold": 60,
+        "diamond": 90,
+        "frozen": 120,
+        "neon": 135,
+        "rainbow": 150,
+        "galaxy": 225,
+        "underworld": 180,
+        "magma": 210
       },
       "weight": "Medium",
-      "tier": "C"
+      "tier": "C",
+      "slug": "lava-jato"
     },
     {
       "id": 14,
@@ -462,17 +638,18 @@
       "rarity": "Legendary",
       "baseIncome": 36,
       "mutations": {
-        "gold": 72.0,
-        "diamond": 108.0,
-        "frozen": 144.0,
-        "neon": 162.0,
-        "rainbow": 180.0,
-        "galaxy": 270.0,
-        "underworld": 216.0,
-        "magma": 252.0
+        "gold": 72,
+        "diamond": 108,
+        "frozen": 144,
+        "neon": 162,
+        "rainbow": 180,
+        "galaxy": 270,
+        "underworld": 216,
+        "magma": 252
       },
       "weight": "Heavy",
-      "tier": "B"
+      "tier": "B",
+      "slug": "gangster-footera"
     },
     {
       "id": 15,
@@ -480,17 +657,18 @@
       "rarity": "Legendary",
       "baseIncome": 41,
       "mutations": {
-        "gold": 82.0,
-        "diamond": 123.0,
-        "frozen": 164.0,
+        "gold": 82,
+        "diamond": 123,
+        "frozen": 164,
         "neon": 184.5,
-        "rainbow": 205.0,
+        "rainbow": 205,
         "galaxy": 307.5,
-        "underworld": 246.0,
-        "magma": 287.0
+        "underworld": 246,
+        "magma": 287
       },
       "weight": "Heavy",
-      "tier": "B"
+      "tier": "B",
+      "slug": "burbaloni-lulliloli"
     },
     {
       "id": 16,
@@ -498,17 +676,18 @@
       "rarity": "Legendary",
       "baseIncome": 42,
       "mutations": {
-        "gold": 84.0,
-        "diamond": 126.0,
-        "frozen": 168.0,
-        "neon": 189.0,
-        "rainbow": 210.0,
-        "galaxy": 315.0,
-        "underworld": 252.0,
-        "magma": 294.0
+        "gold": 84,
+        "diamond": 126,
+        "frozen": 168,
+        "neon": 189,
+        "rainbow": 210,
+        "galaxy": 315,
+        "underworld": 252,
+        "magma": 294
       },
       "weight": "Heavy",
-      "tier": "B"
+      "tier": "B",
+      "slug": "elefanto-cocofanto"
     },
     {
       "id": 17,
@@ -516,17 +695,18 @@
       "rarity": "Legendary",
       "baseIncome": 45,
       "mutations": {
-        "gold": 90.0,
-        "diamond": 135.0,
-        "frozen": 180.0,
+        "gold": 90,
+        "diamond": 135,
+        "frozen": 180,
         "neon": 202.5,
-        "rainbow": 225.0,
+        "rainbow": 225,
         "galaxy": 337.5,
-        "underworld": 270.0,
-        "magma": 315.0
+        "underworld": 270,
+        "magma": 315
       },
       "weight": "Heavy",
-      "tier": "B"
+      "tier": "B",
+      "slug": "madung"
     },
     {
       "id": 18,
@@ -534,17 +714,18 @@
       "rarity": "Mythic",
       "baseIncome": 126,
       "mutations": {
-        "gold": 252.0,
-        "diamond": 378.0,
-        "frozen": 504.0,
-        "neon": 567.0,
-        "rainbow": 630.0,
-        "galaxy": 945.0,
-        "underworld": 756.0,
-        "magma": 882.0
+        "gold": 252,
+        "diamond": 378,
+        "frozen": 504,
+        "neon": 567,
+        "rainbow": 630,
+        "galaxy": 945,
+        "underworld": 756,
+        "magma": 882
       },
       "weight": "Super Heavy",
-      "tier": "A"
+      "tier": "A",
+      "slug": "frigo-camelo"
     },
     {
       "id": 19,
@@ -552,17 +733,18 @@
       "rarity": "Mythic",
       "baseIncome": 180,
       "mutations": {
-        "gold": 360.0,
-        "diamond": 540.0,
-        "frozen": 720.0,
-        "neon": 810.0,
-        "rainbow": 900.0,
-        "galaxy": 1350.0,
-        "underworld": 1080.0,
-        "magma": 1260.0
+        "gold": 360,
+        "diamond": 540,
+        "frozen": 720,
+        "neon": 810,
+        "rainbow": 900,
+        "galaxy": 1350,
+        "underworld": 1080,
+        "magma": 1260
       },
       "weight": "Super Heavy",
-      "tier": "A"
+      "tier": "A",
+      "slug": "bombini-gussini"
     },
     {
       "id": 20,
@@ -570,17 +752,18 @@
       "rarity": "Mythic",
       "baseIncome": 180,
       "mutations": {
-        "gold": 360.0,
-        "diamond": 540.0,
-        "frozen": 720.0,
-        "neon": 810.0,
-        "rainbow": 900.0,
-        "galaxy": 1350.0,
-        "underworld": 1080.0,
-        "magma": 1260.0
+        "gold": 360,
+        "diamond": 540,
+        "frozen": 720,
+        "neon": 810,
+        "rainbow": 900,
+        "galaxy": 1350,
+        "underworld": 1080,
+        "magma": 1260
       },
       "weight": "Super Heavy",
-      "tier": "A"
+      "tier": "A",
+      "slug": "bombardiro-crocodilo"
     },
     {
       "id": 21,
@@ -588,17 +771,18 @@
       "rarity": "Godly",
       "baseIncome": 360,
       "mutations": {
-        "gold": 720.0,
-        "diamond": 1080.0,
-        "frozen": 1440.0,
-        "neon": 1620.0,
-        "rainbow": 1800.0,
-        "galaxy": 2700.0,
-        "underworld": 2160.0,
-        "magma": 2520.0
+        "gold": 720,
+        "diamond": 1080,
+        "frozen": 1440,
+        "neon": 1620,
+        "rainbow": 1800,
+        "galaxy": 2700,
+        "underworld": 2160,
+        "magma": 2520
       },
       "weight": "Ultra Heavy",
-      "tier": "S"
+      "tier": "S",
+      "slug": "odin-din-din-dun"
     },
     {
       "id": 22,
@@ -606,17 +790,18 @@
       "rarity": "Godly",
       "baseIncome": 420,
       "mutations": {
-        "gold": 840.0,
-        "diamond": 1260.0,
-        "frozen": 1680.0,
-        "neon": 1890.0,
-        "rainbow": 2100.0,
-        "galaxy": 3150.0,
-        "underworld": 2520.0,
-        "magma": 2940.0
+        "gold": 840,
+        "diamond": 1260,
+        "frozen": 1680,
+        "neon": 1890,
+        "rainbow": 2100,
+        "galaxy": 3150,
+        "underworld": 2520,
+        "magma": 2940
       },
       "weight": "Ultra Heavy",
-      "tier": "S"
+      "tier": "S",
+      "slug": "giraffa-celeste"
     },
     {
       "id": 23,
@@ -624,17 +809,18 @@
       "rarity": "Godly",
       "baseIncome": 575,
       "mutations": {
-        "gold": 1150.0,
-        "diamond": 1725.0,
-        "frozen": 2300.0,
+        "gold": 1150,
+        "diamond": 1725,
+        "frozen": 2300,
         "neon": 2587.5,
-        "rainbow": 2875.0,
+        "rainbow": 2875,
         "galaxy": 4312.5,
-        "underworld": 3450.0,
-        "magma": 4025.0
+        "underworld": 3450,
+        "magma": 4025
       },
       "weight": "Ultra Heavy",
-      "tier": "S"
+      "tier": "S",
+      "slug": "tralalelo-tralala"
     },
     {
       "id": 24,
@@ -642,17 +828,18 @@
       "rarity": "Godly",
       "baseIncome": 600,
       "mutations": {
-        "gold": 1200.0,
-        "diamond": 1800.0,
-        "frozen": 2400.0,
-        "neon": 2700.0,
-        "rainbow": 3000.0,
-        "galaxy": 4500.0,
-        "underworld": 3600.0,
-        "magma": 4200.0
+        "gold": 1200,
+        "diamond": 1800,
+        "frozen": 2400,
+        "neon": 2700,
+        "rainbow": 3000,
+        "galaxy": 4500,
+        "underworld": 3600,
+        "magma": 4200
       },
       "weight": "Ultra Heavy",
-      "tier": "S"
+      "tier": "S",
+      "slug": "matteo"
     },
     {
       "id": 25,
@@ -660,17 +847,18 @@
       "rarity": "Secret",
       "baseIncome": 1200,
       "mutations": {
-        "gold": 2400.0,
-        "diamond": 3600.0,
-        "frozen": 4800.0,
-        "neon": 5400.0,
-        "rainbow": 6000.0,
-        "galaxy": 9000.0,
-        "underworld": 7200.0,
-        "magma": 8400.0
+        "gold": 2400,
+        "diamond": 3600,
+        "frozen": 4800,
+        "neon": 5400,
+        "rainbow": 6000,
+        "galaxy": 9000,
+        "underworld": 7200,
+        "magma": 8400
       },
       "weight": "Legendary Heavy",
-      "tier": "S+"
+      "tier": "S+",
+      "slug": "los-tralaleritos"
     },
     {
       "id": 26,
@@ -678,17 +866,18 @@
       "rarity": "Secret",
       "baseIncome": 1200,
       "mutations": {
-        "gold": 2400.0,
-        "diamond": 3600.0,
-        "frozen": 4800.0,
-        "neon": 5400.0,
-        "rainbow": 6000.0,
-        "galaxy": 9000.0,
-        "underworld": 7200.0,
-        "magma": 8400.0
+        "gold": 2400,
+        "diamond": 3600,
+        "frozen": 4800,
+        "neon": 5400,
+        "rainbow": 6000,
+        "galaxy": 9000,
+        "underworld": 7200,
+        "magma": 8400
       },
       "weight": "Legendary Heavy",
-      "tier": "S+"
+      "tier": "S+",
+      "slug": "vacca-saturno-saturnita"
     },
     {
       "id": 27,
@@ -696,32 +885,564 @@
       "rarity": "Secret",
       "baseIncome": 2100,
       "mutations": {
-        "gold": 4200.0,
-        "diamond": 6300.0,
-        "frozen": 8400.0,
-        "neon": 9450.0,
-        "rainbow": 10500.0,
-        "galaxy": 15750.0,
-        "underworld": 12600.0,
-        "magma": 14700.0
+        "gold": 4200,
+        "diamond": 6300,
+        "frozen": 8400,
+        "neon": 9450,
+        "rainbow": 10500,
+        "galaxy": 15750,
+        "underworld": 12600,
+        "magma": 14700
       },
       "weight": "Legendary Heavy",
-      "tier": "S+"
+      "tier": "S+",
+      "slug": "garamararama"
+    },
+    {
+      "id": 28,
+      "name": "Trulimero Trulicina",
+      "slug": "trulimero-trulicina",
+      "rarity": "Rare",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 29,
+      "name": "Pipi Kiwi",
+      "slug": "pipi-kiwi",
+      "rarity": "Rare",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 30,
+      "name": "Noobini Cactusini",
+      "slug": "noobini-cactusini",
+      "rarity": "Rare",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 31,
+      "name": "Orangutini Strawberrini",
+      "slug": "orangutini-strawberrini",
+      "rarity": "Rare",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 32,
+      "name": "Espresso Signora",
+      "slug": "espresso-signora",
+      "rarity": "Rare",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 33,
+      "name": "Tim Cheese",
+      "slug": "tim-cheese",
+      "rarity": "Rare",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 34,
+      "name": "Agarinni La Palini",
+      "slug": "agarinni-la-palini",
+      "rarity": "Rare",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 35,
+      "name": "Alessio",
+      "slug": "alessio",
+      "rarity": "Epic",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 36,
+      "name": "Bambini Crostini",
+      "slug": "bambini-crostini",
+      "rarity": "Epic",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 37,
+      "name": "Trippi Troppi",
+      "slug": "trippi-troppi",
+      "rarity": "Epic",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 38,
+      "name": "Brr Brr Patapim",
+      "slug": "brr-brr-patapim",
+      "rarity": "Epic",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 39,
+      "name": "Cappuccuino Assasino",
+      "slug": "cappuccuino-assasino",
+      "rarity": "Epic",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 40,
+      "name": "Svivino Bombondino",
+      "slug": "svivino-bombondino",
+      "rarity": "Epic",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 41,
+      "name": "Brr Brr Sunflowerini",
+      "slug": "brr-brr-sunflowerini",
+      "rarity": "Epic",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 42,
+      "name": "Svinino Pumpkinino",
+      "slug": "svinino-pumpkinino",
+      "rarity": "Epic",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 43,
+      "name": "Orcalero Orcala",
+      "slug": "orcalero-orcala",
+      "rarity": "Epic",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 44,
+      "name": "Bandito Bobrito",
+      "slug": "bandito-bobrito",
+      "rarity": "Epic",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 45,
+      "name": "Mattone Ratto",
+      "slug": "mattone-ratto",
+      "rarity": "Epic",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 46,
+      "name": "Rinoccio Verdini",
+      "slug": "rinoccio-verdini",
+      "rarity": "Epic",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 47,
+      "name": "Ballerina Cappuccina",
+      "slug": "ballerina-cappuccina",
+      "rarity": "Legendary",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 48,
+      "name": "Bananita Dolphinita",
+      "slug": "bananita-dolphinita",
+      "rarity": "Legendary",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 49,
+      "name": "Dragonfrutina Dolphinita",
+      "slug": "dragonfrutina-dolphinita",
+      "rarity": "Legendary",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 50,
+      "name": "Eggplantini Burbaloloni",
+      "slug": "eggplantini-burbaloloni",
+      "rarity": "Legendary",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 51,
+      "name": "Bottelini",
+      "slug": "bottelini",
+      "rarity": "Legendary",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 52,
+      "name": "Bombardilo Watermelondrilo",
+      "slug": "bombardilo-watermelondrilo",
+      "rarity": "Mythic",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 53,
+      "name": "Baby Peperoncini And Marmellata",
+      "slug": "baby-peperoncini-and-marmellata",
+      "rarity": "Mythic",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 54,
+      "name": "Pesto Mortioni",
+      "slug": "pesto-mortioni",
+      "rarity": "Mythic",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 55,
+      "name": "Girafa Celeste",
+      "slug": "girafa-celeste",
+      "rarity": "Godly",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 56,
+      "name": "Kiwissimo",
+      "slug": "kiwissimo",
+      "rarity": "Godly",
+      "baseIncome": 360,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 57,
+      "name": "Carnivourita Tralalerita",
+      "slug": "carnivourita-tralalerita",
+      "rarity": "Godly",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 58,
+      "name": "Cocotanko Giraffanto",
+      "slug": "cocotanko-giraffanto",
+      "rarity": "Godly",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 59,
+      "name": "Luis Traffico",
+      "slug": "luis-traffico",
+      "rarity": "Godly",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 60,
+      "name": "La Tomatoro",
+      "slug": "la-tomatoro",
+      "rarity": "Secret",
+      "baseIncome": 1200,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 61,
+      "name": "Garamararam",
+      "slug": "garamararam",
+      "rarity": "Secret",
+      "baseIncome": 2100,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 62,
+      "name": "Crazylone Pizalone",
+      "slug": "crazylone-pizalone",
+      "rarity": "Secret",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 63,
+      "name": "Blueberrini Octopussini",
+      "slug": "blueberrini-octopussini",
+      "rarity": "Secret",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 64,
+      "name": "Pot Hotspot",
+      "slug": "pot-hotspot",
+      "rarity": "Secret",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 65,
+      "name": "Brri Brri Bicus Dicus Bombicus",
+      "slug": "brri-brri-bicus-dicus-bombicus",
+      "rarity": "Secret",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 66,
+      "name": "Las Tralaleritas",
+      "slug": "las-tralaleritas",
+      "rarity": "Secret",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 67,
+      "name": "Los Mr Carrotitos",
+      "slug": "los-mr-carrotitos",
+      "rarity": "Secret",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 68,
+      "name": "Meowzio Sushini",
+      "slug": "meowzio-sushini",
+      "rarity": "Secret",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 69,
+      "name": "Los Sekolitos",
+      "slug": "los-sekolitos",
+      "rarity": "Secret",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 70,
+      "name": "Lemowzio",
+      "slug": "lemowzio",
+      "rarity": "Secret",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 71,
+      "name": "Bredda Ratto",
+      "slug": "bredda-ratto",
+      "rarity": "Limited",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 72,
+      "name": "Armini Bodybuilderini",
+      "slug": "armini-bodybuilderini",
+      "rarity": "Limited",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 73,
+      "name": "67",
+      "slug": "67",
+      "rarity": "Limited",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 74,
+      "name": "Squalo Cavallo",
+      "slug": "squalo-cavallo",
+      "rarity": "Limited",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 75,
+      "name": "Gottolini Owl",
+      "slug": "gottolini-owl",
+      "rarity": "Limited",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 76,
+      "name": "Hotspotini Burrito",
+      "slug": "hotspotini-burrito",
+      "rarity": "Limited",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 77,
+      "name": "Ospedale",
+      "slug": "ospedale",
+      "rarity": "Limited",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 78,
+      "name": "Rhino Toasterino",
+      "slug": "rhino-toasterino",
+      "rarity": "Limited",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 79,
+      "name": "Chef Cabracadabra",
+      "slug": "chef-cabracadabra",
+      "rarity": "Limited",
+      "baseIncome": 0,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked"
+    },
+    {
+      "id": 80,
+      "name": "Dragon Cannelloni",
+      "slug": "dragon-cannelloni",
+      "rarity": "Limited",
+      "baseIncome": 7000,
+      "mutations": {},
+      "weight": "Unknown",
+      "tier": "Unranked",
+      "obtainMethod": "Boss Fight. (5 Rebirths Required)"
     }
   ],
   "mutationInfo": {
     "plants": {
       "frozen": {
         "effect": "Freezes enemies for 0.3 seconds",
-        "damageMultiplier": 4.0
+        "damageMultiplier": 4
       },
       "gold": {
         "effect": "Golden appearance with 2x damage",
-        "damageMultiplier": 2.0
+        "damageMultiplier": 2
       },
       "diamond": {
         "effect": "Diamond appearance with 3x damage",
-        "damageMultiplier": 3.0
+        "damageMultiplier": 3
       },
       "neon": {
         "effect": "Neon glow with 4.5x damage",
@@ -729,15 +1450,15 @@
       },
       "rainbow": {
         "effect": "Prismatic aura boosts projectiles to 5x damage",
-        "damageMultiplier": 5.0
+        "damageMultiplier": 5
       },
       "underworld": {
         "effect": "Infernal thorns leech health and deal 6x damage",
-        "damageMultiplier": 6.0
+        "damageMultiplier": 6
       },
       "magma": {
         "effect": "Magma bursts leave burning pools for extra ticks",
-        "damageMultiplier": 7.0
+        "damageMultiplier": 7
       },
       "galaxy": {
         "effect": "Cosmic orbit beams hit all lanes for 7.5x damage",
@@ -747,15 +1468,15 @@
     "brainrots": {
       "gold": {
         "effect": "Golden appearance with 2x income",
-        "incomeMultiplier": 2.0
+        "incomeMultiplier": 2
       },
       "diamond": {
         "effect": "Diamond appearance with 3x income",
-        "incomeMultiplier": 3.0
+        "incomeMultiplier": 3
       },
       "frozen": {
         "effect": "Frozen appearance with 4x income",
-        "incomeMultiplier": 4.0
+        "incomeMultiplier": 4
       },
       "neon": {
         "effect": "Neon glow with 4.5x income",
@@ -763,7 +1484,7 @@
       },
       "rainbow": {
         "effect": "Rainbow colors with 5x income",
-        "incomeMultiplier": 5.0
+        "incomeMultiplier": 5
       },
       "galaxy": {
         "effect": "Galaxy pattern with 7.5x income",
@@ -771,11 +1492,11 @@
       },
       "underworld": {
         "effect": "Underworld flames generate 6x income and fear aura",
-        "incomeMultiplier": 6.0
+        "incomeMultiplier": 6
       },
       "magma": {
         "effect": "Magma pulses double tick speed for 7x income",
-        "incomeMultiplier": 7.0
+        "incomeMultiplier": 7
       }
     }
   },
@@ -850,98 +1571,44 @@
   ],
   "fusionRecipes": [
     {
-      "id": "mr-carrot",
-      "result": "Mr. Carrot",
-      "rarity": "Legendary",
-      "cost": 850000,
+      "id": "noobini-cactusini",
+      "result": "Noobini Cactusini",
+      "rarity": "Rare",
+      "cost": 0,
       "inputs": [
         {
-          "item": "Charito",
-          "count": 2
-        },
-        {
-          "item": "Pumpkin",
+          "item": "Cactus",
           "count": 1
         },
         {
-          "item": "Fusion Core",
+          "item": "Noobini Bananani",
           "count": 1
         }
       ],
-      "unlock": "Fusion Lab lvl 5",
-      "notes": "Top-tier single-target burst with natural armor shred."
+      "unlock": "Fuse Machine"
     },
     {
-      "id": "dragonfrutina",
-      "result": "Dragonfrutina Dolphinita",
-      "rarity": "Mythic",
-      "cost": 1450000,
+      "id": "orangutini-strawberrini",
+      "result": "Orangutini Strawberrini",
+      "rarity": "Rare",
+      "cost": 0,
       "inputs": [
         {
-          "item": "Dragonfruit",
+          "item": "Strawberry",
           "count": 1
         },
         {
-          "item": "Dolphinita",
-          "count": 1
-        },
-        {
-          "item": "Fusion Core",
-          "count": 2
-        }
-      ],
-      "unlock": "Fusion Lab lvl 6",
-      "notes": "A hybrid brainrot that pulses splash damage and passive income."
-    },
-    {
-      "id": "sunflar",
-      "result": "Brr Brr Sunflowerim",
-      "rarity": "Secret",
-      "cost": 1650000,
-      "inputs": [
-        {
-          "item": "Sunflower",
-          "count": 1
-        },
-        {
-          "item": "Brr Brr Patapim",
-          "count": 1
-        },
-        {
-          "item": "Neon Core",
+          "item": "Orangutini Annanasini",
           "count": 1
         }
       ],
-      "unlock": "Winter event",
-      "notes": "Provides both lane slow and cross-lane healing pulses."
+      "unlock": "Fuse Machine"
     },
     {
-      "id": "orcalero",
-      "result": "Orcalero Orcala",
-      "rarity": "Mythic",
-      "cost": 1120000,
-      "inputs": [
-        {
-          "item": "Orangutini Ananassini",
-          "count": 1
-        },
-        {
-          "item": "Orca Core",
-          "count": 1
-        },
-        {
-          "item": "Mutant Brainrot",
-          "count": 2
-        }
-      ],
-      "unlock": "Atlantis raid",
-      "notes": "High-income aquatic brainrot with splash frost attacks."
-    },
-    {
-      "id": "pumpkinino",
+      "id": "svinino-pumpkinino",
       "result": "Svinino Pumpkinino",
-      "rarity": "Legendary",
-      "cost": 980000,
+      "rarity": "Epic",
+      "cost": 0,
       "inputs": [
         {
           "item": "Pumpkin",
@@ -950,14 +1617,145 @@
         {
           "item": "Svinino Bombondino",
           "count": 1
+        }
+      ],
+      "unlock": "Fuse Machine"
+    },
+    {
+      "id": "brr-brr-sunflowerim",
+      "result": "Brr Brr Sunflowerim",
+      "rarity": "Epic",
+      "cost": 0,
+      "inputs": [
+        {
+          "item": "Sunflower",
+          "count": 1
         },
         {
-          "item": "Fusion Core",
+          "item": "Brr Brr Patapim",
           "count": 1
         }
       ],
-      "unlock": "Fusion Lab lvl 4",
-      "notes": "Frontline tank brainrot that taunts and shares damage."
+      "unlock": "Fuse Machine"
+    },
+    {
+      "id": "dragonfruitina-dolphinita",
+      "result": "Dragonfruitina Dolphinita",
+      "rarity": "Legendary",
+      "cost": 0,
+      "inputs": [
+        {
+          "item": "Dragon Fruit",
+          "count": 1
+        },
+        {
+          "item": "Bananita Dolphinita",
+          "count": 1
+        }
+      ],
+      "unlock": "Fuse Machine"
+    },
+    {
+      "id": "eggplantini-burbalonini",
+      "result": "Eggplantini Burbalonini",
+      "rarity": "Legendary",
+      "cost": 0,
+      "inputs": [
+        {
+          "item": "Eggplant",
+          "count": 1
+        },
+        {
+          "item": "Burbaloni Lulioli",
+          "count": 1
+        }
+      ],
+      "unlock": "Fuse Machine"
+    },
+    {
+      "id": "bombardilo-watermelondrilo",
+      "result": "Bombardilo Watermelondrilo",
+      "rarity": "Mythic",
+      "cost": 0,
+      "inputs": [
+        {
+          "item": "Watermelon",
+          "count": 1
+        },
+        {
+          "item": "Bombardiro Crocodilo",
+          "count": 1
+        }
+      ],
+      "unlock": "Fuse Machine"
+    },
+    {
+      "id": "cocotanko-giraffanto",
+      "result": "Cocotanko Giraffanto",
+      "rarity": "Godly",
+      "cost": 0,
+      "inputs": [
+        {
+          "item": "Cocotank",
+          "count": 1
+        },
+        {
+          "item": "Giraffa Celeste",
+          "count": 1
+        }
+      ],
+      "unlock": "Fuse Machine"
+    },
+    {
+      "id": "carnivourita-tralalerita",
+      "result": "Carnivourita Tralalerita",
+      "rarity": "Godly",
+      "cost": 0,
+      "inputs": [
+        {
+          "item": "Carnivorous Plant",
+          "count": 1
+        },
+        {
+          "item": "Tralalelo Tralala",
+          "count": 1
+        }
+      ],
+      "unlock": "Fuse Machine"
+    },
+    {
+      "id": "los-mr-carrotitos",
+      "result": "Los Mr Carrotitos",
+      "rarity": "Secret",
+      "cost": 0,
+      "inputs": [
+        {
+          "item": "Mr Carrot",
+          "count": 1
+        },
+        {
+          "item": "Los Tralalitos",
+          "count": 1
+        }
+      ],
+      "unlock": "Fuse Machine"
+    },
+    {
+      "id": "lemowzio",
+      "result": "Lemowzio",
+      "rarity": "Secret",
+      "cost": 0,
+      "inputs": [
+        {
+          "item": "King Limone",
+          "count": 1
+        },
+        {
+          "item": "Meowzio Sushini",
+          "count": 1
+        }
+      ],
+      "unlock": "Fuse Machine"
     }
   ],
   "events": [
@@ -967,15 +1765,9 @@
       "type": "Limited Event",
       "startDate": "2025-09-27T11:00:00Z",
       "endDate": "2025-09-27T13:00:00Z",
-      "modifiers": [
-        "2x Stock Refresh",
-        "+15% Brainrot Income"
-      ],
-      "rewards": [
-        "Admin Badge",
-        "Exclusive Gear Skin"
-      ],
-      "notes": "Prep shields and income buffs 15 minutes before start\u2014stock drains instantly when countdown hits zero."
+      "modifiers": ["2x Stock Refresh", "+15% Brainrot Income"],
+      "rewards": ["Admin Badge", "Exclusive Gear Skin"],
+      "notes": "Prep shields and income buffs 15 minutes before start—stock drains instantly when countdown hits zero."
     },
     {
       "id": "winter-festival",
@@ -983,14 +1775,8 @@
       "type": "Seasonal",
       "startDate": "2025-12-15T00:00:00Z",
       "endDate": "2026-01-05T00:00:00Z",
-      "modifiers": [
-        "Snowstorm weather",
-        "+10% Plant Freeze Chance"
-      ],
-      "rewards": [
-        "Neon Core",
-        "Limited Snowfall Brainrot Skin"
-      ],
+      "modifiers": ["Snowstorm weather", "+10% Plant Freeze Chance"],
+      "rewards": ["Neon Core", "Limited Snowfall Brainrot Skin"],
       "notes": "Unlocks fusion recipe Brr Brr Sunflowerim and drops Frost Grenades from raid bosses."
     },
     {
@@ -999,15 +1785,9 @@
       "type": "Raid",
       "startDate": "2025-10-12T18:00:00Z",
       "endDate": "2025-10-19T18:00:00Z",
-      "modifiers": [
-        "Water lane resistance",
-        "Boss armor phases"
-      ],
-      "rewards": [
-        "Orca Core",
-        "Atlantis Title"
-      ],
-      "notes": "Bring aquatic fusions and Guardian Barrier\u2014boss enrages after 50% HP."
+      "modifiers": ["Water lane resistance", "Boss armor phases"],
+      "rewards": ["Orca Core", "Atlantis Title"],
+      "notes": "Bring aquatic fusions and Guardian Barrier—boss enrages after 50% HP."
     }
   ],
   "dropTables": [
@@ -1163,21 +1943,21 @@
     {
       "code": "STACKS",
       "reward": "Lucky Potion",
-      "addedAt": "2025-09-25T00:00:00Z",
+      "addedAt": "2025-09-25",
       "expiresAt": null,
       "status": "Active"
     },
     {
-      "code": "FROZEN",
+      "code": "frozen",
       "reward": "1 Frost Grenade",
-      "addedAt": "2025-09-25T00:00:00Z",
+      "addedAt": "2025-09-25",
       "expiresAt": null,
       "status": "Active"
     },
     {
-      "code": "BASED",
+      "code": "based",
       "reward": "5000 cash",
-      "addedAt": "2025-09-09T00:00:00Z",
+      "addedAt": "2025-09-09",
       "expiresAt": null,
       "status": "Active"
     }
