@@ -22,6 +22,7 @@ export default function DropsPage() {
     <div className="container space-y-10">
       <SectionHeading
         eyebrow="Loot"
+        as="h1"
         title="Drop tables"
         description="Plan your farming routes with real drop rates and power requirements for every core activity."
       />

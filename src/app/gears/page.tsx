@@ -22,6 +22,7 @@ export default function GearsPage() {
     <div className="container space-y-10">
       <SectionHeading
         eyebrow="Database"
+        as="h1"
         title="Gear arsenal"
         description="Track every active ability item and plan rotations before raids or admin abuse timers hit."
       />

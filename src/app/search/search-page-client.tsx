@@ -1,6 +1,6 @@
 "use client";
 
-import { SectionHeading } from "@/components/section-heading";
+import { SectionHeading } from "@/components/section-heading-client";
 import { brainrots, plants } from "@/data/pvb-database";
 import Link from "next/link";
 import { useMemo, useState } from "react";
@@ -27,6 +27,7 @@ export default function SearchPage() {
     <div className="container space-y-10">
       <SectionHeading
         eyebrow="Search"
+        as="h1"
         title="Find any plant, brainrot, or guide"
         description="Start typing to see instant matches across the database."
       />

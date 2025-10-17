@@ -117,6 +117,7 @@ export default function PlantsPage({ searchParams }: PlantsPageProps) {
       <div className="space-y-4">
         <SectionHeading
           eyebrow="Database"
+          as="h1"
           title="Plants database"
           description="Compare seeds, tiers, and mutation breakpoints to build optimized lanes. Use filters to pinpoint the exact plant you need."
         />

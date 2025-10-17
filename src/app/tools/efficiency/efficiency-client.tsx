@@ -2,7 +2,7 @@
 
 import useSWR from "swr";
 import { useMemo } from "react";
-import { SectionHeading } from "@/components/section-heading";
+import { SectionHeading } from "@/components/section-heading-client";
 import { brainrots, events } from "@/data/pvb-database";
 import type { StockPayload } from "@/data/stock-sample";
 
@@ -89,6 +89,7 @@ export default function EfficiencyToolPage() {
     <div className="container space-y-12">
       <SectionHeading
         eyebrow="Tool"
+        as="h1"
         title="Income optimizer"
         description="Prioritize the highest scaling brainrots with live stock context and active event modifiers factored in."
       />

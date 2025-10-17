@@ -12,6 +12,7 @@ export default function ContactPage() {
     <div className="container space-y-6">
       <SectionHeading
         eyebrow="Contact"
+        as="h1"
         title="Get in touch"
         description="Share bug reports, missing data, or feature requests."
       />

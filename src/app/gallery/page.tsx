@@ -52,6 +52,7 @@ export default function GalleryPage() {
       <header className="space-y-4 text-center">
         <SectionHeading
           eyebrow="Media"
+          as="h1"
           title="Plants vs Brainrots visual compendium"
           description="Browse every asset we have extracted so you can wire up cards, guides, and promo art without digging through folders."
         />

@@ -3,7 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import { SITE_URL } from "@/lib/site-metadata";
+import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site-metadata";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -20,12 +20,32 @@ export const metadata: Metadata = {
     siteName: "Plants vs Brainrots",
     type: "website",
     url: SITE_URL,
+    images: [
+      {
+        url: DEFAULT_OG_IMAGE,
+        width: 512,
+        height: 512,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Plants vs Brainrots Wiki",
     description:
       "Live stock, calculators, fusion planner, and event tracker for Plants vs Brainrots players.",
+    images: [DEFAULT_OG_IMAGE],
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/icons/icon-192.png",
+    other: [
+      {
+        rel: "mask-icon",
+        url: "/icons/icon-512.png",
+        color: "#16a34a",
+      },
+    ],
   },
   manifest: "/manifest.webmanifest",
 };

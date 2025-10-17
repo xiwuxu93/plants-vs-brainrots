@@ -13,6 +13,7 @@ export default function AboutPage() {
     <div className="container space-y-6">
       <SectionHeading
         eyebrow="About"
+        as="h1"
         title="Why we built Plants vs Brainrots Wiki"
         description="A lightweight MVP focused on fast answers for players who want data-backed decisions."
       />

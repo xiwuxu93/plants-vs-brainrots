@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import useSWR from "swr";
-import { SectionHeading } from "@/components/section-heading";
+import { SectionHeading } from "@/components/section-heading-client";
 import { dropTables, mutationInfo, plants } from "@/data/pvb-database";
 import type { StockPayload } from "@/data/stock-sample";
 
@@ -376,6 +376,7 @@ export default function PlantCalculatorPage() {
     <div className="container space-y-12">
       <SectionHeading
         eyebrow="Tool"
+        as="h1"
         title="Plant efficiency calculator"
         description="Tune mutation priorities, monitor stock, and export optimized lineups that squeeze every drop of DPS from your budget."
       />

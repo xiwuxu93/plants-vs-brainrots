@@ -5,7 +5,7 @@ import { getPlantMedia } from "@/data/media-assets";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
-import { withCanonical } from "@/lib/site-metadata";
+import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL, withCanonical } from "@/lib/site-metadata";
 
 interface PlantDetailPageProps {
   params: { slug: string };
@@ -28,10 +28,31 @@ export function generateMetadata({ params }: PlantDetailPageProps): Metadata {
     return { title: "Plant not found" };
   }
 
+  const media = getPlantMedia(plant.name);
+  const imageUrl = media?.image?.src ? new URL(media.image.src, SITE_URL).toString() : DEFAULT_OG_IMAGE;
+
   return {
     title: `${plant.name} | Plants vs Brainrots`,
     description: `Stats, mutations, and strategies for ${plant.name} in Plants vs Brainrots.`,
     ...withCanonical(`/plants/${plant.slug}`),
+    openGraph: {
+      title: `${plant.name} | Plants vs Brainrots`,
+      description: `Stats, mutations, and strategies for ${plant.name} in Plants vs Brainrots.`,
+      url: `${SITE_URL}/plants/${plant.slug}`,
+      siteName: SITE_NAME,
+      type: "article",
+      images: [
+        {
+          url: imageUrl,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${plant.name} | Plants vs Brainrots`,
+      description: `Stats, mutations, and strategies for ${plant.name} in Plants vs Brainrots.`,
+      images: [imageUrl],
+    },
   };
 }
 
@@ -80,6 +101,7 @@ export default function PlantDetailPage({ params }: PlantDetailPageProps) {
         <div className="space-y-6">
           <SectionHeading
             eyebrow="Plant overview"
+            as="h1"
             title={plant.name}
             description="Fine-tune lane coverage with complete damage, cost, and mutation data."
           />

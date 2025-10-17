@@ -5,7 +5,7 @@ import { getBrainrotMedia } from "@/data/media-assets";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
-import { withCanonical } from "@/lib/site-metadata";
+import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL, withCanonical } from "@/lib/site-metadata";
 
 interface BrainrotDetailPageProps {
   params: { slug: string };
@@ -28,10 +28,31 @@ export function generateMetadata({ params }: BrainrotDetailPageProps): Metadata 
     return { title: "Brainrot not found" };
   }
 
+  const media = getBrainrotMedia(brainrot.name);
+  const imageUrl = media?.image?.src ? new URL(media.image.src, SITE_URL).toString() : DEFAULT_OG_IMAGE;
+
   return {
     title: `${brainrot.name} | Plants vs Brainrots`,
     description: `Income tiers, weight class, and best mutations for ${brainrot.name}.`,
     ...withCanonical(`/brainrots/${brainrot.slug}`),
+    openGraph: {
+      title: `${brainrot.name} | Plants vs Brainrots`,
+      description: `Income tiers, weight class, and best mutations for ${brainrot.name}.`,
+      url: `${SITE_URL}/brainrots/${brainrot.slug}`,
+      siteName: SITE_NAME,
+      type: "article",
+      images: [
+        {
+          url: imageUrl,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${brainrot.name} | Plants vs Brainrots`,
+      description: `Income tiers, weight class, and best mutations for ${brainrot.name}.`,
+      images: [imageUrl],
+    },
   };
 }
 
@@ -81,6 +102,7 @@ export default function BrainrotDetailPage({ params }: BrainrotDetailPageProps) 
         <div className="space-y-6">
           <SectionHeading
             eyebrow="Brainrot profile"
+            as="h1"
             title={brainrot.name}
             description="Dial in income scaling and mutation timing for faster rebirth cycles."
           />

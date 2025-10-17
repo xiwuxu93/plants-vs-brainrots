@@ -12,6 +12,7 @@ export default function PrivacyPage() {
     <div className="container space-y-6">
       <SectionHeading
         eyebrow="Privacy"
+        as="h1"
         title="Privacy overview"
         description="We keep things simple—no logins required for the MVP and no trackers beyond basic analytics."
       />

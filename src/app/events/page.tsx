@@ -19,6 +19,7 @@ export default function EventsPage() {
     <div className="container space-y-10">
       <SectionHeading
         eyebrow="Live Ops"
+        as="h1"
         title="Event tracker"
         description="Keep tabs on every timed event, raid, and seasonal update so you never miss exclusive rewards."
       />

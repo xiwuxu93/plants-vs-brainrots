@@ -4,12 +4,13 @@ import useSWR from "swr";
 import Image from "next/image";
 import { useMemo } from "react";
 import { StockItem, StockPayload } from "@/data/stock-sample";
-import { SectionHeading } from "@/components/section-heading";
+import { SectionHeading } from "@/components/section-heading-client";
 import { getBrainrotMedia, getPlantMedia, type MediaAsset } from "@/data/media-assets";
 
 interface StockResponse {
   latest: StockPayload;
   history: StockPayload[];
+  hash?: string;
 }
 
 type StockItemWithMedia = StockItem & { media?: MediaAsset };
@@ -29,6 +30,10 @@ function resolveMedia(item: StockItem): MediaAsset | undefined {
     default:
       return undefined;
   }
+}
+
+interface StockPageClientProps {
+  initialData: StockResponse;
 }
 
 function formatDate(value: string | number | Date | null | undefined, options: Intl.DateTimeFormatOptions) {
@@ -56,25 +61,29 @@ function StockStatusBadge({ status }: { status: StockItem["status"] }) {
   );
 }
 
-export default function StockPageClient() {
+export default function StockPageClient({ initialData }: StockPageClientProps) {
   const refreshMs = 5 * 60 * 1000;
-  const { data, isLoading } = useSWR<StockResponse>("/api/stock", fetcher, {
+  const { data, isLoading: swrLoading } = useSWR<StockResponse>("/api/stock", fetcher, {
     refreshInterval: refreshMs,
     revalidateOnFocus: true,
+    fallbackData: initialData,
   });
 
+  const stockData = data ?? initialData;
+  const isLoading = swrLoading && !data;
+
   const lastUpdated = useMemo(() => {
-    if (!data?.latest?.generatedAt) return "—";
-    return formatDate(data.latest.generatedAt, {
+    if (!stockData?.latest?.generatedAt) return "—";
+    return formatDate(stockData.latest.generatedAt, {
       hour: "2-digit",
       minute: "2-digit",
       second: "2-digit",
       month: "short",
       day: "numeric",
     });
-  }, [data?.latest?.generatedAt]);
+  }, [stockData?.latest?.generatedAt]);
 
-  const items = data?.latest?.items;
+  const items = stockData?.latest?.items;
   const itemsWithMedia = useMemo<StockItemWithMedia[]>(() => {
     const list = items ?? [];
     return list.map((item) => ({
@@ -82,12 +91,13 @@ export default function StockPageClient() {
       media: resolveMedia(item),
     }));
   }, [items]);
-  const history = data?.history ?? [];
+  const history = stockData?.history ?? [];
 
   return (
     <div className="container space-y-10">
       <SectionHeading
         eyebrow="Live"
+        as="h1"
         title="Stock tracker"
         description="Streaming stock snapshots from the Roblox experience. Leave this tab open to catch restocks, limited rotations, and event drops the minute they flip."
       />
@@ -98,12 +108,12 @@ export default function StockPageClient() {
             Last update: <span className="font-semibold text-white">{lastUpdated}</span>
           </p>
           <p>
-            Source: <span className="font-semibold text-white">{data?.latest?.source ?? "unavailable"}</span>
+            Source: <span className="font-semibold text-white">{stockData?.latest?.source ?? "unavailable"}</span>
           </p>
         </div>
-        {data?.latest?.message ? (
+        {stockData?.latest?.message ? (
           <p className="mt-4 rounded-xl border border-amber-400/40 bg-amber-500/10 px-4 py-3 text-sm text-amber-100">
-            {data.latest.message}
+            {stockData.latest.message}
           </p>
         ) : null}
       </div>

@@ -115,6 +115,7 @@ export default function BrainrotsPage({ searchParams }: BrainrotsPageProps) {
       <div className="space-y-4">
         <SectionHeading
           eyebrow="Database"
+          as="h1"
           title="Brainrot income hub"
           description="Track every idle income source with mutation scaling, tier placement, and weight class for balanced rosters."
         />

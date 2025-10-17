@@ -1,6 +1,6 @@
 "use client";
 
-import { SectionHeading } from "@/components/section-heading";
+import { SectionHeading } from "@/components/section-heading-client";
 import { codeHistory, gameInfo } from "@/data/pvb-database";
 
 const siteUrl = "https://plantsvsbrainrots-game.com";
@@ -88,6 +88,7 @@ export default function CodesPageClient() {
 
       <SectionHeading
         eyebrow="Codes"
+        as="h1"
         title="Redeem codes hub"
         description="Copy the latest Plants vs Brainrots codes, claim them in-game, and stack rewards before they expire."
       />

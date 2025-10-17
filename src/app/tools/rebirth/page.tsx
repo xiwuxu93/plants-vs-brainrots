@@ -31,6 +31,7 @@ export default function RebirthToolPage() {
     <div className="container space-y-12">
       <SectionHeading
         eyebrow="Tool"
+        as="h1"
         title="Rebirth planner"
         description="Use this worksheet to decide when to reset, what to stockpile, and how to stabilise income during the next cycle."
       />

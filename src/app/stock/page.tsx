@@ -1,4 +1,5 @@
 import { buildPageMetadata } from "@/lib/site-metadata";
+import { getStockPayload } from "@/lib/stock";
 import StockPageClient from "./stock-page-client";
 
 export const metadata = buildPageMetadata({
@@ -7,6 +8,7 @@ export const metadata = buildPageMetadata({
   path: "/stock",
 });
 
-export default function StockPage() {
-  return <StockPageClient />;
+export default async function StockPage() {
+  const initialData = await getStockPayload();
+  return <StockPageClient initialData={initialData} />;
 }
