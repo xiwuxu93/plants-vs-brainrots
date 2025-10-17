@@ -225,6 +225,27 @@ export default function HomePage() {
       />
       <HomeHero />
       <div className="container">
+        <div className="flex flex-col gap-3 rounded-3xl border border-emerald-500/30 bg-emerald-500/10 px-6 py-4 text-sm text-emerald-100 shadow shadow-emerald-500/10 md:flex-row md:items-center md:justify-between">
+          <div className="flex items-start gap-3 md:items-center">
+            <span role="img" aria-label="Stock alert" className="text-lg">
+              📦
+            </span>
+            <div>
+              <p className="font-semibold text-white">Real-time shop tracker is live.</p>
+              <p className="mt-1 text-emerald-200 md:mt-0 md:text-sm">
+                Watch restocks, rotation swaps, and stock counts without refreshing Discord logs.
+              </p>
+            </div>
+          </div>
+          <Link
+            href="/stock"
+            className="inline-flex items-center justify-center rounded-full border border-emerald-400 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-emerald-100 transition hover:border-emerald-200 hover:text-white md:text-sm"
+          >
+            Open stock tracker →
+          </Link>
+        </div>
+      </div>
+      <div className="container">
         <div className="flex flex-col gap-3 rounded-3xl border border-brand-500/40 bg-brand-500/10 px-6 py-4 text-sm text-brand-100 shadow shadow-brand-500/10 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-3">
             <span role="img" aria-label="sparkles" className="text-lg">

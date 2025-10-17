@@ -1,16 +1,35 @@
 "use client";
 
 import useSWR from "swr";
+import Image from "next/image";
 import { useMemo } from "react";
 import { StockItem, StockPayload } from "@/data/stock-sample";
 import { SectionHeading } from "@/components/section-heading";
+import { getBrainrotMedia, getPlantMedia, type MediaAsset } from "@/data/media-assets";
 
 interface StockResponse {
   latest: StockPayload;
   history: StockPayload[];
 }
 
+type StockItemWithMedia = StockItem & { media?: MediaAsset };
+
 const fetcher = (url: string) => fetch(url).then((res) => res.json() as Promise<StockResponse>);
+
+function resolveMedia(item: StockItem): MediaAsset | undefined {
+  switch (item.type) {
+    case "Brainrot":
+      return getBrainrotMedia(item.name);
+    case "Seed":
+      return getPlantMedia(item.name.replace(/\s+seed$/i, ""));
+    case "Mutation":
+      return getPlantMedia(item.name);
+    case "Unknown":
+      return getPlantMedia(item.name) ?? getBrainrotMedia(item.name);
+    default:
+      return undefined;
+  }
+}
 
 function formatDate(value: string | number | Date | null | undefined, options: Intl.DateTimeFormatOptions) {
   if (!value) return "—";
@@ -55,7 +74,14 @@ export default function StockPageClient() {
     });
   }, [data?.latest?.generatedAt]);
 
-  const items = data?.latest?.items ?? [];
+  const items = data?.latest?.items;
+  const itemsWithMedia = useMemo<StockItemWithMedia[]>(() => {
+    const list = items ?? [];
+    return list.map((item) => ({
+      ...item,
+      media: resolveMedia(item),
+    }));
+  }, [items]);
   const history = data?.history ?? [];
 
   return (
@@ -86,6 +112,7 @@ export default function StockPageClient() {
         <table className="min-w-full divide-y divide-slate-800">
           <thead className="bg-slate-900/80 text-left text-xs uppercase tracking-[0.3em] text-slate-400">
             <tr>
+              <th className="px-4 py-3">Preview</th>
               <th className="px-4 py-3">Item</th>
               <th className="px-4 py-3">Type</th>
               <th className="px-4 py-3 text-right">Price</th>
@@ -95,8 +122,25 @@ export default function StockPageClient() {
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-900/60 bg-slate-950/70 text-sm text-slate-200">
-            {items.map((item) => (
+            {itemsWithMedia.map((item) => (
               <tr key={item.id} className="transition hover:bg-slate-900/50">
+                <td className="px-4 py-3">
+                  {item.media ? (
+                    <div className="relative h-12 w-12 overflow-hidden rounded-xl border border-slate-800 bg-slate-900">
+                      <Image
+                        src={item.media.image}
+                        alt={item.media.alt}
+                        fill
+                        sizes="48px"
+                        className="object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-slate-800 bg-slate-900 text-xs uppercase tracking-[0.25em] text-slate-500">
+                      N/A
+                    </div>
+                  )}
+                </td>
                 <td className="px-4 py-3 font-semibold text-white">{item.name}</td>
                 <td className="px-4 py-3 text-slate-300">{item.type}</td>
                 <td className="px-4 py-3 text-right text-slate-300">
@@ -118,9 +162,9 @@ export default function StockPageClient() {
                 </td>
               </tr>
             ))}
-            {!isLoading && items.length === 0 ? (
+            {!isLoading && itemsWithMedia.length === 0 ? (
               <tr>
-                <td colSpan={6} className="px-4 py-6 text-center text-sm text-slate-400">
+                <td colSpan={7} className="px-4 py-6 text-center text-sm text-slate-400">
                   Stock data is temporarily unavailable while we restore the feed. Please check back soon.
                 </td>
               </tr>
@@ -150,14 +194,26 @@ export default function StockPageClient() {
               </header>
               <ul className="mt-3 space-y-2 text-sm text-slate-200">
                 {entry.items.map((item) => {
+                  const media = resolveMedia(item);
                   return (
                     <li
                       key={`${entry.generatedAt ?? index}-${item.id}`}
-                      className="flex items-center justify-between rounded-xl border border-slate-800 bg-slate-950/60 px-3 py-2"
+                      className="flex items-center justify-between gap-3 rounded-xl border border-slate-800 bg-slate-950/60 px-3 py-2"
                     >
-                      <div>
-                        <p className="font-semibold text-white">{item.name}</p>
-                        <p className="text-xs uppercase tracking-[0.3em] text-slate-400">{item.type}</p>
+                      <div className="flex items-center gap-3">
+                        {media ? (
+                          <div className="relative h-10 w-10 overflow-hidden rounded-lg border border-slate-800 bg-slate-900">
+                            <Image src={media.image} alt={media.alt} fill sizes="40px" className="object-cover" />
+                          </div>
+                        ) : (
+                          <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-800 bg-slate-900 text-[10px] uppercase tracking-[0.25em] text-slate-500">
+                            N/A
+                          </div>
+                        )}
+                        <div>
+                          <p className="font-semibold text-white">{item.name}</p>
+                          <p className="text-xs uppercase tracking-[0.3em] text-slate-400">{item.type}</p>
+                        </div>
                       </div>
                       <div className="text-right text-sm text-slate-300">
                         <p className="font-semibold text-slate-200">{Number.isFinite(item.stock) ? item.stock : "—"}</p>
