@@ -28,7 +28,7 @@ export function SiteFooter() {
               );
             }
             return (
-              <Link key={link.name} href={link.href} className="hover:text-brand-200">
+              <Link prefetch={false} key={link.name} href={link.href} className="hover:text-brand-200">
                 {link.name}
               </Link>
             );

@@ -44,6 +44,7 @@ export function BrainrotCard({ brainrot }: BrainrotCardProps) {
           ))}
         </div>
         <Link
+          prefetch={false}
           href={`/brainrots/${brainrot.slug}`}
           className="inline-flex items-center gap-1 text-sm text-purple-200 hover:text-white"
         >

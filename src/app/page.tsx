@@ -238,6 +238,7 @@ export default function HomePage() {
             </div>
           </div>
           <Link
+            prefetch={false}
             href="/stock"
             className="inline-flex items-center justify-center rounded-full border border-emerald-400 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-emerald-100 transition hover:border-emerald-200 hover:text-white md:text-sm"
           >
@@ -254,6 +255,7 @@ export default function HomePage() {
             <p className="font-semibold text-white">Data pulled from the live Roblox experience and refreshed with every sync.</p>
           </div>
           <Link
+            prefetch={false}
             href="/search"
             className="inline-flex items-center justify-center rounded-full border border-brand-400 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-brand-200 transition hover:border-brand-200 hover:text-white"
           >
@@ -266,6 +268,7 @@ export default function HomePage() {
       <section className="container">
         <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
           <Link
+            prefetch={false}
             href="/fuse-recipe"
             className="group rounded-3xl border border-sky-500/30 bg-slate-900/70 p-6 transition hover:border-sky-400/70 hover:bg-slate-900"
           >
@@ -279,6 +282,7 @@ export default function HomePage() {
             </p>
           </Link>
           <Link
+            prefetch={false}
             href="/events"
             className="rounded-3xl border border-purple-500/30 bg-slate-900/70 p-6 transition hover:border-purple-400/60 hover:bg-slate-900"
           >
@@ -337,7 +341,7 @@ export default function HomePage() {
           )}
         </div>
         <div className="mt-6 text-right">
-          <Link href="/codes" className="text-sm font-semibold text-brand-200 hover:text-white">
+          <Link prefetch={false} href="/codes" className="text-sm font-semibold text-brand-200 hover:text-white">
             See every code →
           </Link>
         </div>
@@ -387,7 +391,7 @@ export default function HomePage() {
               rarity plants, fusion recipes, and rebirth perks. This hub mirrors the latest community wiki so you can track
               restocks, plan fusions, and theorycraft without digging through multiple sources.
             </p>
-            <Link href="/mechanics" className="mt-4 inline-flex text-sm font-semibold text-brand-200 hover:text-white">
+            <Link prefetch={false} href="/mechanics" className="mt-4 inline-flex text-sm font-semibold text-brand-200 hover:text-white">
               Explore the core mechanics →
             </Link>
           </div>
@@ -418,7 +422,7 @@ export default function HomePage() {
           ))}
         </div>
         <div className="mt-6 text-right">
-          <Link href="/plants" className="text-sm font-semibold text-brand-200 hover:text-white">
+          <Link prefetch={false} href="/plants" className="text-sm font-semibold text-brand-200 hover:text-white">
             View full plant database →
           </Link>
         </div>
@@ -436,7 +440,7 @@ export default function HomePage() {
           ))}
         </div>
         <div className="mt-6 text-right">
-          <Link href="/brainrots" className="text-sm font-semibold text-purple-200 hover:text-white">
+          <Link prefetch={false} href="/brainrots" className="text-sm font-semibold text-purple-200 hover:text-white">
             Explore every brainrot →
           </Link>
         </div>
@@ -451,6 +455,7 @@ export default function HomePage() {
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {toolHighlights.map((tool) => (
             <Link
+              prefetch={false}
               key={tool.title}
               href={tool.href}
               className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 transition hover:border-brand-400 hover:shadow-lg hover:shadow-brand-500/10"
@@ -472,6 +477,7 @@ export default function HomePage() {
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {mechanicHighlights.map((item) => (
             <Link
+              prefetch={false}
               key={item.title}
               href={item.href}
               className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 transition hover:border-brand-400 hover:shadow-lg hover:shadow-brand-500/10"

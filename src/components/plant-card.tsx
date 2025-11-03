@@ -56,6 +56,7 @@ export function PlantCard({ plant }: PlantCardProps) {
           ))}
         </div>
         <Link
+          prefetch={false}
           href={`/plants/${plant.slug}`}
           className="inline-flex items-center gap-1 text-sm text-brand-200 hover:text-white"
         >

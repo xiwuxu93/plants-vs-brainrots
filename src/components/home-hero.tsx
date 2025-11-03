@@ -24,18 +24,21 @@ export function HomeHero() {
             Play on Roblox
           </Link>
           <Link
+            prefetch={false}
             href="/mechanics"
             className="inline-flex items-center justify-center rounded-full border border-indigo-400/60 bg-indigo-500/10 px-6 py-2 text-sm font-semibold text-indigo-100 transition hover:scale-[1.02] hover:bg-indigo-500/25 hover:text-white"
           >
             Explore Mechanics
           </Link>
           <Link
+            prefetch={false}
             href="/plants"
             className="inline-flex items-center justify-center rounded-full bg-brand-500 px-6 py-2 text-sm font-semibold text-white shadow-lg shadow-brand-500/30 transition hover:scale-[1.02] hover:bg-brand-400"
           >
             Browse Plants
           </Link>
           <Link
+            prefetch={false}
             href="/brainrots"
             className="inline-flex items-center justify-center rounded-full border border-slate-700 px-6 py-2 text-sm font-semibold text-slate-200 transition hover:border-brand-400 hover:text-white"
           >

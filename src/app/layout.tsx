@@ -64,15 +64,15 @@ export default function RootLayout({
         <Script
           id="google-adsense"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855228928819714"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           crossOrigin="anonymous"
         />
         <Script
           id="google-analytics"
           src="https://www.googletagmanager.com/gtag/js?id=G-GND80V39W6"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics-config" strategy="afterInteractive">
+        <Script id="google-analytics-config" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

@@ -86,13 +86,14 @@ export function SiteHeader() {
   return (
     <header className="border-b border-slate-800 bg-slate-950/90 backdrop-blur">
       <div className="container flex h-16 items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-2 text-lg font-semibold tracking-tight text-white">
+        <Link prefetch={false} href="/" className="flex items-center gap-2 text-lg font-semibold tracking-tight text-white">
           <span role="img" aria-label="Plant">🌱</span>
           Plants vs Brainrots
         </Link>
         <nav className="hidden items-center gap-4 text-sm font-medium text-slate-200 md:flex">
           {primaryNav.map((item) => (
             <Link
+              prefetch={false}
               key={item.href}
               href={item.href}
               className={`rounded-md px-2 py-1 transition hover:bg-slate-800 ${
@@ -153,6 +154,7 @@ export function SiteHeader() {
               >
                 {secondaryNav.map((item) => (
                   <Link
+                    prefetch={false}
                     key={item.href}
                     href={item.href}
                     className={`px-4 py-2 transition hover:bg-slate-800 hover:text-white ${
@@ -167,7 +169,7 @@ export function SiteHeader() {
           ) : null}
         </nav>
         <div className="hidden items-center md:flex">
-          <Link href="/search" className="text-sm text-slate-300 hover:text-white">
+          <Link prefetch={false} href="/search" className="text-sm text-slate-300 hover:text-white">
             Search
           </Link>
         </div>
@@ -192,6 +194,7 @@ export function SiteHeader() {
       >
         {mobileNavItems.map((item) => (
           <Link
+            prefetch={false}
             key={item.href}
             href={item.href}
             className={`rounded-md border border-slate-800 px-3 py-2 transition hover:border-slate-700 hover:text-white ${

@@ -1765,8 +1765,14 @@
       "type": "Limited Event",
       "startDate": "2025-09-27T11:00:00Z",
       "endDate": "2025-09-27T13:00:00Z",
-      "modifiers": ["2x Stock Refresh", "+15% Brainrot Income"],
-      "rewards": ["Admin Badge", "Exclusive Gear Skin"],
+      "modifiers": [
+        "2x Stock Refresh",
+        "+15% Brainrot Income"
+      ],
+      "rewards": [
+        "Admin Badge",
+        "Exclusive Gear Skin"
+      ],
       "notes": "Prep shields and income buffs 15 minutes before start—stock drains instantly when countdown hits zero."
     },
     {
@@ -1775,8 +1781,14 @@
       "type": "Seasonal",
       "startDate": "2025-12-15T00:00:00Z",
       "endDate": "2026-01-05T00:00:00Z",
-      "modifiers": ["Snowstorm weather", "+10% Plant Freeze Chance"],
-      "rewards": ["Neon Core", "Limited Snowfall Brainrot Skin"],
+      "modifiers": [
+        "Snowstorm weather",
+        "+10% Plant Freeze Chance"
+      ],
+      "rewards": [
+        "Neon Core",
+        "Limited Snowfall Brainrot Skin"
+      ],
       "notes": "Unlocks fusion recipe Brr Brr Sunflowerim and drops Frost Grenades from raid bosses."
     },
     {
@@ -1785,8 +1797,14 @@
       "type": "Raid",
       "startDate": "2025-10-12T18:00:00Z",
       "endDate": "2025-10-19T18:00:00Z",
-      "modifiers": ["Water lane resistance", "Boss armor phases"],
-      "rewards": ["Orca Core", "Atlantis Title"],
+      "modifiers": [
+        "Water lane resistance",
+        "Boss armor phases"
+      ],
+      "rewards": [
+        "Orca Core",
+        "Atlantis Title"
+      ],
       "notes": "Bring aquatic fusions and Guardian Barrier—boss enrages after 50% HP."
     }
   ],
